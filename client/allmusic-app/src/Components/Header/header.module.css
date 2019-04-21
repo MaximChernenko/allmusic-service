@@ -1,0 +1,32 @@
+.header {
+    padding: 15px 0 0 4px;
+    height: 100px;
+    background: linear-gradient(#383535 2%, #000000);
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+
+.box::after {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    height: 1px;
+    background-color: #474747;
+    width: 100%;
+}
+
+.footBox {
+    display: flex;
+    justify-content: space-between;
+}

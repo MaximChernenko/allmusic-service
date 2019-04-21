@@ -1,0 +1,19 @@
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+}
+
+.link:hover {
+    color: #678cd1;
+}

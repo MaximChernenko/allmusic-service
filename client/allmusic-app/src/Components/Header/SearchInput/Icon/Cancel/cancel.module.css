@@ -1,0 +1,16 @@
+.btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 34px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    line-height: 0;
+    width: 12px;
+}
+
+.btn:focus {
+    outline: none;
+}

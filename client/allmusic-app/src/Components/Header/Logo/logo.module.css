@@ -1,0 +1,14 @@
+.logo {
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f0f8ff;
+    letter-spacing: 2px;
+}
+
+.logoUpper {
+    font-weight: 900;
+    color: #47a4e2;
+}
