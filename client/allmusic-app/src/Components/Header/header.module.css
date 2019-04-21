@@ -2,6 +2,7 @@
     padding: 15px 0 0 4px;
     height: 100px;
     background: linear-gradient(#383535 2%, #000000);
+    box-shadow: 0px 3px 3px #252424;
 }
 
 .wrapper {

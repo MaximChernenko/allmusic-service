@@ -1,14 +1,11 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.css";
 import { Carousel } from "react-responsive-carousel";
 
 // images
-import asset1 from "../../../images/blog_chrisstein.jpg";
-import asset2 from "../../../images/blog_rodrigoygabriela.jpg";
-import asset3 from "../../../images/blog_zakkwylde.jpg";
-
-// styles
-import s from "./carousel.module.css";
+import asset1 from "../../../images/1.jpg";
+import asset2 from "../../../images/2.jpg";
+import asset3 from "../../../images/3.jpg";
 
 const MainCarousel = () => (
   <Carousel
@@ -16,19 +13,34 @@ const MainCarousel = () => (
     showThumbs={false}
     autoPlay={true}
     infiniteLoop={true}
-    className={s.carousel}
+    interval={7000}
   >
     <div>
       <img src={asset1} alt="asset1" />
-      <p className="legend">Legend 1</p>
+      <p className="legend">
+        Though it’s more commonly known as an insult to offend and degrade, in
+        Missy Elliott’s capable hands, “bitch” means something far more
+        positive: a freedom of expression and a symbol of empowerment.
+      </p>
     </div>
     <div>
       <img src={asset2} alt="asset1" />
-      <p className="legend">Legend 2</p>
+      <p className="legend">
+        Blackpink brought some fresh energy to The Late Late Show With James
+        Corden when they were the guests last night (April 18). Their hazy,
+        sexual energy was on full display when they performed "Kill This Love"
+        from their new EP of the same name.
+      </p>
     </div>
     <div>
       <img src={asset3} alt="asset1" />
-      <p className="legend">Legend 3</p>
+      <p className="legend">
+        On April 26, ScHoolboy Q returns in all of his high-voiced, manic
+        rapping splendor. His new album Crash Talk has been announced to hit
+        streaming services then. The rapper released a brief, head-scratching
+        trailer confirming that finally, after nearly three years, and a few
+        recent singles, he's back and ready for more.
+      </p>
     </div>
   </Carousel>
 );

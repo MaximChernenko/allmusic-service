@@ -15,7 +15,7 @@ class App extends Component {
         <Header />
         <div className={s.inner}>
           <Switch>
-            <Route path="/" component={MainPage} />
+            <Route exact path="/" component={MainPage} />
             <Redirect to="/" />
           </Switch>
         </div>
