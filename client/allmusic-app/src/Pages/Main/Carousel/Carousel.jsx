@@ -1,11 +1,13 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.css";
 import { Carousel } from "react-responsive-carousel";
 
+// styles
+import "./carousel.css";
+
 // images
-import asset1 from "../../../images/1.jpg";
-import asset2 from "../../../images/2.jpg";
-import asset3 from "../../../images/3.jpg";
+import asset1 from "../../../images/carousel/1.jpg";
+import asset2 from "../../../images/carousel/2.jpg";
+import asset3 from "../../../images/carousel/3.jpg";
 
 const MainCarousel = () => (
   <Carousel
