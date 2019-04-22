@@ -1,0 +1,99 @@
+.form {
+    width: 320px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
+
+.groupper {
+    width: 100%;
+}
+
+.groupper::after, .innerText::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #cec6c6;
+    margin-top: 6px;
+}
+
+.groupper::after {
+    margin-top: 6px;
+}
+
+.innerText::after {
+    margin-top: 12px;
+}
+
+.label {
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.innerText {
+    padding-top: 10px;
+}
+
+.inner {
+    box-sizing: border-box;
+    padding: 10px 0;
+    width: 50%;
+    border-bottom: 1px solid #cec6c6;
+    border-right: 1px solid #cec6c6;
+    margin-bottom: 14px;
+}
+
+.inner:last-of-type {
+    border-right: none;
+    padding-left: 10px;
+}
+
+.input {
+    width: 262px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    padding: 6px 8px;
+    border: 1px solid #cec6c6;
+}
+
+.input::placeholder {
+    font-size: 14px;
+    color: #9e9999;
+}
+
+.dateSelect {
+    width: 128px;
+}
+
+.ratingSelect {
+    width: 128px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    background-color: #2a79ad;
+    color: #faf7f3;
+    border: none;
+}
+
+.button:hover {
+    background-color: #47a4e2;
+}

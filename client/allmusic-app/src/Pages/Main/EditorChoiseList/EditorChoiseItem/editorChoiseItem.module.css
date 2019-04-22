@@ -1,0 +1,37 @@
+.wrapper {
+    position: relative;
+}
+
+.wrapper:hover .inner {
+    background-color: rgba(40, 100, 100, 0.86);
+}
+
+.img {
+    display: block;
+    width: 139px;
+    height: 139px;
+}
+
+.inner {
+    padding: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.86);
+}
+
+.band, .album {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0;
+}
+
+.band {
+    font-weight: 400;
+}
+
+.album {
+    font-weight: 700;
+}
