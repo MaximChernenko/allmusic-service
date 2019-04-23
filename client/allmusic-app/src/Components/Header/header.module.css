@@ -1,11 +1,11 @@
 .header {
-    padding: 15px 0 0 4px;
-    height: 100px;
+    padding-top: 15px;
     background: linear-gradient(#383535 2%, #000000);
     box-shadow: 0px 3px 3px #252424;
 }
 
 .wrapper {
+    position: relative;
     width: 940px;
     margin: 0 auto;
 }
@@ -15,7 +15,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 16px;
 }
 
 .box::after {
@@ -30,4 +29,24 @@
 .footBox {
     display: flex;
     justify-content: space-between;
+    padding: 16px 0;
+}
+
+.fixedFootWrapper {
+    z-index: 100;
+    position: fixed;
+    background: #0e0d0d;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fixedFootBox {
+    composes: footBox;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.paddingFix {
+    padding-bottom: 50px;
 }

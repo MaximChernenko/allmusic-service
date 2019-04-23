@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 // Components
 import MainPage from "./Pages/Main/Main";
 import Header from "./Components/Header/HeaderView";
+import Footer from "./Components/Footer/Footer";
 
 // styles
 import s from "./app.module.css";
@@ -19,6 +20,7 @@ class App extends Component {
             <Redirect to="/" />
           </Switch>
         </div>
+        <Footer />
       </div>
     );
   }

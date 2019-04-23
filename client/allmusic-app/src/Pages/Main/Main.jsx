@@ -12,7 +12,7 @@ import s from "./main.module.css";
 import albums from "../../options/albums";
 
 const MainPage = () => (
-  <div>
+  <main>
     <MainCarousel />
     <div className={s.inner}>
       <ArticleBox />
@@ -21,7 +21,7 @@ const MainPage = () => (
         <EditorChoiseList data={albums} />
       </div>
     </div>
-  </div>
+  </main>
 );
 
 export default MainPage;
