@@ -9,20 +9,21 @@ import s from "./artistDisco.module.css";
 const ArtistDisco = ({ albums }) => {
   const albumsObj = albums.map(id => albumsOpt.find(item => item.id === id));
   return (
-    <div>
-      <h2>Discography</h2>
-      <table>
-        <tr>
-          <th>Year</th>
-          <th>Album</th>
-          <th>Label</th>
-          <th>Rating</th>
-          <th>User Ratings</th>
+    <div className={s.wrapper}>
+      <h2 className={s.title}>Discography</h2>
+      <table className={s.table}>
+        <tr className={s.tr}>
+          <th />
+          <th className={s.th}>Year</th>
+          <th className={s.th}>Album</th>
+          <th className={s.th}>Label</th>
+          <th className={s.th}>Rating</th>
+          <th className={s.th}>User Ratings</th>
         </tr>
         {albumsObj.map(album => (
-          <tr>
+          <tr className={s.tr}>
             <td>
-              <img src={album.imgSrc} alt={album.name} />
+              <img className={s.img} src={album.imgSrc} alt={album.name} />
             </td>
             <td>{album.releaseDate.split(" ")[2]}</td>
             <td>{album.label}</td>

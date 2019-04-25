@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 // options
 
 import artists from "../../options/artists";
@@ -43,20 +43,28 @@ export default class ArtistPage extends Component {
     console.log(`${url}/biography`);
     const { artist } = this.state;
     return artist ? (
-      <main>
-        <div>
-          <h2>{artist.name}</h2>
-          <ArtistMenu />
-          <Route
-            path={`${path}/biography`}
-            render={props => <ArtistBio {...props} bio={artist.bio} />}
-          />
-          <Route
-            parh={`${path}/discography`}
-            render={props => <ArtistDisco {...props} albums={artist.albums} />}
-          />
+      <main className={s.main}>
+        <div className={s.wrapper}>
+          <header className={s.header}>
+            <h2 className={s.title}>{artist.name}</h2>
+            <ArtistMenu />
+          </header>
+          <div className={s.inner}>
+            <Switch>
+              <Route
+                path={`${path}/biography`}
+                render={props => <ArtistBio {...props} bio={artist.bio} />}
+              />
+              <Route
+                parh={`${path}/discography`}
+                render={props => (
+                  <ArtistDisco {...props} albums={artist.albums} />
+                )}
+              />
+            </Switch>
+          </div>
         </div>
-        <div>
+        <div className={s.aside}>
           <Avatar imgSrc={artist.imgSrc} alt={artist.name} />
           <ArtistDataBox
             active={artist.active}

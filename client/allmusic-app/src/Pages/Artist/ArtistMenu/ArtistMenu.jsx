@@ -1,25 +1,55 @@
 import React from "react";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter, NavLink } from "react-router-dom";
 
 // styles
 import s from "./artistMenu.module.css";
 
 const ArtistMenu = ({ match: { url } }) => (
-  <ul>
-    <li>
-      <Link to={`${url}/biography`}>Biography</Link>
+  <ul className={s.list}>
+    <li className={s.item}>
+      <NavLink
+        activeClassName={s.activeLink}
+        className={s.link}
+        to={`${url}/biography`}
+      >
+        Biography
+      </NavLink>
     </li>
-    <li>
-      <Link to={`${url}/discgraphy`}>Discography</Link>
+    <li className={s.item}>
+      <NavLink
+        activeClassName={s.activeLink}
+        className={s.link}
+        to={`${url}/discography`}
+      >
+        Discography
+      </NavLink>
     </li>
-    <li>
-      <Link to={`${url}/songs`}>Songs</Link>
+    <li className={s.item}>
+      <NavLink
+        activeClassName={s.activeLink}
+        className={s.link}
+        to={`${url}/songs`}
+      >
+        Songs
+      </NavLink>
     </li>
-    <li>
-      <Link to={`${url}/credits`}>Credits</Link>
+    <li className={s.item}>
+      <NavLink
+        activeClassName={s.activeLink}
+        className={s.link}
+        to={`${url}/credits`}
+      >
+        Credits
+      </NavLink>
     </li>
-    <li>
-      <Link to={`${url}/related`}>Related</Link>
+    <li className={s.item}>
+      <NavLink
+        activeClassName={s.activeLink}
+        className={s.link}
+        to={`${url}/related`}
+      >
+        Related
+      </NavLink>
     </li>
   </ul>
 );

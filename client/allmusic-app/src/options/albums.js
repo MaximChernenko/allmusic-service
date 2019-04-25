@@ -56,7 +56,8 @@ const albums = [
       "Rap-Metal",
       "Rap-Rock"
     ],
-    songs: [1, 2, 3, 4, 5]
+    songs: [1, 2, 3, 4, 5],
+    isRecommended: true
   },
   {
     id: 2,
@@ -95,7 +96,8 @@ const albums = [
       "Rap-Metal",
       "Rap-Rock"
     ],
-    songs: [1, 2, 3, 4, 5]
+    songs: [1, 2, 3, 4, 5],
+    isRecommended: true
   },
   {
     id: 3,
@@ -127,7 +129,8 @@ const albums = [
     duration: "40:27",
     genre: "Pop/Rock",
     styles: ["Alternative/Indie Rock", "Heavy Metal", "Rap-Metal", "Rap-Rock"],
-    songs: [1, 2, 3, 4, 5]
+    songs: [1, 2, 3, 4, 5],
+    isRecommended: true
   },
   {
     id: 4,
@@ -162,7 +165,8 @@ const albums = [
     duration: "46:14",
     genre: "Pop/Rock",
     styles: ["Alternative/Indie Rock", "Heavy Metal", "Rap-Metal", "Rap-Rock"],
-    songs: [1, 2, 3, 4, 5]
+    songs: [1, 2, 3, 4, 5],
+    isRecommended: true
   },
   {
     id: 5,
@@ -198,15 +202,40 @@ const albums = [
     duration: "52:01",
     genre: "Pop/Rock",
     styles: ["Alternative/Indie Rock", "Heavy Metal", "Rap-Metal", "Rap-Rock"],
-    songs: [1, 2, 3, 4, 5]
+    songs: [1, 2, 3, 4, 5],
+    isRecommended: true
   },
-  { id: 6, band: "Papa Roach", imgSrc: i, name: "Infest" },
-  { id: 7, band: "Eminem", imgSrc: k, name: "Kamikaze" },
-  { id: 8, band: "Billie Eilish", imgSrc: dsam, name: "Dont Smile at Me" },
-  { id: 9, band: "Deuce", imgSrc: nl, name: "Nine Lives" },
-  { id: 10, band: "Three Days Grace", imgSrc: h, name: "Human" },
-  { id: 11, band: "Twenty One Pilots", imgSrc: t, name: "Trench" },
-  { id: 12, band: "Twenty One Pilots", imgSrc: bl, name: "Blurryface" }
+  { id: 6, band: "Papa Roach", imgSrc: i, name: "Infest", isRecommended: true },
+  { id: 7, band: "Eminem", imgSrc: k, name: "Kamikaze", isRecommended: true },
+  {
+    id: 8,
+    band: "Billie Eilish",
+    imgSrc: dsam,
+    name: "Dont Smile at Me",
+    isRecommended: true
+  },
+  { id: 9, band: "Deuce", imgSrc: nl, name: "Nine Lives", isRecommended: true },
+  {
+    id: 10,
+    band: "Three Days Grace",
+    imgSrc: h,
+    name: "Human",
+    isRecommended: true
+  },
+  {
+    id: 11,
+    band: "Twenty One Pilots",
+    imgSrc: t,
+    name: "Trench",
+    isRecommended: true
+  },
+  {
+    id: 12,
+    band: "Twenty One Pilots",
+    imgSrc: bl,
+    name: "Blurryface",
+    isRecommended: true
+  }
 ];
 
 export default albums;
