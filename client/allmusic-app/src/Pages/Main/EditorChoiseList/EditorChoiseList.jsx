@@ -16,7 +16,7 @@ const EditorChosieList = ({ data }) => (
     <ul className={s.list}>
       {data.map(item => (
         <li key={item.id}>
-          <Link className={s.link} to={`/albums/${item.id}`}>
+          <Link className={s.link} to={`/album/${item.id}`}>
             <EditorChosieItem item={item} />
           </Link>
         </li>

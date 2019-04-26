@@ -1,0 +1,36 @@
+.wrapper {
+    position: relative;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.text {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 130px;
+    padding: 12px 0 12px 32px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(to top right, #0e76bc 50%, #cbecfc);
+}
+
+.text::before {
+    content: url('../../../icons/albumAvatar/sound.svg');
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    line-height: 0;
+}

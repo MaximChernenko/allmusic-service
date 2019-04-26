@@ -1,3 +1,10 @@
+.inner {
+    background-color: #ffffff;
+    padding: 30px 0;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
 .title {
     margin: 0;
     font-size: 20px;

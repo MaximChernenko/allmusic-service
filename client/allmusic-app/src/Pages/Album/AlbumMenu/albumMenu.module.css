@@ -1,0 +1,23 @@
+.list {
+    display: flex;
+    width: 544px;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    background-color: #676f75;
+    color: #ffffff;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.activeLink, .link:hover {
+    background-color: #4aa5da;
+}

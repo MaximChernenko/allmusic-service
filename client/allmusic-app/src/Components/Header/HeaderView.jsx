@@ -32,7 +32,6 @@ export default class Header extends Component {
   }
 
   handleScroll = e => {
-    console.log(this.fixPoint);
     if (window.pageYOffset >= this.fixPoint) {
       this.setState({
         isNavFixed: true

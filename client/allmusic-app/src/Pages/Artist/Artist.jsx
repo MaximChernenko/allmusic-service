@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 // options
 
 import artists from "../../options/artists";
@@ -29,18 +29,12 @@ export default class ArtistPage extends Component {
 
     const artist = artists.find(item => item.id === Number(id));
     this.setState({ artist });
-    const {
-      history,
-      match: { url }
-    } = this.props;
-    history.replace(`${url}/biography`);
   }
 
   render() {
     const {
       match: { path, url }
     } = this.props;
-    console.log(`${url}/biography`);
     const { artist } = this.state;
     return artist ? (
       <main className={s.main}>
@@ -56,11 +50,12 @@ export default class ArtistPage extends Component {
                 render={props => <ArtistBio {...props} bio={artist.bio} />}
               />
               <Route
-                parh={`${path}/discography`}
+                path={`${path}/discography`}
                 render={props => (
                   <ArtistDisco {...props} albums={artist.albums} />
                 )}
               />
+              <Redirect to={`${url}/biography`} />
             </Switch>
           </div>
         </div>

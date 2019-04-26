@@ -15,10 +15,10 @@ import five from "../images/albums/03.jpg";
 const albums = [
   {
     id: 1,
-    band: "Hollywood Undead",
+    band: 1,
     imgSrc: ss,
     name: "Swan Songs",
-    rewiew: `Zombies or not, Hollywood Undead are a true underground phenomenon. 
+    review: `Zombies or not, Hollywood Undead are a true underground phenomenon. 
     They built their reputation through word of mouth on social networking sites
     such as MySpace, and it was to the latter's fledgling record label offshoot 
     that the six-member rap-rock troupe signed to in 2005. They later parted company 
@@ -56,15 +56,15 @@ const albums = [
       "Rap-Metal",
       "Rap-Rock"
     ],
-    songs: [1, 2, 3, 4, 5],
+    songs: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
     isRecommended: true
   },
   {
     id: 2,
-    band: "Hollywood Undead",
+    band: 1,
     imgSrc: at,
     name: "American Tragedy",
-    rewiew: `After their debut, Swan Song, went gold, the six masked members 
+    review: `After their debut, Swan Song, went gold, the six masked members 
     of Hollywood Undead went back to their home studios and started pre-production 
     on a follow-up. With some new tracks in tow, Johnny 3 Tears, J-Dog, Charlie Scene, 
     Da Kurlzz, Funny Man, and new recruit Daniel "Danny" Murillo (a former American 
@@ -96,15 +96,15 @@ const albums = [
       "Rap-Metal",
       "Rap-Rock"
     ],
-    songs: [1, 2, 3, 4, 5],
+    songs: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28],
     isRecommended: true
   },
   {
     id: 3,
-    band: "Hollywood Undead",
+    band: 1,
     imgSrc: nftu,
     name: "Notes From the Underground",
-    rewiew: `Working again with American Tragedy producer/co-writer Griffin Boice, 
+    review: `Working again with American Tragedy producer/co-writer Griffin Boice, 
     masked alt-metal/rap outfit Hollywood Undead returned with their testosterone-fueled 
     signature sound for their 2012 album Notes from the Underground. The record boosts 
     the knowing arena rock posturing with titanic contemporary production. Going for 
@@ -129,15 +129,15 @@ const albums = [
     duration: "40:27",
     genre: "Pop/Rock",
     styles: ["Alternative/Indie Rock", "Heavy Metal", "Rap-Metal", "Rap-Rock"],
-    songs: [1, 2, 3, 4, 5],
+    songs: [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
     isRecommended: true
   },
   {
     id: 4,
-    band: "Hollywood Undead",
+    band: 1,
     imgSrc: dotd,
     name: "Day of the Dead",
-    rewiew: `The fifth studio long-player from the ghoulish, non-Faygo-drinking, 
+    review: `The fifth studio long-player from the ghoulish, non-Faygo-drinking, 
     Los Angeles-based rap-rock crew, Day of the Dead is the follow-up to 2002's 
     chart-topping Notes from the Underground -- it's also the group's first outing 
     for Interscope. Darker and a tad more defiant than previous outings (calling out 
@@ -165,15 +165,15 @@ const albums = [
     duration: "46:14",
     genre: "Pop/Rock",
     styles: ["Alternative/Indie Rock", "Heavy Metal", "Rap-Metal", "Rap-Rock"],
-    songs: [1, 2, 3, 4, 5],
+    songs: [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
     isRecommended: true
   },
   {
     id: 5,
-    band: "Hollywood Undead",
+    band: 1,
     imgSrc: five,
     name: "Five",
-    rewiew: `The veteran rap-rock unit's fifth studio long-player and the 
+    review: `The veteran rap-rock unit's fifth studio long-player and the 
     follow-up to 2015's Day of the Dead, the aptly named Five delivers an 
     eclectic sonic slap that draws from a wide array of influences. Like 
     its predecessor, the 14-track set can go from gritty to velvety at the 
@@ -202,7 +202,7 @@ const albums = [
     duration: "52:01",
     genre: "Pop/Rock",
     styles: ["Alternative/Indie Rock", "Heavy Metal", "Rap-Metal", "Rap-Rock"],
-    songs: [1, 2, 3, 4, 5],
+    songs: [52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65],
     isRecommended: true
   },
   { id: 6, band: "Papa Roach", imgSrc: i, name: "Infest", isRecommended: true },

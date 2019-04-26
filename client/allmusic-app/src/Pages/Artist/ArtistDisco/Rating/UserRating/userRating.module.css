@@ -1,5 +1,5 @@
 .list {
-    width: 100%;
+    width: 88px;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -7,7 +7,19 @@
     padding: 0;
 }
 
-.starIcon {
+.defaultBtn {
+    display: block;
+    cursor: pointer;
+    height: 14px;
     width: 14px;
-    fill: #ee5050;
+    border: none;
+    background: transparent;
+    background-image: url('../../../../../icons/rate/star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.activeBtn {
+    background-image: url('../../../../../icons/rate/star-red.svg');
 }

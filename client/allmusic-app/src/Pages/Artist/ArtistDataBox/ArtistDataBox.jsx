@@ -4,39 +4,39 @@ import React from "react";
 import s from "./artistDataBox.module.css";
 
 const ArtistDataBox = ({ active, formed, genre, styles, groupMembers }) => (
-  <div>
-    <table>
-      <tr>
-        <td>Active</td>
+  <div className={s.wrapper}>
+    <table className={s.table}>
+      <tr className={s.tr}>
+        <td className={s.key}>Active</td>
         <td>{active}</td>
       </tr>
-      <tr>
-        <td>Formed</td>
-        <td>{formed}</td>
+      <tr className={s.tr}>
+        <td className={s.key}>Formed</td>
+        <td className={s.value}>{formed}</td>
       </tr>
-      <tr>
-        <td>Genre</td>
-        <td>{genre}</td>
+      <tr className={s.tr}>
+        <td className={s.key}>Genre</td>
+        <td className={s.value}>{genre}</td>
       </tr>
-      <tr>
-        <td>Styles</td>
-        <td>
+      <tr className={`${s.listTr} ${s.tr}`}>
+        <td className={s.key}>Styles</td>
+        <td className={s.value}>
           {
-            <ul>
+            <ul className={s.list}>
               {styles.map(item => (
-                <li>{item}</li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
           }
         </td>
       </tr>
-      <tr>
-        <td>Group members</td>
-        <td>
+      <tr className={s.listTr}>
+        <td className={s.key}>Group members</td>
+        <td className={s.value}>
           {
-            <ul>
+            <ul className={s.list}>
               {groupMembers.map(item => (
-                <li>{item}</li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
           }

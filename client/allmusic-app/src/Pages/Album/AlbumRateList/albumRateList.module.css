@@ -1,0 +1,28 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0 30px 22px 30px;
+}
+
+.item {
+    width: 148px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    color: #ffffff;
+    margin: 0;
+}
+
+.userRateItem {
+    width: 178px;
+}
+
+.userRateSelect {
+    width: 178px;
+}

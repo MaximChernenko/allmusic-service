@@ -14,12 +14,12 @@
     width: 14px;
     border: none;
     background: transparent;
-    background-image: url('../../../../../icons/rate/star.svg');
+    background-image: url('../../../../icons/rate/star.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
-.activeBtn {
-    background-image: url('../../../../../icons/rate/star-blue.svg');
+.activeBtn, .defaultBtn:hover {
+    background-image: url('../../../../icons/rate/star-orange.svg');
 }
