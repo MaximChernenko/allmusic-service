@@ -1,0 +1,32 @@
+.wrapper {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    margin-bottom: 25px;
+}
+
+.item::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #3b3939;
+    margin-top: 25px;
+}
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0 0 40px;
+    text-shadow: 38px 12px 3px #3b3939;
+    text-align: center;
+}

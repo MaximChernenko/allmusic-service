@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// options
-import articleItems from "../../../options/articles";
+import { connect } from "react-redux";
+
+// redux
+import articleSelectors from "../../Article/duck/selectors";
+
 // Components
 import ArticleList from "./ArticleList/ArticleList";
 // styles
 import s from "./articleBox.module.css";
 
-const ArticleBox = () => (
+const ArticleBox = ({ articles }) => (
   <div className={s.wrapper}>
     <div className={s.inner}>
       <h2 className={s.title}>Articles</h2>
@@ -15,8 +18,12 @@ const ArticleBox = () => (
         All articles
       </Link>
     </div>
-    <ArticleList articles={articleItems} />
+    <ArticleList articles={articles} />
   </div>
 );
 
-export default ArticleBox;
+const mapStateToProps = state => ({
+  articles: articleSelectors.getArticlesArr(state)
+});
+
+export default connect(mapStateToProps)(ArticleBox);

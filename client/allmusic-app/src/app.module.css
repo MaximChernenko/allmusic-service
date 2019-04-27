@@ -1,6 +1,7 @@
 .inner {
     padding: 20px 0 40px;
     width: 940px;
+    min-height: 100vh;
     margin: 0 auto;
 }
 

@@ -8,6 +8,8 @@ import { getArtists } from "./Pages/Artist/duck/operations";
 import { getAlbums } from "./Pages/Album/duck/operations";
 // Songs
 import { getSongs } from "./Pages/Song/duck/operations";
+// Articles
+import { getArticles } from "./Pages/Article/duck/operations";
 
 // Components
 import MainPage from "./Pages/Main/Main";
@@ -15,16 +17,19 @@ import Header from "./Components/Header/HeaderView";
 import Footer from "./Components/Footer/Footer";
 import ArtistPage from "./Pages/Artist/Artist";
 import AlbumPage from "./Pages/Album/Album";
+import ArticlePage from "./Pages/Article/Article";
+import ArticlesPage from "./Pages/Articles/Articles";
 
 // styles
 import s from "./app.module.css";
 
 class App extends Component {
   componentDidMount() {
-    const { getArtists, getAlbums, getSongs } = this.props;
+    const { getArtists, getAlbums, getSongs, getArticles } = this.props;
     getArtists();
     getAlbums();
     getSongs();
+    getArticles();
   }
 
   render() {
@@ -36,6 +41,8 @@ class App extends Component {
             <Route exact path="/" component={MainPage} />
             <Route path="/artist/:id" component={ArtistPage} />
             <Route path="/album/:id" component={AlbumPage} />
+            <Route path="/articles" component={ArticlesPage} />
+            <Route path="/article/:id" component={ArticlePage} />
             <Redirect to="/" />
           </Switch>
         </div>
@@ -48,7 +55,8 @@ class App extends Component {
 const mapDispatchToProps = {
   getArtists,
   getAlbums,
-  getSongs
+  getSongs,
+  getArticles
 };
 
 export default connect(

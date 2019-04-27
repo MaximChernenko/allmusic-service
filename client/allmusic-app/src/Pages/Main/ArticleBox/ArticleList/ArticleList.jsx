@@ -10,7 +10,7 @@ const ArticleList = ({ articles }) => (
     {articles.map(article => (
       <Link key={article.id} className={s.link} to={`/article/${article.id}`}>
         <li className={s.item}>
-          <Article src={article.imgSrc} content={article.content} />
+          <Article id={article.id} content={article.content} />
         </li>
       </Link>
     ))}

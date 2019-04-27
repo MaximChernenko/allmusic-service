@@ -1,0 +1,23 @@
+.article {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.article::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.img {
+    float: left;
+    width: 500px;
+    padding-right: 14px;
+}
+
+.text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}

@@ -3,14 +3,14 @@ import React from "react";
 // styles
 import s from "./article.module.css";
 
-const Article = ({ id, content }) => (
+const Article = ({ content, id }) => (
   <div className={s.wrapper}>
     <img
       className={s.img}
-      alt={content.slice(0, 10)}
       src={process.env.PUBLIC_URL + `/images/articles/${id}.jpg`}
+      alt={content.slice(0, 10)}
     />
-    <p className={s.text}>{content.slice(0, 40).trim() + "..."}</p>
+    <p className={s.text}>{content}</p>
   </div>
 );
 
