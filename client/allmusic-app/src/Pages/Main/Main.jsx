@@ -1,5 +1,7 @@
-import React from "react";
-
+import React, { Component } from "react";
+import { connect } from "react-redux";
+// redux
+import albumSelectors from "../Album/duck/selectors";
 // Components
 import MainCarousel from "./Carousel/Carousel";
 import ArticleBox from "./ArticleBox/ArticleBox";
@@ -8,20 +10,26 @@ import EditorChoiseList from "./EditorChoiseList/EditorChoiseList";
 // styles
 import s from "./main.module.css";
 
-// options
-import albums from "../../options/albums";
+class MainPage extends Component {
+  render() {
+    const { recommendedAlbums } = this.props;
+    return (
+      <main>
+        <MainCarousel />
+        <div className={s.inner}>
+          <ArticleBox />
+          <div>
+            <SearchForm />
+            <EditorChoiseList data={recommendedAlbums} />
+          </div>
+        </div>
+      </main>
+    );
+  }
+}
 
-const MainPage = () => (
-  <main>
-    <MainCarousel />
-    <div className={s.inner}>
-      <ArticleBox />
-      <div>
-        <SearchForm />
-        <EditorChoiseList data={albums} />
-      </div>
-    </div>
-  </main>
-);
+const mapStateToProps = state => ({
+  recommendedAlbums: albumSelectors.getRecommendedAlbums(state)
+});
 
-export default MainPage;
+export default connect(mapStateToProps)(MainPage);

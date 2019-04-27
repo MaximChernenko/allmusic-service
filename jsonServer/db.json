@@ -1,0 +1,768 @@
+{
+  "artists": {
+    "1": {
+      "id": 1,
+      "name": "Hollywood Undead",
+      "active": "2000s - 2010s",
+      "formed": "June, 2005 in Hollywood, CA",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Heavy Metal",
+        "Rap-Metal",
+        "Rap-Rock",
+        "Alternative/Indie Rock",
+        "Alternative Pop/Rock"
+      ],
+      "groupMembers": [
+        "Danny",
+        "Daren",
+        "Charlie Scene",
+        "Da Kurlzz",
+        "Funny Man",
+        "J-Dog",
+        "Johny 3 Tears",
+        "The Producer"
+      ],
+      "albums": [1, 2, 3, 4, 5],
+      "bio": "Hollywood Undead hail from the streets of Hollywood, California, mixing brash hip-hop, rock, and minor metalcore touches with cocky posturing. With their colorful pseudonyms and unique hockey goaltender-inspired masks, the band debuted in 2008 with Swan Songs, but didn't hit their commercial stride until the release of their 2011 sophomore effort, American Tragedy, which cracked the Top Ten on the Billboard 200 chart. Subsequent outings like Notes from the Underground (2013) and Day of the Dead (2015) performed just as well, if not better, cementing the group's reputation as one of rapcore's leading lights. Owing much of their popularity and exposure to the social networking website MySpace, the group started as the musical project of J-Dog and Tha Producer in June 2005. They uploaded some new music to their profile and very quickly started amassing song plays and online friends with tracks about drinking, sex, and emo kids. 'The gang,' as the guys liked to refer to themselves, also grew to include six members: J-Dog and Tha Producer alongside Charlie Scene, Johnny 3 Tears (formerly called the Server), Funny Man, and Da Kurlzz. As the band's online profile steadily increased, MySpace head honcho Tom Anderson wasn't immune and wound up featuring Hollywood Undead's song 'No. 5' on MySpace's first compilation album, in addition to giving them the distinction of being the first act signed to the site's new record label (distributed by Interscope) in 2005. Swan Songs finally appeared in 2008 on A&M/Octone Records. A year later, that label released an album of B-sides, live tracks, and covers titled Desperate Measures. In 2010, vocalist Aron 'Deuce' Erlichman left the group; he was replaced by Daniel 'Danny' Murillo, a former contestant on American Idol and lead singer of Lorene Drive. After shows with Avenged Sevenfold on The Nightmare After Christmas Tour, Hollywood Undead released their sophomore album, American Tragedy, in April of 2011, and the album debuted in the Top Five of Billboard's Top 200. The following November, A&M/Octone Records released a remix version of the record called American Tragedy Redux, which featured mixes by Andrew W.K., Borgore, and KMFDM, among others. In January of 2013, after embarking on The Underground Tour, Hollywood Undead released their third studio album, Notes from the Underground, which proved to be their highest-charting outing to date, landing at the number two spot on the Billboard Top 200 and soaring to number one on the Canadian albums chart. Their hotly anticipated fourth studio album, Day of the Dead, arrived in March 2015, and was preceded by the singles 'Usual Suspects,' 'Gravity,' 'How We Roll,' and the explosive title cut. The band returned to the studio in late 2016 to record its fifth studio album, Five. With their contract with Interscope finished, Hollywood Undead set up their own label, Dove & Grenade Media, in collaboration with BMG to release the album. The first single, 'California Dreaming' -- a scathing look at the inequalities between the two sides of Los Angeles culture -- was released in mid-2017, with the full-length Five arriving later that October. In 2018 the band released the standalone single 'Gotta Let Go,' a summery blast of feel-good nostalgia about letting go of pain."
+    }
+  },
+  "albums": {
+    "1": {
+      "id": 1,
+      "band": 1,
+      "name": "Swan Songs",
+      "review": "Zombies or not, Hollywood Undead are a true underground phenomenon. They built their reputation through word of mouth on social networking sites such as MySpace, and it was to the latter's fledgling record label offshoot that the six-member rap-rock troupe signed to in 2005. They later parted company with MySpace Records, preferring to seek another label rather than censor their lyrics, and it's hard to argue with their logic. Presented here in all its unedited glory, there's nothing particularly shocking about any of the lyrics on Swan Song -- in fact, there's very little that's interesting at all. Part of the problem lies in the fact that the group doesn't seem to know what it wants to be. Much of the album is given over to ironic frat-boy party rap: marquee singles 'Everywhere I Go' and 'No. 5' play fast and loose with misogynist and homophobic slurs, but it's a cheap way to win a laugh, and the jokes become stale long before Hollywood Undead are finished with them. Insufferable though the lyrics are, there are some genuinely good ideas here. 'Everywhere I Go' and 'No Other Place,' in particular, are as danceable as any single in recent memory, and the production value is strong throughout the album. However, their attempts to get serious are about as convincing as their pimp credentials (i.e. not very) and the more intensified the mood, the more interchangeable the rappers become (only Funny Man stands out for his booming baritone). Tracks like 'Young' and 'This Love, This Hate' represent a low point, as the emcees trade ever-more-exasperated Marshall Mathers impersonations to the backdrop of imposing Wall of Sound guitars and angsty chorus vocals. Clearly, they have talent, but a giant question remains as to whether Hollywood Undead have the self-confidence to drop the gimmicky exterior and deliver something a little more substantial than dated clichés and mildly offensive lyrics.",
+      "label": "Octone Records / A&M / Octone",
+      "rating": 2,
+      "userRating": 4,
+      "isPick": false,
+      "releaseDate": "August 26, 2008",
+      "duration": "49:31",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative Pop/Rock",
+        "Alternative/Indie Rock",
+        "Heavy Metal",
+        "Rap-Metal",
+        "Rap-Rock"
+      ],
+      "songs": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "isRecommended": true
+    },
+    "2": {
+      "id": 2,
+      "band": 1,
+      "name": "American Tragedy",
+      "review": "After their debut, Swan Song, went gold, the six masked members of Hollywood Undead went back to their home studios and started pre-production on a follow-up. With some new tracks in tow, Johnny 3 Tears, J-Dog, Charlie Scene, Da Kurlzz, Funny Man, and new recruit Daniel 'Danny' Murillo (a former American Idol contestant who replaced Aron “Deuce” Erlichman) reunited with former Hollywood Undead producer Don Gilmore and recruited four other producers (Griffin Boice, Sam Hollander, Dave Katz, and Kevin Rudolf) to broaden their sound. They succeed and they don’t, on this level. With more contributors, the group shows a wider range of influences, from mainstream pop, to Southern rap, to the usual riff-hearty rap-rock songs with big, shiny, Good Charlotte-style hooks, but at the core of the band, little has changed. The crew is still intentionally misogynistic and profane, sounding like caricatures of Eminem or Kid Rock as they rap and sing about gangsta clichés like puffing blunts, drinking Patron, getting booty, and flossing. Still, suburban youth won’t care if the material is stock. It’s a big, overstated album fit for moving car subwoofers, and even though it’s more layered with keyboards and digital gloss, the active rock appeal is there, even when they depart from the machismo and deliver the introspective rap ballads “Pour Me” and “Coming Back Down.”",
+      "label": "Octone Records / A&M",
+      "rating": 2,
+      "releaseDate": "April 5, 2011",
+      "userRating": 4,
+      "isPick": false,
+      "duration": "50:37",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative Pop/Rock",
+        "Alternative/Indie Rock",
+        "Heavy Metal",
+        "Rap-Metal",
+        "Rap-Rock"
+      ],
+      "songs": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28],
+      "isRecommended": true
+    },
+    "3": {
+      "id": 3,
+      "band": 1,
+      "name": "Notes From the Underground",
+      "review": "Working again with American Tragedy producer/co-writer Griffin Boice, masked alt-metal/rap outfit Hollywood Undead returned with their testosterone-fueled signature sound for their 2012 album Notes from the Underground. The record boosts the knowing arena rock posturing with titanic contemporary production. Going for a grand scale enhances the power of their rap-metal attack, which can get tedious, but as they did on the previous year's outing, Johnny 3 Tears, Charlie Scene, Da Kurlzz, Funny Man, J-Dog, and Danny divide their songs up into club pop, rap-rock, and power ballads to break up the sameness of Hollywood suburbia. There are two lyrical themes, too, almost as if they are partying recklessly when the masks are on, and inner angst is revealed when the masks are removed. For every song that revolves around juvenile humor -- for instance, the thinly veiled sports gag 'Pigskin,' where Charlie Scene raps about his weenie and Danny sings 'Hike up your skirt girl, let's get naughty' -- there's a seemingly heartfelt song about dejection. The party rhymes are pretty played out at this point, and knowingly so, as evidenced by a line like 'Girls look at me like that guy must make pornos/Yeah, I'm pushing 30 but I still drink Mickey's four O's,' but otherwise, the group shows no signs of slowing and will probably still be going strong if and when rap-rock makes a resurgence.",
+      "label": "Octone Records / A&M",
+      "rating": 2,
+      "releaseDate": "January 8, 2013",
+      "userRating": 4,
+      "isPick": false,
+      "duration": "40:27",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative/Indie Rock",
+        "Heavy Metal",
+        "Rap-Metal",
+        "Rap-Rock"
+      ],
+      "songs": [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+      "isRecommended": true
+    },
+    "4": {
+      "id": 4,
+      "band": 1,
+      "name": "Day of the Dead",
+      "review": "The fifth studio long-player from the ghoulish, non-Faygo-drinking, Los Angeles-based rap-rock crew, Day of the Dead is the follow-up to 2002's chart-topping Notes from the Underground -- it's also the group's first outing for Interscope. Darker and a tad more defiant than previous outings (calling out the band's 'haters' is a frequent theme) but still stocked with enough good-time, in-your-face, but largely innocuous party-rap anthems to successfully soundtrack multiple lost weekends, the 12-track set offers up a wide array of rock, electropop, and hip-hop with a newfound emphasis on the pop side of things. Festooned with enough well-worn hooks, stadium-ready gang vocals, and seismic orchestral bursts to be briefly mistaken for a Katy Perry superbowl halftime show rehearsal, Charlie Scene, Da Kurlzz, Danny, Funny Man, J-Dog, and Johnny 3 Tears clearly have their sights set on the mainstream, but they pollute the water with too many cheap slurs and lazy, sexist non sequiturs to really break free from the WWE/UFC promo/highlight reel graveyard, even though singles like 'Gravity,' 'How We Roll,' 'Usual Suspects,' and the beefy title track, at least sonically, suggest very obvious commercial aspirations. That said, overthinking Hollywood Undead causes brain freeze, and taking the album at face value results in a far better listening experience. How many masked, horror-themed rap-rock crews the world needs is still up for debate, but Day of the Dead is easily the group's most accessible and instantly gratifying outing, and what it lacks in nuance it more than makes up for with (schlocky) audacity.",
+      "label": "Interscope / Polydor",
+      "rating": 3,
+      "releaseDate": "March 31, 2015",
+      "userRating": 4,
+      "isPick": false,
+      "duration": "46:14",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative/Indie Rock",
+        "Heavy Metal",
+        "Rap-Metal",
+        "Rap-Rock"
+      ],
+      "songs": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
+      "isRecommended": true
+    },
+    "5": {
+      "id": 5,
+      "band": 1,
+      "name": "Five",
+      "review": "The veteran rap-rock unit's fifth studio long-player and the follow-up to 2015's Day of the Dead, the aptly named Five delivers an eclectic sonic slap that draws from a wide array of influences. Like its predecessor, the 14-track set can go from gritty to velvety at the drop of a needle, with hood-centric (as in Los Angeles) party anthems like 'Riot' and 'California Dreaming' (definitely not a Mamas & the Papas cover) simmering alongside languid reggae-folk jams ('Ghost Beach') and brooding, 'Lose Yourself'-era Eminem-inspired beatdowns. That penchant for experimentation, as well as a flair for pop craftsmanship, is what sets Hollywood Undead apart from some of their contemporaries -- for every seedy barrel roll into nu-metal malevolence -- 'Renegade' is a bona fide street peeler -- there's a slick blast of buttery radio fodder like 'Nobody's Watching.' Most of the time, the two camps find a way to coexist, with fiery rhymes yielding big, anthemic (clean) metalcore choruses -- the ragged and self-loathing 'Broken Record' takes a different approach, pairing incrementally desperate verses with a refrain straight out of the Twenty One Pilots manual. Five is an oddly seductive album, especially considering the merits of the oft-maligned and frequently stagnant genre from which it was conjured. Vocalist/guitarist Charlie Scene, vocalist/multi-instrumentalist Danny, vocalist Funny Man, vocalist/multi-instrumentalist J-Dog, and vocalist/bassist Johnny 3 Tears may be rolling down some familiar streets, but they're doing it with style and a not insignificant amount of substance.",
+      "label": "BMG",
+      "rating": 4,
+      "releaseDate": "October 27, 2017",
+      "userRating": 4,
+      "isPick": true,
+      "duration": "52:01",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative/Indie Rock",
+        "Heavy Metal",
+        "Rap-Metal",
+        "Rap-Rock"
+      ],
+      "songs": [52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65],
+      "isRecommended": true
+    },
+    "6": {
+      "id": 6,
+      "band": "Papa Roach",
+      "name": "Infest",
+      "isRecommended": true
+    },
+    "7": {
+      "id": 7,
+      "band": "Eminem",
+      "name": "Kamikaze",
+      "isRecommended": true
+    },
+    "8": {
+      "id": 8,
+      "band": "Billie Eilish",
+      "name": "Dont Smile at Me",
+      "isRecommended": true
+    },
+    "9": {
+      "id": 9,
+      "band": "Deuce",
+      "name": "Nine Lives",
+      "isRecommended": true
+    },
+    "10": {
+      "id": 10,
+      "band": "Three Days Grace",
+      "name": "Human",
+      "isRecommended": true
+    },
+    "11": {
+      "id": 11,
+      "band": "Twenty One Pilots",
+      "name": "Trench",
+      "isRecommended": true
+    },
+    "12": {
+      "id": 12,
+      "band": "Twenty One Pilots",
+      "name": "Blurryface",
+      "isRecommended": true
+    }
+  },
+  "songs": {
+    "1": {
+      "id": 1,
+      "band": 1,
+      "album": 1,
+      "name": "Undead",
+      "time": "4:25",
+      "number": 1,
+      "isPick": true
+    },
+    "2": {
+      "id": 2,
+      "band": 1,
+      "album": 1,
+      "name": "Sell Your Soul",
+      "time": "3:13",
+      "number": 2,
+      "isPick": false
+    },
+    "3": {
+      "id": 3,
+      "band": 1,
+      "album": 1,
+      "name": "Everywhere I Go",
+      "time": "3:30",
+      "number": 3,
+      "isPick": false
+    },
+    "4": {
+      "id": 4,
+      "band": 1,
+      "album": 1,
+      "name": "No Other Place",
+      "time": "3:16",
+      "number": 4,
+      "isPick": false
+    },
+    "5": {
+      "id": 5,
+      "band": 1,
+      "album": 1,
+      "name": "No. 5",
+      "time": "3:05",
+      "number": 5,
+      "isPick": false
+    },
+    "6": {
+      "id": 6,
+      "band": 1,
+      "album": 1,
+      "name": "Young",
+      "time": "3:16",
+      "number": 6,
+      "isPick": true
+    },
+    "7": {
+      "id": 7,
+      "band": 1,
+      "album": 1,
+      "name": "Black Dahila",
+      "time": "3:45",
+      "number": 7,
+      "isPick": false
+    },
+    "8": {
+      "id": 8,
+      "band": 1,
+      "album": 1,
+      "name": "This Love, This Hate",
+      "time": "3:57",
+      "number": 8,
+      "isPick": true
+    },
+    "9": {
+      "id": 9,
+      "band": 1,
+      "album": 1,
+      "name": "Bottle and a Gun",
+      "time": "3:22",
+      "number": 9,
+      "isPick": false
+    },
+    "10": {
+      "id": 10,
+      "band": 1,
+      "album": 1,
+      "name": "California",
+      "time": "3:16",
+      "number": 10,
+      "isPick": false
+    },
+    "11": {
+      "id": 11,
+      "band": 1,
+      "album": 1,
+      "name": "City",
+      "time": "3:34",
+      "number": 11,
+      "isPick": false
+    },
+    "12": {
+      "id": 12,
+      "band": 1,
+      "album": 1,
+      "name": "The Diary",
+      "time": "4:35",
+      "number": 12,
+      "isPick": false
+    },
+    "13": {
+      "id": 13,
+      "band": 1,
+      "album": 1,
+      "name": "Pimpin'",
+      "time": "3:07",
+      "number": 13,
+      "isPick": false
+    },
+    "14": {
+      "id": 14,
+      "band": 1,
+      "album": 1,
+      "name": "Paradise Lost",
+      "time": "3:10",
+      "number": 14,
+      "isPick": false
+    },
+    "15": {
+      "id": 15,
+      "band": 1,
+      "album": 2,
+      "name": "Been to Hell",
+      "time": "3:23",
+      "number": 1,
+      "isPick": true
+    },
+    "16": {
+      "id": 16,
+      "band": 1,
+      "album": 2,
+      "name": "Apologize",
+      "time": "3:27",
+      "number": 2,
+      "isPick": false
+    },
+    "17": {
+      "id": 17,
+      "band": 1,
+      "album": 2,
+      "name": "Comin' in Hot",
+      "time": "3:23",
+      "number": 3,
+      "isPick": false
+    },
+    "18": {
+      "id": 18,
+      "band": 1,
+      "album": 2,
+      "name": "My Town",
+      "time": "3:36",
+      "number": 4,
+      "isPick": false
+    },
+    "19": {
+      "id": 19,
+      "band": 1,
+      "album": 2,
+      "name": "I Don't Wanna Die",
+      "time": "3:58",
+      "number": 5,
+      "isPick": false
+    },
+    "20": {
+      "id": 20,
+      "band": 1,
+      "album": 2,
+      "name": "Hear Me Now",
+      "time": "3:34",
+      "number": 6,
+      "isPick": true
+    },
+    "21": {
+      "id": 21,
+      "band": 1,
+      "album": 2,
+      "name": "Gangsta Sexy",
+      "time": "3:53",
+      "number": 7,
+      "isPick": false
+    },
+    "22": {
+      "id": 22,
+      "band": 1,
+      "album": 2,
+      "name": "Glory",
+      "time": "3:34",
+      "number": 8,
+      "isPick": false
+    },
+    "23": {
+      "id": 23,
+      "band": 1,
+      "album": 2,
+      "name": "Lights Out",
+      "time": "3:51",
+      "number": 9,
+      "isPick": false
+    },
+    "24": {
+      "id": 24,
+      "band": 1,
+      "album": 2,
+      "name": "Coming Back Down",
+      "time": "3:22",
+      "number": 1,
+      "isPick": false
+    },
+    "25": {
+      "id": 25,
+      "band": 1,
+      "album": 2,
+      "name": "Bullet",
+      "time": "3:17",
+      "number": 11,
+      "isPick": false
+    },
+    "26": {
+      "id": 26,
+      "band": 1,
+      "album": 2,
+      "name": "Levitate",
+      "time": "3:24",
+      "number": 12,
+      "isPick": false
+    },
+    "27": {
+      "id": 27,
+      "band": 1,
+      "album": 2,
+      "name": "Pour Me",
+      "time": "4:03",
+      "number": 13,
+      "isPick": true
+    },
+    "28": {
+      "id": 28,
+      "band": 1,
+      "album": 2,
+      "name": "Tendencies",
+      "time": "3:32",
+      "number": 14,
+      "isPick": false
+    },
+    "29": {
+      "id": 29,
+      "band": 1,
+      "album": 3,
+      "name": "Dead Bite",
+      "time": "3:38",
+      "number": 1,
+      "isPick": false
+    },
+    "30": {
+      "id": 30,
+      "band": 1,
+      "album": 3,
+      "name": "From the Ground",
+      "time": "3:45",
+      "number": 2,
+      "isPick": true
+    },
+    "31": {
+      "id": 31,
+      "band": 1,
+      "album": 3,
+      "name": "Another Way Out",
+      "time": "2:47",
+      "number": 3,
+      "isPick": false
+    },
+    "32": {
+      "id": 32,
+      "band": 1,
+      "album": 3,
+      "name": "Lion",
+      "time": "3:54",
+      "number": 4,
+      "isPick": true
+    },
+    "33": {
+      "id": 33,
+      "band": 1,
+      "album": 3,
+      "name": "We Are",
+      "time": "4:34",
+      "number": 5,
+      "isPick": false
+    },
+    "34": {
+      "id": 34,
+      "band": 1,
+      "album": 3,
+      "name": "Pigskin",
+      "time": "2:41",
+      "number": 6,
+      "isPick": false
+    },
+    "35": {
+      "id": 35,
+      "band": 1,
+      "album": 3,
+      "name": "Rain",
+      "time": "3:41",
+      "number": 7,
+      "isPick": false
+    },
+    "36": {
+      "id": 36,
+      "band": 1,
+      "album": 3,
+      "name": "Kill Everyone",
+      "time": "2:52",
+      "number": 8,
+      "isPick": false
+    },
+    "37": {
+      "id": 37,
+      "band": 1,
+      "album": 3,
+      "name": "Believe",
+      "time": "4:14",
+      "number": 9,
+      "isPick": true
+    },
+    "38": {
+      "id": 38,
+      "band": 1,
+      "album": 3,
+      "name": "Up in Smoke",
+      "time": "3:38",
+      "number": 10,
+      "isPick": false
+    },
+    "39": {
+      "id": 39,
+      "band": 1,
+      "album": 3,
+      "name": "Outside",
+      "time": "4:43",
+      "number": 11,
+      "isPick": false
+    },
+    "40": {
+      "id": 40,
+      "band": 1,
+      "album": 4,
+      "name": "Usual Suspects",
+      "time": "3:46",
+      "number": 1,
+      "isPick": true
+    },
+    "41": {
+      "id": 41,
+      "band": 1,
+      "album": 4,
+      "name": "How We Roll",
+      "time": "4:45",
+      "number": 2,
+      "isPick": true
+    },
+    "42": {
+      "id": 42,
+      "band": 1,
+      "album": 4,
+      "name": "Day of the Dead",
+      "time": "3:55",
+      "number": 3,
+      "isPick": false
+    },
+    "43": {
+      "id": 43,
+      "band": 1,
+      "album": 4,
+      "name": "War Child",
+      "time": "3:58",
+      "number": 4,
+      "isPick": false
+    },
+    "44": {
+      "id": 44,
+      "band": 1,
+      "album": 4,
+      "name": "Dark Places",
+      "time": "4:39",
+      "number": 5,
+      "isPick": false
+    },
+    "45": {
+      "id": 45,
+      "band": 1,
+      "album": 4,
+      "name": "Take Me Home",
+      "time": "3:47",
+      "number": 6,
+      "isPick": false
+    },
+    "46": {
+      "id": 46,
+      "band": 1,
+      "album": 4,
+      "name": "Gravity",
+      "time": "3:19",
+      "number": 7,
+      "isPick": true
+    },
+    "47": {
+      "id": 47,
+      "band": 1,
+      "album": 4,
+      "name": "Does Everybody in the World Have to Die",
+      "time": "3:17",
+      "number": 8,
+      "isPick": false
+    },
+    "48": {
+      "id": 48,
+      "band": 1,
+      "album": 4,
+      "name": "Disease",
+      "time": "3:31",
+      "number": 9,
+      "isPick": false
+    },
+    "49": {
+      "id": 49,
+      "band": 1,
+      "album": 4,
+      "name": "Party by Myself",
+      "time": "4:10",
+      "number": 10,
+      "isPick": false
+    },
+    "50": {
+      "id": 50,
+      "band": 1,
+      "album": 4,
+      "name": "Live Forever",
+      "time": "3:40",
+      "number": 11,
+      "isPick": false
+    },
+    "51": {
+      "id": 51,
+      "band": 1,
+      "album": 4,
+      "name": "Save Me",
+      "time": "3:27",
+      "number": 12,
+      "isPick": false
+    },
+    "52": {
+      "id": 52,
+      "band": 1,
+      "album": 5,
+      "name": "California Dreaming",
+      "time": "3:54",
+      "number": 1,
+      "isPick": true
+    },
+    "53": {
+      "id": 53,
+      "band": 1,
+      "album": 5,
+      "name": "Whatever It Takes",
+      "time": "3:07",
+      "number": 2,
+      "isPick": true
+    },
+    "54": {
+      "id": 54,
+      "band": 1,
+      "album": 5,
+      "name": "Bad Moon",
+      "time": "3:52",
+      "number": 3,
+      "isPick": false
+    },
+    "55": {
+      "id": 55,
+      "band": 1,
+      "album": 5,
+      "name": "Ghost Beach",
+      "time": "3:54",
+      "number": 4,
+      "isPick": true
+    },
+    "56": {
+      "id": 56,
+      "band": 1,
+      "album": 5,
+      "name": "Broken Record",
+      "time": "3:39",
+      "number": 5,
+      "isPick": false
+    },
+    "57": {
+      "id": 57,
+      "band": 1,
+      "album": 5,
+      "name": "Nobody's Watching",
+      "time": "3:58",
+      "number": 6,
+      "isPick": false
+    },
+    "58": {
+      "id": 58,
+      "band": 1,
+      "album": 5,
+      "name": "Renegade",
+      "time": "3:03",
+      "number": 7,
+      "isPick": true
+    },
+    "59": {
+      "id": 59,
+      "band": 1,
+      "album": 5,
+      "name": "Black Cadillac",
+      "time": "3:47",
+      "number": 8,
+      "isPick": false
+    },
+    "60": {
+      "id": 60,
+      "band": 1,
+      "album": 5,
+      "name": "Pray (Put 'Em in the Dirt)",
+      "time": "4:24",
+      "number": 9,
+      "isPick": false
+    },
+    "61": {
+      "id": 61,
+      "band": 1,
+      "album": 5,
+      "name": "Cashed Out",
+      "time": "3:29",
+      "number": 10,
+      "isPick": false
+    },
+    "62": {
+      "id": 62,
+      "band": 1,
+      "album": 5,
+      "name": "Riot",
+      "time": "3:47",
+      "number": 11,
+      "isPick": true
+    },
+    "63": {
+      "id": 63,
+      "band": 1,
+      "album": 5,
+      "name": "We Own the Night",
+      "time": "4:02",
+      "number": 12,
+      "isPick": false
+    },
+    "64": {
+      "id": 64,
+      "band": 1,
+      "album": 5,
+      "name": "Bang Bang",
+      "time": "3:40",
+      "number": 13,
+      "isPick": false
+    },
+    "65": {
+      "id": 65,
+      "band": 1,
+      "album": 5,
+      "name": "Your Life",
+      "time": "3:25",
+      "number": 14,
+      "isPick": false
+    }
+  }
+}

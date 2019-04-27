@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+// redux
+// Artists
+import { getArtists } from "./Pages/Artist/duck/operations";
+// Albums
+import { getAlbums } from "./Pages/Album/duck/operations";
+// Songs
+import { getSongs } from "./Pages/Song/duck/operations";
 
 // Components
 import MainPage from "./Pages/Main/Main";
@@ -12,6 +20,13 @@ import AlbumPage from "./Pages/Album/Album";
 import s from "./app.module.css";
 
 class App extends Component {
+  componentDidMount() {
+    const { getArtists, getAlbums, getSongs } = this.props;
+    getArtists();
+    getAlbums();
+    getSongs();
+  }
+
   render() {
     return (
       <div>
@@ -30,4 +45,13 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = {
+  getArtists,
+  getAlbums,
+  getSongs
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(App);

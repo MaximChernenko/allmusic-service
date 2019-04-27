@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-// options
-
-import artists from "../../options/artists";
+import { connect } from "react-redux";
+// redux
+import artistSelectors from "./duck/selectors";
 
 // Components
 import ArtistMenu from "./ArtistMenu/ArtistMenu";
@@ -14,28 +14,12 @@ import ArtistDataBox from "./ArtistDataBox/ArtistDataBox";
 // styles
 import s from "./artist.module.css";
 
-export default class ArtistPage extends Component {
-  state = {
-    artist: null
-  };
-
-  componentDidMount() {
-    // get id
-    const {
-      match: {
-        params: { id }
-      }
-    } = this.props;
-
-    const artist = artists.find(item => item.id === Number(id));
-    this.setState({ artist });
-  }
-
+class ArtistPage extends Component {
   render() {
     const {
       match: { path, url }
     } = this.props;
-    const { artist } = this.state;
+    const { artist } = this.props;
     return artist ? (
       <main className={s.main}>
         <div className={s.wrapper}>
@@ -60,7 +44,7 @@ export default class ArtistPage extends Component {
           </div>
         </div>
         <div className={s.aside}>
-          <Avatar imgSrc={artist.imgSrc} alt={artist.name} />
+          <Avatar id={artist.id} alt={artist.name} />
           <ArtistDataBox
             active={artist.active}
             formed={artist.formed}
@@ -75,3 +59,9 @@ export default class ArtistPage extends Component {
     );
   }
 }
+
+const mapStateToProps = (state, props) => ({
+  artist: artistSelectors.getArtist(state, props.match.params.id)
+});
+
+export default connect(mapStateToProps)(ArtistPage);

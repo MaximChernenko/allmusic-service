@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Link, Route, Switch, Redirect } from "react-router-dom";
-// options
-import albums from "../../options/albums";
-import artists from "../../options/artists";
+import { connect } from "react-redux";
+
+// redux
+import albumSelectors from "./duck/selectors";
 
 // Components
 import Avatar from "./AlbumAvatar/AlbumAvatar";
@@ -14,38 +15,17 @@ import AlbumRateList from "./AlbumRateList/AlbumRateList";
 // styles
 import s from "./album.module.css";
 
-export default class AlbumPage extends Component {
-  state = {
-    album: null,
-    artist: null
-  };
-
-  componentDidMount() {
-    // get id
-    const {
-      match: {
-        params: { id }
-      }
-    } = this.props;
-
-    const album = albums.find(item => item.id === Number(id));
-    const artist = artists.find(item => item.id === album.band);
-    this.setState({ album, artist });
-  }
+class AlbumPage extends Component {
   render() {
     const {
-      match: { path, url }
+      match: { path, url },
+      album,
+      artist
     } = this.props;
-    const { album, artist } = this.state;
-
     return album ? (
       <main className={s.main}>
         <div className={s.aside}>
-          <Avatar
-            imgSrc={album.imgSrc}
-            alt={album.name}
-            isPick={album.isPick}
-          />
+          <Avatar id={album.id} alt={album.name} isPick={album.isPick} />
           <AlbumDataBox
             releaseDate={album.releaseDate}
             duration={album.duration}
@@ -87,3 +67,17 @@ export default class AlbumPage extends Component {
     );
   }
 }
+
+const mapStateToProps = (
+  state,
+  {
+    match: {
+      params: { id }
+    }
+  }
+) => ({
+  album: albumSelectors.getAlbumById(state, id),
+  artist: albumSelectors.getArtistByAlbum(state, id)
+});
+
+export default connect(mapStateToProps)(AlbumPage);
