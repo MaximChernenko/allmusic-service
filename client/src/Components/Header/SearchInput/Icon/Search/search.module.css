@@ -1,16 +1,8 @@
-.btn {
-    cursor: pointer;
+.link {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
-    padding: 0;
-    border: none;
-    background: transparent;
     line-height: 0;
     width: 16px;
-}
-
-.btn:focus {
-    outline: none;
 }

@@ -16,7 +16,7 @@ const AlbumRateList = ({ rating, userRating }) => (
     </li>
     <li className={`${s.item} ${s.userRateItem}`}>
       <p className={s.text}>User rating:</p>
-      <UserRating rating={rating} />
+      <UserRating rating={userRating} />
     </li>
     <li className={`${s.item} ${s.userRateSelect}`}>
       <p className={s.text}>Your rating:</p>

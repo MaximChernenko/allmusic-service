@@ -9,7 +9,6 @@
 
 .defaultBtn {
     display: block;
-    cursor: pointer;
     height: 14px;
     width: 14px;
     border: none;
@@ -20,6 +19,10 @@
     background-position: center;
 }
 
+.defaultBtn:focus {
+    outline: none;
+}
+
 .activeBtn {
-    background-image: url('../../../../../icons/rate/star-blue.svg');
+    background-image: url('../../../../../icons/rate/star-red.svg');
 }

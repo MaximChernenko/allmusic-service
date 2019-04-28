@@ -1,12 +1,12 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // styles
 import s from "./search.module.css";
 
 const SearchBtn = ({ src, alt }) => (
-  <button type="button" className={s.btn}>
+  <Link to="/search" className={s.link}>
     <img src={src} alt={alt} />
-  </button>
+  </Link>
 );
 
 export default SearchBtn;
