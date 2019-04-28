@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 // redux
 import searchSelectors from "../duck/selectors";
-import { getArtistById } from "../duck/operations";
+import artistSelectors from "../../../../Pages/Artist/duck/selectors";
 // styles
 import s from "./searchModal.module.css";
 
@@ -11,8 +11,7 @@ const SearchModal = ({
   artists,
   albums,
   songs,
-  searchArtist,
-  getArtistById,
+  allArtists,
   searchValue,
   closeModal,
   onReset
@@ -46,9 +45,8 @@ const SearchModal = ({
       {albums.length > 0 && <h2 className={s.title}>Albums</h2>}
       {albums.length > 0 && (
         <ul className={s.list}>
-          {albums.map(album => {
-            getArtistById(album.band);
-            return (
+          {albums.map(
+            album =>
               album && (
                 <li className={s.item} key={album.id}>
                   <Link
@@ -59,7 +57,7 @@ const SearchModal = ({
                     className={s.linkArtist}
                     to={`/artist/${album.band}`}
                   >
-                    {searchArtist.name}
+                    {allArtists[album.band] && allArtists[album.band].name}
                   </Link>
                   <Link
                     onClick={() => {
@@ -73,8 +71,7 @@ const SearchModal = ({
                   </Link>
                 </li>
               )
-            );
-          })}
+          )}
         </ul>
       )}
     </div>
@@ -82,9 +79,8 @@ const SearchModal = ({
       {songs.length > 0 && <h2 className={s.title}>Songs</h2>}
       {songs.length > 0 && (
         <ul className={s.list}>
-          {songs.map(song => {
-            getArtistById(song.band);
-            return (
+          {songs.map(
+            song =>
               song && (
                 <li className={s.item} key={song.id}>
                   <Link
@@ -95,7 +91,7 @@ const SearchModal = ({
                     className={s.linkArtist}
                     to={`/artist/${song.band}`}
                   >
-                    {searchArtist.name}
+                    {allArtists[song.band] && allArtists[song.band].name}
                   </Link>
                   <Link
                     onClick={() => {
@@ -109,8 +105,7 @@ const SearchModal = ({
                   </Link>
                 </li>
               )
-            );
-          })}
+          )}
         </ul>
       )}
     </div>
@@ -128,18 +123,11 @@ const SearchModal = ({
 );
 
 const mapStateToProps = state => ({
+  allArtists: artistSelectors.getArtists(state),
   artists: searchSelectors.getArtistsBySearch(state).slice(0, 3),
   albums: searchSelectors.getAlbumsBySearch(state).slice(0, 3),
   songs: searchSelectors.getSongsBySearch(state).slice(0, 3),
-  searchArtist: searchSelectors.getSearchArtist(state),
   searchValue: searchSelectors.getSearch(state)
 });
 
-const mapDispatchToProps = {
-  getArtistById
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(SearchModal);
+export default connect(mapStateToProps)(SearchModal);

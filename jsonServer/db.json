@@ -25,6 +25,17 @@
       ],
       "albums": [1, 2, 3, 4, 5],
       "bio": "Hollywood Undead hail from the streets of Hollywood, California, mixing brash hip-hop, rock, and minor metalcore touches with cocky posturing. With their colorful pseudonyms and unique hockey goaltender-inspired masks, the band debuted in 2008 with Swan Songs, but didn't hit their commercial stride until the release of their 2011 sophomore effort, American Tragedy, which cracked the Top Ten on the Billboard 200 chart. Subsequent outings like Notes from the Underground (2013) and Day of the Dead (2015) performed just as well, if not better, cementing the group's reputation as one of rapcore's leading lights. Owing much of their popularity and exposure to the social networking website MySpace, the group started as the musical project of J-Dog and Tha Producer in June 2005. They uploaded some new music to their profile and very quickly started amassing song plays and online friends with tracks about drinking, sex, and emo kids. 'The gang,' as the guys liked to refer to themselves, also grew to include six members: J-Dog and Tha Producer alongside Charlie Scene, Johnny 3 Tears (formerly called the Server), Funny Man, and Da Kurlzz. As the band's online profile steadily increased, MySpace head honcho Tom Anderson wasn't immune and wound up featuring Hollywood Undead's song 'No. 5' on MySpace's first compilation album, in addition to giving them the distinction of being the first act signed to the site's new record label (distributed by Interscope) in 2005. Swan Songs finally appeared in 2008 on A&M/Octone Records. A year later, that label released an album of B-sides, live tracks, and covers titled Desperate Measures. In 2010, vocalist Aron 'Deuce' Erlichman left the group; he was replaced by Daniel 'Danny' Murillo, a former contestant on American Idol and lead singer of Lorene Drive. After shows with Avenged Sevenfold on The Nightmare After Christmas Tour, Hollywood Undead released their sophomore album, American Tragedy, in April of 2011, and the album debuted in the Top Five of Billboard's Top 200. The following November, A&M/Octone Records released a remix version of the record called American Tragedy Redux, which featured mixes by Andrew W.K., Borgore, and KMFDM, among others. In January of 2013, after embarking on The Underground Tour, Hollywood Undead released their third studio album, Notes from the Underground, which proved to be their highest-charting outing to date, landing at the number two spot on the Billboard Top 200 and soaring to number one on the Canadian albums chart. Their hotly anticipated fourth studio album, Day of the Dead, arrived in March 2015, and was preceded by the singles 'Usual Suspects,' 'Gravity,' 'How We Roll,' and the explosive title cut. The band returned to the studio in late 2016 to record its fifth studio album, Five. With their contract with Interscope finished, Hollywood Undead set up their own label, Dove & Grenade Media, in collaboration with BMG to release the album. The first single, 'California Dreaming' -- a scathing look at the inequalities between the two sides of Los Angeles culture -- was released in mid-2017, with the full-length Five arriving later that October. In 2018 the band released the standalone single 'Gotta Let Go,' a summery blast of feel-good nostalgia about letting go of pain."
+    },
+    "2": {
+      "id": 2,
+      "name": "Twenty One Pilots",
+      "active": "2000s - 2010s",
+      "formed": "2009 in Columbus, OH",
+      "genre": "Pop/Rock, Rap",
+      "styles": ["Emo-Pop", "Alternative/Indie Rock", "Alternative Pop/Rock"],
+      "groupMembers": ["Josh Dun", "Tyler Joseph"],
+      "albums": [6, 7, 8],
+      "bio": "Rising from Columbus, Ohio on the strength of a sizable grassroots following, Twenty One Pilots cycled through lineups and styles before the core duo of Tyler Joseph and Josh Dun made their mainstream breakthrough with their chart-topping fourth effort, 2015's Blurryface. Featuring the Grammy-winning single 'Stressed Out' and its follow-up chart hit 'Ride,' the album was certified multi-platinum and became one of the year's best-selling albums in the world. Formed in 2009 by high-school friends Tyler Joseph, Nick Thomas, and Chris Salih, Twenty One Pilots built an enormous regional following across Ohio and the Midwest, spurred on by constant and energetic touring, shrewd use of interactive social media, and connecting with fans on a grassroots level. The trio self-released their eponymous debut album of rap-infused, high-tech pop in December 2009 before Thomas and Salih left the band in 2011. Frontman Tyler Joseph recruited replacement drummer Josh Dun and Twenty One Pilots continued as a duo. Later that year, second album Regional at Best surfaced, the first with the new lineup. Expanding their audience with a series of videos made by their friend Mark Eshelman, their brand grew and caught the attention of the major labels. In 2012, they signed to Atlantic subsidiary Fueled by Ramen, releasing the Three Songs EP and working with Adele producer Greg Wells on Vessel, their debut album for the label. Vessel was released in January of 2013 and featured the platinum singles 'Holding on to You,' 'House of Gold,' and 'Car Radio.' For the recording of their third album, Twenty One Pilots opted to work with various producers on an almost song-by-song basis. Recruiting Ricky Reed, Mike Crossey, Tim Anderson, and others, this process took them to studios throughout Los Angeles and London. The album, the Billboard 200-topping Blurryface, arrived in 2015. The album's Grammy-winning smash hit 'Stressed Out' reached number two on the Billboard Hot 100 in February 2016, with 'Ride' following at number five that summer. 'Heathens,' their Grammy-nominated contribution to the soundtrack for the DC Comics film Suicide Squad, not only helped notch the third alternative rock chart-topper for the duo, but the single's rise to number two on the Hot 100 made Twenty One Pilots only the third rock band to have two concurrent Top Ten singles. At the end of the year, the duo collaborated with tourmates MUTEMATH for the TOPxMM EP, which featured reimaginings of 'Heathens' and four Blurryface tracks. After a period of silence, during which time fans pieced together clues and theories about the group's next release, Twenty One Pilots emerged in 2018 with the single 'Jumpsuit' b/w 'Nico and the Niners,' the first offerings from their fifth LP, Trench."
     }
   },
   "albums": {
@@ -137,44 +148,79 @@
     },
     "6": {
       "id": 6,
-      "band": "Papa Roach",
-      "name": "Infest",
+      "band": 2,
+      "name": "Vessel",
+      "review": "Columbus, Ohio-based pop duo Twenty One Pilots spent the few short years leading up to Vessel, their debut recording for Atlantic Records subsidiary Fueled by Ramen, touring ceaselessly and reaching out to their growing fan base on a grassroots level. The emphatic pop stylings with more-than-occasional rap interjections made by Tyler Joseph and Josh Dun -- two Midwestern high-school friends who worked hard enough to build up something some people took notice of, still young and full of enough energy to keep up with the twists and turns once the major labels came knocking -- sound custom-made for the trajectory of their career up to this point. The move from rough demo versions on self-released recordings like 2011's Regional at Best to the glossy, radio-ready production of Vessel (handled by Greg Wells, who's also responsible for hits by Adele, Kid Cudi, Katy Perry, and others) seems like an entirely natural progression for the band's dorky rhymes that always run out just in time for an epically hooky chorus. Vessel is front-loaded with three relentlessly catchy single-ready standouts: the schizo-frenetic hip-hop via indie bounce of 'Ode to Sleep,' the silky groove of 'Holding on to You,' and the vocoder radio pop of 'Migraine.' These three songs encapsulate the band's unique calling card, offering up the best examples of what makes their approach different from any number of bands working in similar territory, with enormous beats and full-force electro-pop running through hooks modeled for Top 40 radio, each element punctuated by Joseph's down-to-earth sentiments coming through in the form of caffeinated rap codas. The continuity of the album isn't as strong after those first three songs. The influence of dour emo-pop like Bright Eyes shows up in some of the vocal stylings, as on 'Semi-Automatic' and the uncharacteristically folky 'House of Gold.' The entire ride is more of a party than an emo-fest, though, and a decidedly more commercial take on the parts of indie rock that appeal to a mass market, with banging tunes like 'Fake You Out' leaning closer to Coldplay or Fun. than they do to MGMT, but with an eye toward both sides of the coin. Twenty One Pilots definitely have a formula for both songwriting and production that renders some of the songs here slightly redundant, but even that doesn't take away from the overall value of the album. Vessel is a lively, energetic, pulsing collection of candy-coated big-budget pop with just enough personality to make it more engaging than a large percentage of other groups out there at the moment doing something similar.",
+      "label": "Fueled by Ramen Records",
+      "rating": 4,
+      "releaseDate": "January 8, 2013",
+      "userRating": 5,
+      "isPick": false,
+      "duration": "47:43",
+      "genre": "Pop/Rock, Rap",
+      "styles": [
+        "Alternative/Indie Rock",
+        "Indie Rock",
+        "Pop",
+        "Underground Rap"
+      ],
+      "songs": [66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77],
       "isRecommended": true
     },
     "7": {
       "id": 7,
-      "band": "Eminem",
-      "name": "Kamikaze",
+      "band": 2,
+      "name": "Blurryface",
+      "review": "Grappling with the forces of dark and light that rage within, Twenty One Pilots make inner turmoil sound thrilling on their sophomore major-label LP, Blurryface. Named after the menacing character that represents the negative in vocalist Tyler Joseph's life, Blurryface is a genre-blending grab bag of styles that sounds like a soundtrack from multiple artists. Reggae and dub, industrial and drum'n'bass, indie rock and rap. They're all included on Blurryface, where abrupt stylistic changes are exciting without being jarring. In addition to the hit singles 'Ride and 'Stressed Out' -- which tackle millennial angst and relatable life struggles -- Blurryface is packed with self-aware lyrics, clever observations, and deep introspection. While its predecessor, Vessel, hinted at the fearless experimental side of the duo -- which also includes drummer Josh Dun -- it was ultimately more precious and innocent. Keeping with the 'blurryface' threat, this album is darker and, despite the addictively catchy nature of the music, more serious. Joseph struggles with his demons throughout -- fear and anxiety seep through 'The Judge,' while the conflict rages on 'Doubt' and self-doubt and regret plague 'Polarize' -- until catharsis is achieved on 'Goner,' where Joseph sings 'I've got two faces/Blurry's the one I'm not.' It's an emotional ride buoyed by a constantly shifting sonic palette. Despite the intensity of some of the lyrics, when one focuses strictly on the music, it's a party. The reggae influences abound (nearly half the album includes some kind of laid-back dub beat) and Joseph strums his ukulele to effective measure on 'The Judge' and 'We Don't Believe What's on TV.' The pair also flirts with electronic dance beats on highlights 'Heavydirtysoul' and the New Order-ish ode to Columbus, Ohio, 'Hometown.' This may sound like a confused mishmash of ideas from two guys who can't seem to focus, but in the 2010s -- when so many genres rubbed elbows in the Top 40 -- it ends up being a natural product of the very environment where it was spawned. Twenty One Pilots tap into both the emotions and musical proclivities of restless youth in 2015, resulting in an effort that sounds both of its time and also completely futuristic.",
+      "label": "Fueled by Ramen Records",
+      "rating": 4,
+      "releaseDate": "May 19, 2015",
+      "userRating": 4,
+      "isPick": false,
+      "duration": "52:17",
+      "genre": "Pop/Rock",
+      "styles": ["Alternative/Indie Rock", "Indie Rock", "Pop"],
+      "songs": [78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91],
       "isRecommended": true
     },
     "8": {
       "id": 8,
-      "band": "Billie Eilish",
-      "name": "Dont Smile at Me",
+      "band": 2,
+      "name": "Trench",
+      "review": "Advancing the narrative started on their 2015 breakthrough, Blurryface, Ohio duo Twenty One Pilots continue the struggle with personal demons, diving deep into the darkness of the Trench and battling fresh enemies wrought from their newfound fame and fortune. The results are less carefree or pop-friendly, and instead comprise an engrossing conceptual journey that demands full attention, especially considering the album's underlying mythology. Dark and intense, it's a gift to dedicated fans, a theory-packed, multi-media puzzle for those interested in delving into a rich story occupied by symbolic entities like Dema, the journal-writing Clancy, the mysterious Nico, and the nine bishops from the Blurryface days. It's a heady maze, but a subtle nod to diehards in their so-called Skeleton Clique. Sonically -- while their trademark cross-genre, dub-influenced sounds remain -- TOP expand their reach with some fresh tricks, sprinkling surprises such as Tyler Joseph's falsetto into the R&B-washed 'Morph' and the funky 'My Blood'; a horn section on 'Legend'; and bright digital synths to second-half highlights 'The Hype,' 'Cut My Lip,' and 'Bandito.' Atop Josh Dun's precision backing, Joseph's flow is in top form, winding breathlessly on the hypnotic 'Levitate' and the tortured examination on suicide in the modern age, 'Neon Gravestones.' The latter track contains some of the best lyrics on Trench, making fine use of TOP's position to reach listeners with a supportive and urgent message. Emotional album-closer 'Leave the City' extends that theme, with Joseph pushing through the inner darkness as he concludes, 'In time I will leave the city/For now I will stay alive.' It's a powerful moment, both distressing and inspirational all at once. Through these layers of angst and despair, Joseph and Dun manage to fend off the circling vultures -- like the one on the album cover -- offering a glimmer of hope that should resonate with listeners. Although Trench requires a few spins to really register, it's ultimately rewarding and fully immersive, delivering a depth and gravity at which Twenty One Pilots only hinted on Blurryface.",
+      "label": "Fueled by Ramen Records",
+      "rating": 5,
+      "releaseDate": "October 5, 2018",
+      "userRating": 4,
+      "isPick": true,
+      "duration": "56:03",
+      "genre": "Pop/Rock, Rap",
+      "styles": ["Alternative/Indie Rock", "Alternative Pop-Rock", "Emo-Pop"],
+      "songs": [92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105],
       "isRecommended": true
     },
     "9": {
       "id": 9,
-      "band": "Deuce",
-      "name": "Nine Lives",
+      "band": "Papa Roach",
+      "name": "Infest",
       "isRecommended": true
     },
     "10": {
       "id": 10,
-      "band": "Three Days Grace",
-      "name": "Human",
+      "band": "Eminem",
+      "name": "Kamikaze",
       "isRecommended": true
     },
     "11": {
       "id": 11,
-      "band": "Twenty One Pilots",
-      "name": "Trench",
+      "band": "Billie Eilish",
+      "name": "Dont Smile at Me",
       "isRecommended": true
     },
     "12": {
       "id": 12,
-      "band": "Twenty One Pilots",
-      "name": "Blurryface",
+      "band": "Deuce",
+      "name": "Nine Lives",
       "isRecommended": true
     }
   },
@@ -763,6 +809,366 @@
       "time": "3:25",
       "number": 14,
       "isPick": false
+    },
+    "66": {
+      "id": 66,
+      "band": 2,
+      "album": 6,
+      "name": "Ode to Sleep",
+      "time": "5:08",
+      "number": 1,
+      "isPick": true
+    },
+    "67": {
+      "id": 67,
+      "band": 2,
+      "album": 6,
+      "name": "Holding on to You",
+      "time": "4:23",
+      "number": 2,
+      "isPick": true
+    },
+    "68": {
+      "id": 68,
+      "band": 2,
+      "album": 6,
+      "name": "Migraine",
+      "time": "3:59",
+      "number": 3,
+      "isPick": false
+    },
+    "69": {
+      "id": 69,
+      "band": 2,
+      "album": 6,
+      "name": "House of Gold",
+      "time": "2:43",
+      "number": 4,
+      "isPick": false
+    },
+    "70": {
+      "id": 70,
+      "band": 2,
+      "album": 6,
+      "name": "Car Radio",
+      "time": "4:27",
+      "number": 5,
+      "isPick": false
+    },
+    "71": {
+      "id": 71,
+      "band": 2,
+      "album": 6,
+      "name": "Semi-Automatic",
+      "time": "4:13",
+      "number": 6,
+      "isPick": false
+    },
+    "72": {
+      "id": 72,
+      "band": 2,
+      "album": 6,
+      "name": "Screen",
+      "time": "3:49",
+      "number": 7,
+      "isPick": false
+    },
+    "73": {
+      "id": 73,
+      "band": 2,
+      "album": 6,
+      "name": "The Run and Go",
+      "time": "3:48",
+      "number": 8,
+      "isPick": false
+    },
+    "74": {
+      "id": 74,
+      "band": 2,
+      "album": 6,
+      "name": "Fake You Out",
+      "time": "3:51",
+      "number": 9,
+      "isPick": true
+    },
+    "75": {
+      "id": 75,
+      "band": 2,
+      "album": 6,
+      "name": "Guns for Hands",
+      "time": "4:33",
+      "number": 10,
+      "isPick": false
+    },
+    "76": {
+      "id": 76,
+      "band": 2,
+      "album": 6,
+      "name": "Trees",
+      "time": "4:27",
+      "number": 11,
+      "isPick": false
+    },
+    "77": {
+      "id": 77,
+      "band": 2,
+      "album": 6,
+      "name": "Truce",
+      "time": "2:22",
+      "number": 12,
+      "isPick": false
+    },
+    "78": {
+      "id": 78,
+      "band": 2,
+      "album": 7,
+      "name": "Heavydirtysoul",
+      "time": "3:54",
+      "number": 1,
+      "isPick": true
+    },
+    "79": {
+      "id": 79,
+      "band": 2,
+      "album": 7,
+      "name": "Stressed Out",
+      "time": "3:22",
+      "number": 2,
+      "isPick": true
+    },
+    "80": {
+      "id": 80,
+      "band": 2,
+      "album": 7,
+      "name": "Ride",
+      "time": "3:34",
+      "number": 3,
+      "isPick": true
+    },
+    "81": {
+      "id": 81,
+      "band": 2,
+      "album": 7,
+      "name": "Fairly Local",
+      "time": "3:27",
+      "number": 4,
+      "isPick": false
+    },
+    "82": {
+      "id": 82,
+      "band": 2,
+      "album": 7,
+      "name": "Tear in My Heart",
+      "time": "3:08",
+      "number": 5,
+      "isPick": false
+    },
+    "83": {
+      "id": 83,
+      "band": 2,
+      "album": 7,
+      "name": "Lane Boy",
+      "time": "4:13",
+      "number": 6,
+      "isPick": false
+    },
+    "84": {
+      "id": 84,
+      "band": 2,
+      "album": 7,
+      "name": "The Judge",
+      "time": "4:57",
+      "number": 7,
+      "isPick": true
+    },
+    "85": {
+      "id": 85,
+      "band": 2,
+      "album": 7,
+      "name": "Doubt",
+      "time": "3:11",
+      "number": 8,
+      "isPick": false
+    },
+    "86": {
+      "id": 86,
+      "band": 2,
+      "album": 7,
+      "name": "Polarize",
+      "time": "3:46",
+      "number": 9,
+      "isPick": false
+    },
+    "87": {
+      "id": 87,
+      "band": 2,
+      "album": 7,
+      "name": "We Don't Believe What's on TV",
+      "time": "2:57",
+      "number": 10,
+      "isPick": false
+    },
+    "88": {
+      "id": 88,
+      "band": 2,
+      "album": 7,
+      "name": "Message Man",
+      "time": "4:00",
+      "number": 11,
+      "isPick": false
+    },
+    "89": {
+      "id": 89,
+      "band": 2,
+      "album": 7,
+      "name": "Hometown",
+      "time": "3:54",
+      "number": 12,
+      "isPick": false
+    },
+    "90": {
+      "id": 90,
+      "band": 2,
+      "album": 7,
+      "name": "Not Today",
+      "time": "3:58",
+      "number": 13,
+      "isPick": false
+    },
+    "91": {
+      "id": 91,
+      "band": 2,
+      "album": 7,
+      "name": "Goner",
+      "time": "3:56",
+      "number": 14,
+      "isPick": true
+    },
+    "92": {
+      "id": 92,
+      "band": 2,
+      "album": 8,
+      "name": "Jumpsuit",
+      "time": "3:58",
+      "number": 1,
+      "isPick": true
+    },
+    "93": {
+      "id": 93,
+      "band": 2,
+      "album": 8,
+      "name": "Levitate",
+      "time": "2:25",
+      "number": 2,
+      "isPick": true
+    },
+    "94": {
+      "id": 94,
+      "band": 2,
+      "album": 8,
+      "name": "Morph",
+      "time": "4:18",
+      "number": 3,
+      "isPick": false
+    },
+    "95": {
+      "id": 95,
+      "band": 2,
+      "album": 8,
+      "name": "My Blood",
+      "time": "3:49",
+      "number": 4,
+      "isPick": false
+    },
+    "96": {
+      "id": 96,
+      "band": 2,
+      "album": 8,
+      "name": "Chlorine",
+      "time": "5:24",
+      "number": 5,
+      "isPick": false
+    },
+    "97": {
+      "id": 97,
+      "band": 2,
+      "album": 8,
+      "name": "Smithereens",
+      "time": "2:57",
+      "number": 6,
+      "isPick": false
+    },
+    "98": {
+      "id": 98,
+      "band": 2,
+      "album": 8,
+      "name": "Neon Gravestones",
+      "time": "4:00",
+      "number": 7,
+      "isPick": true
+    },
+    "99": {
+      "id": 99,
+      "band": 2,
+      "album": 8,
+      "name": "The Hype",
+      "time": "4:25",
+      "number": 8,
+      "isPick": false
+    },
+    "100": {
+      "id": 100,
+      "band": 2,
+      "album": 8,
+      "name": "Nico and the Niners",
+      "time": "3:45",
+      "number": 9,
+      "isPick": false
+    },
+    "101": {
+      "id": 101,
+      "band": 2,
+      "album": 8,
+      "name": "Cut My Lip",
+      "time": "4:42",
+      "number": 10,
+      "isPick": false
+    },
+    "102": {
+      "id": 102,
+      "band": 2,
+      "album": 8,
+      "name": "Bandito",
+      "time": "5:30",
+      "number": 11,
+      "isPick": true
+    },
+    "103": {
+      "id": 103,
+      "band": 2,
+      "album": 8,
+      "name": "Pet Cheetah",
+      "time": "3:18",
+      "number": 12,
+      "isPick": false
+    },
+    "104": {
+      "id": 104,
+      "band": 2,
+      "album": 8,
+      "name": "Legend",
+      "time": "2:52",
+      "number": 13,
+      "isPick": false
+    },
+    "105": {
+      "id": 105,
+      "band": 2,
+      "album": 8,
+      "name": "Leave the City",
+      "time": "4:40",
+      "number": 14,
+      "isPick": true
     }
   },
   "articles": {

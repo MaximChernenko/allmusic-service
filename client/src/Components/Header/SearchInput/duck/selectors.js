@@ -1,7 +1,6 @@
 import { createSelector } from "reselect";
 
-const getSearch = state => state.search.value;
-const getSearchArtist = state => state.search.artist;
+const getSearch = state => state.search;
 
 const getArtists = state => state.artists;
 
@@ -42,7 +41,6 @@ const getSongsBySearch = createSelector(
 
 export default {
   getSearch,
-  getSearchArtist,
   getArtistsBySearch,
   getAlbumsBySearch,
   getSongsBySearch

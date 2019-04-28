@@ -1,10 +1,16 @@
-import { combineReducers } from "redux";
+import { SEARCH_DATA, SEARCH_CLEAR } from "./actionTypes";
 
-// reducers
-import valueReducer from "./valueReducer";
-import artistReducer from "./artistReducer";
+const initialValue = "";
 
-export default combineReducers({
-  value: valueReducer,
-  artist: artistReducer
-});
+const searchReducer = (state = initialValue, { type, payload }) => {
+  switch (type) {
+    case SEARCH_DATA:
+      return payload.filter;
+    case SEARCH_CLEAR:
+      return initialValue;
+    default:
+      return state;
+  }
+};
+
+export default searchReducer;
