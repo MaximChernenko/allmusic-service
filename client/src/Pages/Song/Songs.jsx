@@ -12,7 +12,9 @@ const Songs = ({ id, songs }) => (
 );
 
 const mapStateToProps = (state, { id }) => ({
-  songs: songSelectors.getSongsByArtist(state, id)
+  songs: songSelectors
+    .getSongsByArtist(state, id)
+    .sort((a, b) => (a.name > b.name ? 1 : a.name < b.name ? -1 : 0))
 });
 
 export default connect(mapStateToProps)(Songs);

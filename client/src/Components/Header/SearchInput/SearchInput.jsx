@@ -68,7 +68,7 @@ class SearchInput extends Component {
       <div ref={this.container} className={s.container}>
         <input
           autoComplete="off"
-          className={s.input}
+          className={`${s.input} ${isOpen && s.activeInput}`}
           name="search"
           value={search}
           placeholder="Search"

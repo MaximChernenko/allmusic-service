@@ -14,8 +14,11 @@
 }
 
 .input:focus {
-    width: 240px;
     outline: none;
+}
+
+.activeInput {
+    width: 240px;
 }
 
 .input::placeholder {

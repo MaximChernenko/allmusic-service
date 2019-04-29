@@ -4,6 +4,7 @@ import qs from "query-string";
 // styles
 import s from "./songFilter.module.css";
 
+// options
 const enAlphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
 class SongFilter extends Component {
@@ -11,11 +12,12 @@ class SongFilter extends Component {
 
   componentDidMount() {
     const letter = this.getLetterFromProps(this.props);
-
+    console.log(letter);
     if (letter) {
       this.props.history.push({
         pathname: this.props.location.pathname,
-        search: `letter=${letter}`
+        search: `letter=${letter}`,
+        hash: this.props.location.hash
       });
     } else {
       this.props.history.push({
@@ -32,7 +34,11 @@ class SongFilter extends Component {
   };
 
   render() {
-    const { songs } = this.props;
+    const {
+      songs,
+      location: { hash }
+    } = this.props;
+    const validHash = hash.slice(1);
     const currentLetter = this.getLetterFromProps(this.props);
     let songsToShow = [];
     if (currentLetter === "all") {
@@ -77,8 +83,13 @@ class SongFilter extends Component {
         <ul className={s.songList}>
           {songsToShow.length > 0 ? (
             songsToShow.map(song => (
-              <li className={s.songItem} key={song.id}>
-                <p className={s.songName}>{song.name}</p>
+              <li id={song.id} className={s.songItem} key={song.id}>
+                <p
+                  className={`${s.songName} ${Number(validHash) === song.id &&
+                    s.activeSong}`}
+                >
+                  {song.name}
+                </p>
               </li>
             ))
           ) : (

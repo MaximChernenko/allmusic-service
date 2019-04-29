@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 // redux
 import searchSelectors from "../duck/selectors";
 import artistSelectors from "../../../../Pages/Artist/duck/selectors";
@@ -93,16 +94,22 @@ const SearchModal = ({
                   >
                     {allArtists[song.band] && allArtists[song.band].name}
                   </Link>
-                  <Link
+                  <HashLink
                     onClick={() => {
                       onReset();
                       closeModal();
                     }}
                     className={s.link}
-                    to="/songs"
+                    to={`/artist/${song.band}/songs/?letter=all#${song.id}`}
+                    scroll={el => {
+                      const coords = el.getBoundingClientRect();
+                      window.scrollTo({
+                        top: coords.top - window.screen.height / 2
+                      });
+                    }}
                   >
                     {song.name}
-                  </Link>
+                  </HashLink>
                 </li>
               )
           )}
