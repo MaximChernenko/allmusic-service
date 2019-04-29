@@ -1,0 +1,69 @@
+.filterList {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+}
+
+.filterBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.filterBtn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.activeBtn {
+    background-color: #0099ff;
+    color: #ffffff;
+}
+
+.filterBtn:focus {
+    outline: none;
+}
+
+.title {
+    margin: 0;
+    font-size: 20px;
+    position: relative;
+    padding: 0 30px 14px 30px;
+    margin-bottom: 20px;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #909ba3;
+    left: 0;
+    bottom: 0;
+}
+
+.songList {
+    list-style: none;
+    margin: 0;
+    padding: 0 40px;
+}
+
+.songItem {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 10px;
+}
+
+.songItem:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.songName {
+    font-family: 'Roboto Slab', serif;
+    color: #0099ff;
+    text-shadow: 1px 0px #000000;
+    margin: 0;
+}
