@@ -1,5 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
+import { compose } from "redux";
+// utils
+import withScrollToTop from "../../utils/hocs/withScrollToTop";
 
 // redux
 import articleSelectors from "../Article/duck/selectors";
@@ -32,4 +35,7 @@ const mapStateToProps = (
   article: articleSelectors.getArticleById(state, id)
 });
 
-export default connect(mapStateToProps)(ArticlePage);
+export default compose(
+  connect(mapStateToProps),
+  withScrollToTop
+)(ArticlePage);

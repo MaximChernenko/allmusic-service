@@ -53,9 +53,7 @@ const AlbumTrackListing = ({ songsObj, artistBySong }) => (
               </th>
               <td className={s.suffix} />
             </tr>
-          ) : (
-            <h2>Loading</h2>
-          )
+          ) : null
         )}
       </tbody>
     </table>

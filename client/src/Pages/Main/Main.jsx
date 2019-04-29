@@ -1,5 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
+import { compose } from "redux";
+// utils
+import withScrollToTop from "../../utils/hocs/withScrollToTop";
 // redux
 import albumSelectors from "../Album/duck/selectors";
 // Components
@@ -10,26 +13,24 @@ import EditorChoiseList from "./EditorChoiseList/EditorChoiseList";
 // styles
 import s from "./main.module.css";
 
-class MainPage extends Component {
-  render() {
-    const { recommendedAlbums } = this.props;
-    return (
-      <main>
-        <MainCarousel />
-        <div className={s.inner}>
-          <ArticleBox />
-          <div>
-            <SearchForm />
-            <EditorChoiseList data={recommendedAlbums} />
-          </div>
-        </div>
-      </main>
-    );
-  }
-}
+const MainPage = ({ recommendedAlbums }) => (
+  <main>
+    <MainCarousel />
+    <div className={s.inner}>
+      <ArticleBox />
+      <div>
+        <SearchForm />
+        <EditorChoiseList data={recommendedAlbums} />
+      </div>
+    </div>
+  </main>
+);
 
 const mapStateToProps = state => ({
   recommendedAlbums: albumSelectors.getRecommendedAlbums(state)
 });
 
-export default connect(mapStateToProps)(MainPage);
+export default compose(
+  connect(mapStateToProps),
+  withScrollToTop
+)(MainPage);

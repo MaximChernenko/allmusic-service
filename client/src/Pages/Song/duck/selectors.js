@@ -13,4 +13,13 @@ const getArtistBySong = createSelector(
   (songs, artists) => (songs[0] ? artists[songs[0].band] : null)
 );
 
-export default { getSongsById, getArtistBySong };
+const getSongsByArtist = createSelector(
+  [getSongs, (state, id) => id],
+  (songs, id) => {
+    const keys = Object.keys(songs);
+    const songsArr = keys.map(id => songs[id]);
+    return songsArr.filter(song => song.band === id);
+  }
+);
+
+export default { getSongsById, getArtistBySong, getSongsByArtist };
