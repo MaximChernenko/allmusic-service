@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import qs from "query-string";
+import slugify from "slugify";
 // styles
 import s from "./songFilter.module.css";
-
+// utils
+import getClearHash from "../../../../utils/helpers/getClearId";
 // options
 const enAlphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
@@ -12,7 +14,6 @@ class SongFilter extends Component {
 
   componentDidMount() {
     const letter = this.getLetterFromProps(this.props);
-    console.log(letter);
     if (letter) {
       this.props.history.push({
         pathname: this.props.location.pathname,
@@ -38,7 +39,7 @@ class SongFilter extends Component {
       songs,
       location: { hash }
     } = this.props;
-    const validHash = hash.slice(1);
+    const validHash = getClearHash(hash);
     const currentLetter = this.getLetterFromProps(this.props);
     let songsToShow = [];
     if (currentLetter === "all") {
@@ -83,7 +84,11 @@ class SongFilter extends Component {
         <ul className={s.songList}>
           {songsToShow.length > 0 ? (
             songsToShow.map(song => (
-              <li id={song.id} className={s.songItem} key={song.id}>
+              <li
+                id={slugify(song.name).toLowerCase() + "-" + song.id}
+                className={s.songItem}
+                key={song.id}
+              >
                 <p
                   className={`${s.songName} ${Number(validHash) === song.id &&
                     s.activeSong}`}

@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 // redux
-import songSelectors from "../../../Song/duck/selectors";
+import songSelectors from "../../../Artist/ArtistSongs/duck/selectors";
 // icons
 import streamIcon from "../../../../icons/albumTrackListing/spotify.svg";
 import playIcon from "../../../../icons/albumTrackListing/play-button.svg";

@@ -2,8 +2,10 @@ import React from "react";
 import { Link, Route, Switch, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { compose } from "redux";
+import slugify from "slugify";
 // utils
 import withScrollToTop from "../../utils/hocs/withScrollToTop";
+import getClearId from "../../utils/helpers/getClearId";
 // redux
 import albumSelectors from "./duck/selectors";
 
@@ -31,7 +33,12 @@ const AlbumPage = ({ match: { path, url }, album, artist }) =>
       </div>
       <div className={s.wrapper}>
         <header className={s.header}>
-          <Link to={`/artist/${artist.id}`} className={s.link}>
+          <Link
+            to={`/artist/${slugify(artist.name).toLowerCase() +
+              "-" +
+              artist.id}`}
+            className={s.link}
+          >
             {artist.name}
           </Link>
           <h1 className={s.title}>{album.name}</h1>
@@ -67,8 +74,8 @@ const mapStateToProps = (
     }
   }
 ) => ({
-  album: albumSelectors.getAlbumById(state, id),
-  artist: albumSelectors.getArtistByAlbum(state, id)
+  album: albumSelectors.getAlbumById(state, getClearId(id)),
+  artist: albumSelectors.getArtistByAlbum(state, getClearId(id))
 });
 
 export default compose(

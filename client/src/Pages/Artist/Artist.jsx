@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { compose } from "redux";
 // utils
 import withScrollToTop from "../../utils/hocs/withScrollToTop";
+import getClearId from "../../utils/helpers/getClearId";
 // redux
 import artistSelectors from "./duck/selectors";
 
@@ -13,7 +14,7 @@ import ArtistBio from "./ArtistBio/ArtistBio";
 import ArtistDisco from "./ArtistDisco/ArtistDisco";
 import Avatar from "./ArtistAvatar/ArtistAvatar";
 import ArtistDataBox from "./ArtistDataBox/ArtistDataBox";
-import ArtistSongs from "../Song/Songs";
+import ArtistSongs from "../Artist/ArtistSongs/ArtistSongs";
 
 // styles
 import s from "./artist.module.css";
@@ -61,8 +62,15 @@ const ArtistPage = ({ match: { path, url }, artist }) =>
     <h2>Artist Not Found</h2>
   );
 
-const mapStateToProps = (state, props) => ({
-  artist: artistSelectors.getArtist(state, props.match.params.id)
+const mapStateToProps = (
+  state,
+  {
+    match: {
+      params: { id }
+    }
+  }
+) => ({
+  artist: artistSelectors.getArtist(state, getClearId(id))
 });
 
 export default compose(

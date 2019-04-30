@@ -7,7 +7,7 @@ import { getArtists } from "./Pages/Artist/duck/operations";
 // Albums
 import { getAlbums } from "./Pages/Album/duck/operations";
 // Songs
-import { getSongs } from "./Pages/Song/duck/operations";
+import { getSongs } from "./Pages/Artist/ArtistSongs/duck/operations";
 // Articles
 import { getArticles } from "./Pages/Article/duck/operations";
 

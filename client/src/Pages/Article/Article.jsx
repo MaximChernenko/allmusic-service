@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { compose } from "redux";
 // utils
 import withScrollToTop from "../../utils/hocs/withScrollToTop";
-
+import getClearId from "../../utils/helpers/getClearId";
 // redux
 import articleSelectors from "../Article/duck/selectors";
 
@@ -32,7 +32,7 @@ const mapStateToProps = (
     }
   }
 ) => ({
-  article: articleSelectors.getArticleById(state, id)
+  article: articleSelectors.getArticleById(state, getClearId(id))
 });
 
 export default compose(

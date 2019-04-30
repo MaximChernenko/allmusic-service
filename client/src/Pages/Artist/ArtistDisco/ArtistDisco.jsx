@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import slugify from "slugify";
 // redux
 import albumSelectors from "../../Album/duck/selectors";
 // Components
@@ -47,7 +48,12 @@ const ArtistDisco = ({ albumsObj }) =>
                     className={`${s.prefix} ${album.isPick && s.pickPrefix}`}
                   />
                   <td className={s.cover}>
-                    <Link className={s.link} to={`/album/${album.id}`}>
+                    <Link
+                      className={s.link}
+                      to={`/album/${slugify(album.name).toLowerCase() +
+                        "-" +
+                        album.id}`}
+                    >
                       <img
                         className={s.img}
                         src={
@@ -64,7 +70,12 @@ const ArtistDisco = ({ albumsObj }) =>
                     </p>
                   </td>
                   <td className={s.album}>
-                    <Link className={s.link} to={`/album/${album.id}`}>
+                    <Link
+                      className={s.link}
+                      to={`/album/${slugify(album.name).toLowerCase() +
+                        "-" +
+                        album.id}`}
+                    >
                       <p className={s.albumText}>{album.name}</p>
                     </Link>
                   </td>

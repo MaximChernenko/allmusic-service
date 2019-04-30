@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import slugify from "slugify";
 // Components
 import EditorChosieItem from "./EditorChoiseItem/EditorChoiseItem";
 // styles
@@ -16,7 +17,10 @@ const EditorChosieList = ({ data }) => (
     <ul className={s.list}>
       {data.map(item => (
         <li key={item.id}>
-          <Link className={s.link} to={`/album/${item.id}`}>
+          <Link
+            className={s.link}
+            to={`/album/${slugify(item.name).toLowerCase() + "-" + item.id}`}
+          >
             <EditorChosieItem item={item} />
           </Link>
         </li>

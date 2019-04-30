@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import slugify from "slugify";
 // redux
 import searchSelectors from "../duck/selectors";
 import artistSelectors from "../../../../Pages/Artist/duck/selectors";
@@ -32,7 +33,9 @@ const SearchModal = ({
                       closeModal();
                     }}
                     className={s.link}
-                    to={`/artist/${artist.id}`}
+                    to={`/artist/${slugify(artist.name).toLowerCase() +
+                      "-" +
+                      artist.id}`}
                   >
                     {artist.name}
                   </Link>
@@ -56,7 +59,13 @@ const SearchModal = ({
                       closeModal();
                     }}
                     className={s.linkArtist}
-                    to={`/artist/${album.band}`}
+                    to={`/artist/${slugify(
+                      allArtists[album.band]
+                        ? allArtists[album.band].name.toLowerCase()
+                        : "no-name"
+                    ) +
+                      "-" +
+                      album.band}`}
                   >
                     {allArtists[album.band] && allArtists[album.band].name}
                   </Link>
@@ -66,7 +75,9 @@ const SearchModal = ({
                       closeModal();
                     }}
                     className={s.link}
-                    to={`/album/${album.id}`}
+                    to={`/album/${slugify(album.name).toLowerCase() +
+                      "-" +
+                      album.id}`}
                   >
                     {album.name}
                   </Link>
@@ -90,7 +101,13 @@ const SearchModal = ({
                       closeModal();
                     }}
                     className={s.linkArtist}
-                    to={`/artist/${song.band}`}
+                    to={`/artist/${slugify(
+                      allArtists[song.band]
+                        ? allArtists[song.band].name.toLowerCase()
+                        : "no-name"
+                    ) +
+                      "-" +
+                      song.band}`}
                   >
                     {allArtists[song.band] && allArtists[song.band].name}
                   </Link>
@@ -100,7 +117,11 @@ const SearchModal = ({
                       closeModal();
                     }}
                     className={s.link}
-                    to={`/artist/${song.band}/songs/?letter=all#${song.id}`}
+                    to={`/artist/${song.band}/songs/?letter=all#${slugify(
+                      song.name
+                    ).toLowerCase() +
+                      "-" +
+                      song.id}`}
                     scroll={el => {
                       const coords = el.getBoundingClientRect();
                       window.scrollTo({
