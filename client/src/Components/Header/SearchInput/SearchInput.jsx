@@ -46,7 +46,6 @@ class SearchInput extends Component {
 
   checkClick({ target }) {
     // Close if search btn entered
-    console.log(this.searchBtn.current.contains(target));
     if (this.searchBtn.current.contains(target)) {
       this.closeModal();
       return;
