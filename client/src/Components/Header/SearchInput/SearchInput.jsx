@@ -9,7 +9,7 @@ import cancelIcon from "../../../icons/searchInput/close.svg";
 import searchIcon from "../../../icons/searchInput/search.svg";
 
 // Components
-import SearchBtn from "./Icon/Search/Search";
+import SearchBtn from "./Icon/Search/SearchBtn";
 import CancelBtn from "./Icon/Cancel/Cancel";
 import SearchModal from "./SearchModal/SearchModal";
 
@@ -18,6 +18,7 @@ import s from "./searchInput.module.css";
 
 class SearchInput extends Component {
   container = createRef();
+  searchBtn = createRef();
 
   state = {
     isOpen: false
@@ -44,6 +45,12 @@ class SearchInput extends Component {
   };
 
   checkClick({ target }) {
+    // Close if search btn entered
+    console.log(this.searchBtn.current.contains(target));
+    if (this.searchBtn.current.contains(target)) {
+      this.closeModal();
+      return;
+    }
     if (this.container.current.contains(target)) {
       this.openModal();
     } else {
@@ -81,7 +88,12 @@ class SearchInput extends Component {
             alt="cancel"
           />
         )}
-        <SearchBtn src={searchIcon} alt="search" />
+        <SearchBtn
+          ref={this.searchBtn}
+          closeModal={this.closeModal}
+          src={searchIcon}
+          alt="search"
+        />
         {search.length > 0 && isOpen && (
           <SearchModal
             onReset={this.handlerResetInput}

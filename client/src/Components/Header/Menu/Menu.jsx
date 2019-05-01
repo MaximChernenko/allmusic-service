@@ -21,17 +21,17 @@ const Menu = () => (
       </Link>
     </li>
     <li>
-      <Link className={s.link} to="recommendations">
+      <Link className={s.link} to="/recommendations">
         Recommendations
       </Link>
     </li>
     <li>
-      <Link className={s.link} to="my-profile">
+      <Link className={s.link} to="/my-profile">
         My Profile
       </Link>
     </li>
     <li>
-      <Link className={s.link} to="advanced-search">
+      <Link className={s.link} to="/advanced-search">
         Advanced Search
       </Link>
     </li>

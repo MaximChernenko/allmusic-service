@@ -140,7 +140,6 @@ const SearchModal = ({
     <Link
       to="/search"
       onClick={() => {
-        onReset();
         closeModal();
       }}
       className={s.linkSeeAll}

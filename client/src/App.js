@@ -19,6 +19,8 @@ import ArtistPage from "./Pages/Artist/Artist";
 import AlbumPage from "./Pages/Album/Album";
 import ArticlePage from "./Pages/Article/Article";
 import ArticlesPage from "./Pages/Articles/Articles";
+import RecommendationsPage from "./Pages/Recommendations/Recommendations";
+import SearchPage from "./Pages/Search/Search";
 
 // styles
 import s from "./app.module.css";
@@ -43,6 +45,8 @@ class App extends Component {
             <Route path="/album/:id" component={AlbumPage} />
             <Route path="/articles" component={ArticlesPage} />
             <Route path="/article/:id" component={ArticlePage} />
+            <Route path="/recommendations" component={RecommendationsPage} />
+            <Route path="/search" component={SearchPage} />
             <Redirect to="/" />
           </Switch>
         </div>

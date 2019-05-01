@@ -1,0 +1,66 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wrapper {
+    margin-bottom: 20px;
+}
+
+.img {
+    display: block;
+    width: 200px;
+}
+
+.inner {
+    font-family: 'Noto Sans', sans-serif;
+    width: 600px;
+}
+
+.text {
+    margin: 0;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.link {
+    display: inline-block;
+    color: #0e76bc;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: #70b8e9;
+    color: #ffffff;
+}
+
+.imgInner {
+    position: relative;
+}
+
+.box {
+    padding: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.86);
+}
+
+.band, .album {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.band {
+    font-weight: 400;
+}
+
+.album {
+    font-weight: 700;
+}
