@@ -16,14 +16,13 @@ import s from "./searchList.module.css";
 const SearchList = ({ search, artists, albums, songs, searchFilter }) => (
   <div className={s.wrapper}>
     <h2 className={s.title}>
-      {" "}
       {searchFilter === "ALL"
-        ? artists.length + albums.length + songs.length
+        ? artists.length + albums.length + songs.length + " "
         : searchFilter === "ARTIST"
         ? artists.length + " artists "
         : searchFilter === "ALBUM"
         ? albums.length + " albums "
-        : songs.length + " songs "}{" "}
+        : songs.length + " songs "}
       search results
       {`${search.length > 0 ? ` for ${search}` : ""} `}
     </h2>

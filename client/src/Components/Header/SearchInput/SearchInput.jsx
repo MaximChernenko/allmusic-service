@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 // redux
 import searchSelectors from "./duck/selectors";
 import { searchData, searchClear } from "./duck/actions";
+import { advancedSearchReset } from "../../../Pages/AdvancedSearch/duck/actions";
 
 import cancelIcon from "../../../icons/searchInput/close.svg";
 import searchIcon from "../../../icons/searchInput/search.svg";
@@ -58,7 +59,8 @@ class SearchInput extends Component {
   }
 
   handlerInputChange = ({ target: { value } }) => {
-    const { searchData } = this.props;
+    const { searchData, advancedSearchReset } = this.props;
+    advancedSearchReset();
     searchData(value);
   };
 
@@ -110,7 +112,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = {
   searchData,
-  searchClear
+  searchClear,
+  advancedSearchReset
 };
 
 export default connect(

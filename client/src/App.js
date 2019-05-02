@@ -21,6 +21,7 @@ import ArticlePage from "./Pages/Article/Article";
 import ArticlesPage from "./Pages/Articles/Articles";
 import RecommendationsPage from "./Pages/Recommendations/Recommendations";
 import SearchPage from "./Pages/Search/Search";
+import AdvancedSearch from "./Pages/AdvancedSearch/AdvancedSearch";
 
 // styles
 import s from "./app.module.css";
@@ -47,6 +48,7 @@ class App extends Component {
             <Route path="/article/:id" component={ArticlePage} />
             <Route path="/recommendations" component={RecommendationsPage} />
             <Route path="/search" component={SearchPage} />
+            <Route path="/advanced-search" component={AdvancedSearch} />
             <Redirect to="/" />
           </Switch>
         </div>

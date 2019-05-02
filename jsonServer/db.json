@@ -36,6 +36,30 @@
       "groupMembers": ["Josh Dun", "Tyler Joseph"],
       "albums": [6, 7, 8],
       "bio": "Rising from Columbus, Ohio on the strength of a sizable grassroots following, Twenty One Pilots cycled through lineups and styles before the core duo of Tyler Joseph and Josh Dun made their mainstream breakthrough with their chart-topping fourth effort, 2015's Blurryface. Featuring the Grammy-winning single 'Stressed Out' and its follow-up chart hit 'Ride,' the album was certified multi-platinum and became one of the year's best-selling albums in the world. Formed in 2009 by high-school friends Tyler Joseph, Nick Thomas, and Chris Salih, Twenty One Pilots built an enormous regional following across Ohio and the Midwest, spurred on by constant and energetic touring, shrewd use of interactive social media, and connecting with fans on a grassroots level. The trio self-released their eponymous debut album of rap-infused, high-tech pop in December 2009 before Thomas and Salih left the band in 2011. Frontman Tyler Joseph recruited replacement drummer Josh Dun and Twenty One Pilots continued as a duo. Later that year, second album Regional at Best surfaced, the first with the new lineup. Expanding their audience with a series of videos made by their friend Mark Eshelman, their brand grew and caught the attention of the major labels. In 2012, they signed to Atlantic subsidiary Fueled by Ramen, releasing the Three Songs EP and working with Adele producer Greg Wells on Vessel, their debut album for the label. Vessel was released in January of 2013 and featured the platinum singles 'Holding on to You,' 'House of Gold,' and 'Car Radio.' For the recording of their third album, Twenty One Pilots opted to work with various producers on an almost song-by-song basis. Recruiting Ricky Reed, Mike Crossey, Tim Anderson, and others, this process took them to studios throughout Los Angeles and London. The album, the Billboard 200-topping Blurryface, arrived in 2015. The album's Grammy-winning smash hit 'Stressed Out' reached number two on the Billboard Hot 100 in February 2016, with 'Ride' following at number five that summer. 'Heathens,' their Grammy-nominated contribution to the soundtrack for the DC Comics film Suicide Squad, not only helped notch the third alternative rock chart-topper for the duo, but the single's rise to number two on the Hot 100 made Twenty One Pilots only the third rock band to have two concurrent Top Ten singles. At the end of the year, the duo collaborated with tourmates MUTEMATH for the TOPxMM EP, which featured reimaginings of 'Heathens' and four Blurryface tracks. After a period of silence, during which time fans pieced together clues and theories about the group's next release, Twenty One Pilots emerged in 2018 with the single 'Jumpsuit' b/w 'Nico and the Niners,' the first offerings from their fifth LP, Trench."
+    },
+    "3": {
+      "id": 3,
+      "name": "Rammstein",
+      "active": "1990s - 2010s",
+      "formed": "January, 1994 in Berlin, Germany",
+      "genre": "Pop/Rock, International",
+      "styles": [
+        "Heavy Metal",
+        "Alternative Metal",
+        "Industrial Metal",
+        "Progressive Metal German"
+      ],
+      "groupMembers": [
+        "Christoph 'Doom' Schneider",
+        "Flake Lorenz",
+        "Oliver Riedel",
+        "Paul Landers",
+        "Richard Z. Kruspe",
+        "Till Lindemann",
+        "Christoph Schneider"
+      ],
+      "albums": [9, 10, 11, 12, 13, 14],
+      "bio": "Germany's biggest rock export Rammstein was formed in 1993 by an assembly of factory-weary proletarians raised in East Germany. The sextet is comprised of hulking vocalist and one-time Olympic swimming hopeful Till Lindemann, guitarists Richard Kruspe and Paul Landers, bassist Oliver Riedel, drummer Christoph Schneider, and keyboardist Christian 'Flake' Lorenz. They originally took their name from a United States Air Force base in Germany where 80 people were injured or killed as the result of a crash during an air show. However, as their popularity increased, they tried to distance themselves from the tragedy, opting for the literal translation of 'stone battering ram.' That latter description was apt, as the band's brand of muscular metal hits just as hard. The group's first album, 1995's Herzeleid, combined metal riffs with early Depeche Mode-inspired sheen and a faint Euro-disco heartbeat. Two tracks from the album -- 'Heirate Mich' and 'Rammstein' -- would help break the band in the United States when Nine Inch Nails' Trent Reznor included them on the soundtrack to David Lynch's film Lost Highway. Word of Rammstein's on-stage antics -- which included the use of heavy pyrotechnics and over-the-top theatrics -- began to spread, just in time for the release of their sophomore set. Sehnsucht arrived in 1997 and would prove to be the battering ram that busted down the gates of the international market. Including their most iconic song, 'Du Hast,' Sehnsucht topped the German charts upon release and landed Rammstein opening slots for KMFDM and the inaugural Family Values tour, which included Korn, Ice Cube, Orgy, and Limp Bizkit. Despite the obvious language barrier, the band soon found themselves on MTV's TRL and received a Grammy nomination for Best Metal Performance. The album would eventually go platinum in the United States. They released their first live album, Live Aus Berlin, in 1999 and quickly returned to the studio for its follow-up. Riding the wave of success spawned from Sehnsucht's surprise international performance, Rammstein returned with Mutter in 2001. Whereas Herzeleid debuted a band focused on fusion and Sehnsucht further developed their hybrid metal sound, Mutter would solidify Rammstein as a formidable force, incorporating lush orchestral layers to their riffs-and-rhythms attack. Darker and more dramatic than its predecessors, it spawned six singles -- including 'Links 2-3-4,' 'Sonne,' 'Ich Will,' and 'Feuer Frei!' -- and their most expensive music videos to date. Mutter topped the charts in Germany and Austria and charted internationally, reaching number 77 in the United States. The band embarked on yet another international tour, amplifying the danger and excitement with even bigger pyrotechnic arrangements. In 2004, Rammstein released the first of a pair of albums recorded during the same sessions. Reise, Reise contained more of the orchestral atmospherics found on Mutter, while expanding Rammstein's linguistic wheelhouse with the addition of an English chorus on the satirical 'Amerika' and a Russian flourish courtesy of Estonian singer Viktoria Fersh on the apocalyptic 'Moskau.' A year later, the band released the companion album Rosenrot, which included a handful of songs from the Reise sessions. Originally titled Reise, Reise: Vol. Two, Rosenrot featured some of Rammstein's heaviest and hardest-hitting songs, a duet with Texas' Sharleen Spiteri, and a foray into Spanish with Carmen Zapata on the deranged mariachi-metal 'Te Quiero Puta!' The album crashed the Top Ten in nearly 15 countries, peaking at number 47 in the United States. Their third release in as many years, Volkerball, was a three-disc CD/DVD collection that chronicled their 2005 world tour. It included recordings from France, England, Japan, and Russia, and went to number one in Germany, Finland, Mexico, and Russia."
     }
   },
   "albums": {
@@ -201,27 +225,129 @@
     },
     "9": {
       "id": 9,
-      "band": "Papa Roach",
-      "name": "Infest",
+      "band": 3,
+      "name": "HERZELEID",
+      "review": "Rammstein's first album was about what was to be expected from a bunch of Germans who happily grew up on everything from Skinny Puppy to Depeche Mode to Laibach and back again, not to mention plenty of skull-crushing metal straight up. Precisely brutal and often brilliantly arranged -- the band aren't per se inventive, but they bring everything together to make something astonishingly radio-friendly out of something that isn't necessarily -- HERZELEID in particular is the logical conclusion of KMFDM's self-referential electro-metal. The band freely invokes its own name throughout the way that group did in its songs -- the final tune is called 'Rammstein,' to top it all off -- and the riffs readily connect the dots between the older band's clipped guitar bursts and their even more compressed nu-metal equivalents. The swaggering sass and stomp of 'Wollt Ihr das Bett in Flammen Sehen' makes for a near-perfect start, and from there the band merrily -- without a smile on its collective face -- has a great, loud-as-hell time. The downside is that the formula is in some ways so perfected they don't vary it much -- verses with roiling basses and stomping drums, cascading feedback apocalypse and sometimes squelchy samples adding textures and beats as needed. But there's more there than might be guessed -- the sternly beautiful choruses on 'Der Meister,' soothing keyboards suggesting a 'we all march forward!' anthem for the modern day, the nods toward jungle/drum'n'bass on songs like 'Asche zu Asche,' the full-on goth/Depeche-into-metal love of 'Heirate Mich' and 'Laichzeit.' Then there's 'Seemann,' a power ballad actually worthy of the name, the type of song sung looking out over the Baltic Sea as the sun sets and you contemplate angst to the nth degree. If you're going to go, go big.",
+      "label": "Mercury / Ils / Motor",
+      "rating": 3,
+      "releaseDate": "December 10, 1996",
+      "userRating": 4,
+      "isPick": false,
+      "duration": "49:22",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative Metal",
+        "Industrial Metal",
+        "Progressive Metal",
+        "Heavy Metal"
+      ],
+      "songs": [106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116],
       "isRecommended": true
     },
     "10": {
       "id": 10,
-      "band": "Eminem",
-      "name": "Kamikaze",
+      "band": 3,
+      "name": "SEHNSUCHT",
+      "review": "Rammstein's second album, SEHNSUCHT, finds the German prog metal band making a great leap forward. While the group still sounds a little unfocused in places, their blend of industrial noise, grinding metal guitars, and operatic vocals is staggeringly powerful. No other European metal band sounds like Rammstein, nor does any American metal group -- this is powerful, gothic metal that is unlike anything else in late-'90s metal. SEHNSUCHT may be an acquired taste, but it's one worth acquiring.",
+      "label": "Motor / Slash",
+      "rating": 4,
+      "releaseDate": "January 13, 1998",
+      "userRating": 5,
+      "isPick": true,
+      "duration": "43:50",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative Metal",
+        "Industrial Metal",
+        "Progressive Metal",
+        "Heavy Metal"
+      ],
+      "songs": [117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127],
       "isRecommended": true
     },
     "11": {
       "id": 11,
-      "band": "Billie Eilish",
-      "name": "Dont Smile at Me",
+      "band": 3,
+      "name": "Mutter",
+      "review": "With the first Rammstein album you hear, it's hard not to be slightly amazed by the sheer chutzpah of it all. The German lyrics, the prog rock tendencies, the classic metal guitars, and the ridiculous basso profundo vocals -- you either fall for it, spurn it, or are utterly bemused by the extremeness of it all. Unless you're a fanatic, it wears a little thin the second time around. And for most listeners, MUTTER, the group's third album and sequel to their inexplicable commercial breakthrough Sehnsucht, will be the second time around since it's their first release since becoming a high profile act. Thing is, if you've heard that record, you've pretty much heard MUTTER, since all the trademarks are in place, without much noticeable variation. Yes, there are slight differences, chief of which is the cleaner production, which streamlines everything so the guitars don't seem as heavy, the songs not as epic, and the whole enterprise not as ridiculous. That's not the same thing as stripping the group to the basics, however; it's more like wrapping up the music in nice, shiny paper and putting a ribbon on it. That's not really good for a group like Rammstein, but it doesn't dilute their impact, either, because they are what they are and no amount of polish will make them mainstream (nor will it make it possible to take them seriously). So, that does mean that MUTTER isn't as good as Sehnsucht, but it isn't a stumble either -- and if you liked the first, you'll like this (not the same thing as being amused by the first -- in that case, this will try your patience). That still doesn't answer the question whether anybody outside of diehards needs more than one Rammstein album, but that's just a question of personal taste.",
+      "label": "Republic / Universal Distribution",
+      "rating": 4,
+      "releaseDate": "April 3, 2001",
+      "userRating": 5,
+      "isPick": false,
+      "duration": "45:02",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative Metal",
+        "Industrial Metal",
+        "Progressive Metal",
+        "Heavy Metal"
+      ],
+      "songs": [128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138],
       "isRecommended": true
     },
     "12": {
       "id": 12,
-      "band": "Deuce",
-      "name": "Nine Lives",
+      "band": 3,
+      "name": "REISE / REISE",
+      "review": "Taking three years to release their follow-up to MUTTER is a good idea since REISE, REISE is more of the same -- the same grit, the same growl, and the same dramatic, orchestra choruses. There's a bit more ingenuity in the production and a little more focus in the songs but not enough for the nonfaithful to pick up on. Unfortunately the lead single, 'Mein Teil,' is no 'Du Hast,' but the damning 'Amerika' almost equals their breakthrough track. Whether or not Rammstein's label has the guts to release the band's acerbic 'Coca-Cola/Sometimes War' view of the States as a single is another question, but it's the key track to the album, an album that has a couple more, minor surprises. The loose, bluesy guitar on 'Los' adds some quirk to the band's stern, Teutonic palette, while the sinister 'Stein Um Stein' creeps more than stomps in parts. That's it for twists and turns, but few bands can industrially grind as convincingly as Rammstein. Same as it ever was, REISE, REISE won't do much to increase the band's fan base, but being a tight, free-of-filler album, it'll satisfy the faithful.",
+      "label": "Universal Distribution / Republic",
+      "rating": 4,
+      "releaseDate": "November 9, 2004",
+      "userRating": 4,
+      "isPick": false,
+      "duration": "48:21",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative Metal",
+        "Industrial Metal",
+        "Progressive Metal",
+        "Heavy Metal"
+      ],
+      "songs": [139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149],
       "isRecommended": true
+    },
+    "13": {
+      "id": 13,
+      "band": 3,
+      "name": "Rosenrot",
+      "review": "To date, Rammstein haven't been able to equal the excitement and power of their breakthrough 1998 album, SEHNSUCHT, and while ROSENROT suffers that fate, there's an EP's worth of brilliance and one track that towers above them all. Just as exciting as their massive hit 'Du Hast,' 'Te Quiero Puta!' is a glorious blend of the group's usual Teutonic crunch and mariachi music that earns the exclamation point in its title. It's loco to hear Rammstein with bright horns and Latin vocalists and just about as odd to hear them with Sharleen Spiteri -- lead singer for the classy pop act Texas -- whose sweet and somber vocals make 'Stirb Nicht Vor Mir (Don't Die Before I Do)' sound very dreamy, very Nightwish. The out of control 'Zerstören' and 'Benzin,' with its biting social commentary on the world's addiction to oil, are the final two tracks for the hypothetical four-star EP, since the rest of ROSENROT sounds a bit too formulaic. Most everything is tense during the verses, then blows up during the choruses, but if there's one area the band has made giant steps, it's with the lyrics. Greed, irresponsible hedonism, and modern-day interpretations of Goethe are touched upon through wordplay and metaphor, all of it lost on the non-Deutsch speaking set. It still doesn't make up for the stale turns the music takes on a good portion of the album, but there are signs that SEHNSUCHT's worthy follow-up is more possible than ever.",
+      "label": "Universal Distribution / Universal International",
+      "rating": 3,
+      "releaseDate": "November 1, 2005",
+      "userRating": 4,
+      "isPick": false,
+      "duration": "48:00",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative Metal",
+        "Industrial Metal",
+        "Progressive Metal",
+        "Heavy Metal"
+      ],
+      "songs": [150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160],
+      "isRecommended": false
+    },
+    "14": {
+      "id": 14,
+      "band": 3,
+      "name": "Liebe Ist Für Alle Da",
+      "review": "Anyone familiar with the industrial metal band's dark sense of irony should take one look at the title of Rammstein's 2009 album LIEBE IST FÜR ALLE DA ('Love Is There for Everyone') and conclude that this one is a mean monster. Combining the tightness and punch of their 1998 album, Sehnsucht, with the musicianship and elaborate textures of their later work, LIEBE IST is a grand achievement, skillfully dividing its time between razor sharp metal rockers like 'B********,' or the opening theme song 'Rammlied' and nostalgic cabaret pieces that conjure the spirits of Weil and Brecht at a goth club. The best of the latter is the naked and haunting closer 'Roter Sand,' but little touches of a sinister yesteryear are everywhere, like the fake vaudeville music in 'Haifisch,' or the soundtrack strings of 'Wiener Blut,' which are eventually overcome by a guitar-crunching juggernaut. This strange mix of styles is more effective here than it has been for about a decade, and there's no threat of the album becoming ponderous, either, as an economical track list and purposeful songs wipe away the sins of their previous album, 2005's Rosenrot. The group's loyal fans have remained loyal throughout the past decade and have braved all the difficult but ultimately rewarding efforts that came with it. To them, LIEBE IST FÜR ALLE DA is the big payoff and an instant classic. For the rest of the world, this is that once-a-decade, perfectly balanced Rammstein album that's immediately accessible but wide and deep enough to explore for years to come.",
+      "label": "Vagrant / Universal Music Group",
+      "rating": 4,
+      "releaseDate": "October 20, 2009",
+      "userRating": 4,
+      "isPick": false,
+      "duration": "46:00",
+      "genre": "Pop/Rock",
+      "styles": [
+        "Alternative Metal",
+        "Industrial Metal",
+        "Progressive Metal",
+        "Heavy Metal"
+      ],
+      "songs": [161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171],
+      "isRecommended": false
     }
   },
   "songs": {
@@ -1168,6 +1294,600 @@
       "name": "Leave the City",
       "time": "4:40",
       "number": 14,
+      "isPick": true
+    },
+    "106": {
+      "id": 106,
+      "band": 3,
+      "album": 9,
+      "name": "Wollt Ihr das Bett in Flammen Sehen",
+      "time": "5:17",
+      "number": 1,
+      "isPick": false
+    },
+    "107": {
+      "id": 107,
+      "band": 3,
+      "album": 9,
+      "name": "Der Meister",
+      "time": "4:10",
+      "number": 2,
+      "isPick": false
+    },
+    "108": {
+      "id": 108,
+      "band": 3,
+      "album": 9,
+      "name": "Weisses Fleisch",
+      "time": "3:35",
+      "number": 3,
+      "isPick": false
+    },
+    "109": {
+      "id": 109,
+      "band": 3,
+      "album": 9,
+      "name": "Asche Zu Asche",
+      "time": "3:51",
+      "number": 4,
+      "isPick": false
+    },
+    "110": {
+      "id": 110,
+      "band": 3,
+      "album": 9,
+      "name": "Seemann",
+      "time": "4:48",
+      "number": 5,
+      "isPick": false
+    },
+    "111": {
+      "id": 111,
+      "band": 3,
+      "album": 9,
+      "name": "Du Riechst So Gut",
+      "time": "4:49",
+      "number": 6,
+      "isPick": false
+    },
+    "112": {
+      "id": 112,
+      "band": 3,
+      "album": 9,
+      "name": "Das Alte Lied",
+      "time": "5:44",
+      "number": 7,
+      "isPick": false
+    },
+    "113": {
+      "id": 113,
+      "band": 3,
+      "album": 9,
+      "name": "Heirate Mich",
+      "time": "4:44",
+      "number": 8,
+      "isPick": false
+    },
+    "114": {
+      "id": 114,
+      "band": 3,
+      "album": 9,
+      "name": "Herzeleid",
+      "time": "3:43",
+      "number": 9,
+      "isPick": false
+    },
+    "115": {
+      "id": 115,
+      "band": 3,
+      "album": 9,
+      "name": "Laichzeit",
+      "time": "4:22",
+      "number": 10,
+      "isPick": false
+    },
+    "116": {
+      "id": 116,
+      "band": 3,
+      "album": 9,
+      "name": "Rammstein",
+      "time": "4:25",
+      "number": 11,
+      "isPick": false
+    },
+    "117": {
+      "id": 117,
+      "band": 3,
+      "album": 10,
+      "name": "Sehnsucht",
+      "time": "4:04",
+      "number": 1,
+      "isPick": false
+    },
+    "118": {
+      "id": 118,
+      "band": 3,
+      "album": 10,
+      "name": "Engel",
+      "time": "4:24",
+      "number": 2,
+      "isPick": false
+    },
+    "119": {
+      "id": 119,
+      "band": 3,
+      "album": 10,
+      "name": "Tier",
+      "time": "3:47",
+      "number": 3,
+      "isPick": false
+    },
+    "120": {
+      "id": 120,
+      "band": 3,
+      "album": 10,
+      "name": "Bestrafe Mich",
+      "time": "3:38",
+      "number": 4,
+      "isPick": false
+    },
+    "121": {
+      "id": 121,
+      "band": 3,
+      "album": 10,
+      "name": "Du Hast",
+      "time": "3:55",
+      "number": 5,
+      "isPick": false
+    },
+    "122": {
+      "id": 122,
+      "band": 3,
+      "album": 10,
+      "name": "Buck Dich",
+      "time": "3:22",
+      "number": 6,
+      "isPick": false
+    },
+    "123": {
+      "id": 123,
+      "band": 3,
+      "album": 10,
+      "name": "Spiel Mit Mir",
+      "time": "4:45",
+      "number": 7,
+      "isPick": false
+    },
+    "124": {
+      "id": 124,
+      "band": 3,
+      "album": 10,
+      "name": "Klaviert",
+      "time": "4:24",
+      "number": 8,
+      "isPick": false
+    },
+    "125": {
+      "id": 125,
+      "band": 3,
+      "album": 10,
+      "name": "Alter Mann",
+      "time": "4:24",
+      "number": 9,
+      "isPick": false
+    },
+    "126": {
+      "id": 126,
+      "band": 3,
+      "album": 10,
+      "name": "Eifersucht",
+      "time": "3:37",
+      "number": 10,
+      "isPick": false
+    },
+    "127": {
+      "id": 127,
+      "band": 3,
+      "album": 10,
+      "name": "Kuss Mich (Fellfrosch)",
+      "time": "3:29",
+      "number": 11,
+      "isPick": false
+    },
+    "128": {
+      "id": 128,
+      "band": 3,
+      "album": 11,
+      "name": "Mein Herz Brennt",
+      "time": "4:39",
+      "number": 1,
+      "isPick": false
+    },
+    "129": {
+      "id": 129,
+      "band": 3,
+      "album": 11,
+      "name": "Links 2 3 4",
+      "time": "3:36",
+      "number": 2,
+      "isPick": true
+    },
+    "130": {
+      "id": 130,
+      "band": 3,
+      "album": 11,
+      "name": "Sonne",
+      "time": "4:32",
+      "number": 3,
+      "isPick": false
+    },
+    "131": {
+      "id": 131,
+      "band": 3,
+      "album": 11,
+      "name": "Ich Will",
+      "time": "3:36",
+      "number": 4,
+      "isPick": false
+    },
+    "132": {
+      "id": 132,
+      "band": 3,
+      "album": 11,
+      "name": "Feuer Frei!",
+      "time": "3:11",
+      "number": 5,
+      "isPick": false
+    },
+    "133": {
+      "id": 133,
+      "band": 3,
+      "album": 11,
+      "name": "Mutter",
+      "time": "4:32",
+      "number": 6,
+      "isPick": true
+    },
+    "134": {
+      "id": 134,
+      "band": 3,
+      "album": 11,
+      "name": "Spieluhr",
+      "time": "4:46",
+      "number": 7,
+      "isPick": false
+    },
+    "135": {
+      "id": 135,
+      "band": 3,
+      "album": 11,
+      "name": "Zwitter",
+      "time": "4:17",
+      "number": 8,
+      "isPick": false
+    },
+    "136": {
+      "id": 136,
+      "band": 3,
+      "album": 11,
+      "name": "Rein Raus",
+      "time": "3:09",
+      "number": 9,
+      "isPick": false
+    },
+    "137": {
+      "id": 137,
+      "band": 3,
+      "album": 11,
+      "name": "Adios",
+      "time": "3:49",
+      "number": 10,
+      "isPick": false
+    },
+    "138": {
+      "id": 138,
+      "band": 3,
+      "album": 11,
+      "name": "Nebel",
+      "time": "4:54",
+      "number": 11,
+      "isPick": false
+    },
+    "139": {
+      "id": 139,
+      "band": 3,
+      "album": 12,
+      "name": "Reise, Reise",
+      "time": "4:45",
+      "number": 1,
+      "isPick": false
+    },
+    "140": {
+      "id": 140,
+      "band": 3,
+      "album": 12,
+      "name": "Mein Teil",
+      "time": "4:32",
+      "number": 2,
+      "isPick": true
+    },
+    "141": {
+      "id": 141,
+      "band": 3,
+      "album": 12,
+      "name": "Dalai Lama",
+      "time": "5:38",
+      "number": 3,
+      "isPick": false
+    },
+    "142": {
+      "id": 142,
+      "band": 3,
+      "album": 12,
+      "name": "Keine Lust",
+      "time": "3:42",
+      "number": 4,
+      "isPick": false
+    },
+    "143": {
+      "id": 143,
+      "band": 3,
+      "album": 12,
+      "name": "Los",
+      "time": "4:25",
+      "number": 5,
+      "isPick": true
+    },
+    "144": {
+      "id": 144,
+      "band": 3,
+      "album": 12,
+      "name": "America",
+      "time": "3:46",
+      "number": 6,
+      "isPick": true
+    },
+    "145": {
+      "id": 145,
+      "band": 3,
+      "album": 12,
+      "name": "Moskau",
+      "time": "4:16",
+      "number": 7,
+      "isPick": false
+    },
+    "146": {
+      "id": 146,
+      "band": 3,
+      "album": 12,
+      "name": "Morgenstern",
+      "time": "3:59",
+      "number": 8,
+      "isPick": false
+    },
+    "147": {
+      "id": 147,
+      "band": 3,
+      "album": 12,
+      "name": "Stein Um Stein",
+      "time": "3:59",
+      "number": 9,
+      "isPick": true
+    },
+    "148": {
+      "id": 148,
+      "band": 3,
+      "album": 12,
+      "name": "Ohne Dich",
+      "time": "4:32",
+      "number": 10,
+      "isPick": false
+    },
+    "149": {
+      "id": 149,
+      "band": 3,
+      "album": 12,
+      "name": "Amour",
+      "time": "4:50",
+      "number": 11,
+      "isPick": false
+    },
+    "150": {
+      "id": 150,
+      "band": 3,
+      "album": 13,
+      "name": "Benzin",
+      "time": "3:46",
+      "number": 1,
+      "isPick": true
+    },
+    "151": {
+      "id": 151,
+      "band": 3,
+      "album": 13,
+      "name": "Mann Gegen Mann",
+      "time": "3:50",
+      "number": 2,
+      "isPick": false
+    },
+    "152": {
+      "id": 152,
+      "band": 3,
+      "album": 13,
+      "name": "Rosenrot",
+      "time": "3:50",
+      "number": 3,
+      "isPick": false
+    },
+    "153": {
+      "id": 153,
+      "band": 3,
+      "album": 13,
+      "name": "Spring",
+      "time": "5:24",
+      "number": 4,
+      "isPick": false
+    },
+    "154": {
+      "id": 154,
+      "band": 3,
+      "album": 13,
+      "name": "Wo Bist Du",
+      "time": "3:55",
+      "number": 5,
+      "isPick": false
+    },
+    "155": {
+      "id": 155,
+      "band": 3,
+      "album": 13,
+      "name": "Stirb Nicht Vor Mir (Don't Die Before I Do)",
+      "time": "4:05",
+      "number": 6,
+      "isPick": true
+    },
+    "156": {
+      "id": 156,
+      "band": 3,
+      "album": 13,
+      "name": "Zerstören",
+      "time": "5:28",
+      "number": 7,
+      "isPick": true
+    },
+    "157": {
+      "id": 157,
+      "band": 3,
+      "album": 13,
+      "name": "Hilf Mir",
+      "time": "4:43",
+      "number": 8,
+      "isPick": false
+    },
+    "158": {
+      "id": 158,
+      "band": 3,
+      "album": 13,
+      "name": "Te Quiero Puta!",
+      "time": "3:55",
+      "number": 9,
+      "isPick": true
+    },
+    "159": {
+      "id": 159,
+      "band": 3,
+      "album": 13,
+      "name": "Feuer und Wasser",
+      "time": "5:17",
+      "number": 10,
+      "isPick": false
+    },
+    "160": {
+      "id": 160,
+      "band": 3,
+      "album": 13,
+      "name": "Ein Lied",
+      "time": "3:43",
+      "number": 11,
+      "isPick": false
+    },
+    "161": {
+      "id": 161,
+      "band": 3,
+      "album": 14,
+      "name": "Rammlied",
+      "time": "5:18",
+      "number": 1,
+      "isPick": true
+    },
+    "162": {
+      "id": 162,
+      "band": 3,
+      "album": 14,
+      "name": "Ich Tu Dir Weh",
+      "time": "5:01",
+      "number": 2,
+      "isPick": false
+    },
+    "163": {
+      "id": 163,
+      "band": 3,
+      "album": 14,
+      "name": "Waidmanns Heil",
+      "time": "3:32",
+      "number": 3,
+      "isPick": false
+    },
+    "164": {
+      "id": 164,
+      "band": 3,
+      "album": 14,
+      "name": "Haifisch",
+      "time": "3:44",
+      "number": 4,
+      "isPick": true
+    },
+    "165": {
+      "id": 165,
+      "band": 3,
+      "album": 14,
+      "name": "B********",
+      "time": "4:14",
+      "number": 5,
+      "isPick": true
+    },
+    "166": {
+      "id": 166,
+      "band": 3,
+      "album": 14,
+      "name": "Frühling in Paris",
+      "time": "4:44",
+      "number": 6,
+      "isPick": false
+    },
+    "167": {
+      "id": 167,
+      "band": 3,
+      "album": 14,
+      "name": "Wiener Blut",
+      "time": "5:18",
+      "number": 7,
+      "isPick": false
+    },
+    "168": {
+      "id": 168,
+      "band": 3,
+      "album": 14,
+      "name": "Pussy",
+      "time": "3:59",
+      "number": 8,
+      "isPick": false
+    },
+    "169": {
+      "id": 169,
+      "band": 3,
+      "album": 14,
+      "name": "Liebe Ist für Alle Da",
+      "time": "3:28",
+      "number": 9,
+      "isPick": false
+    },
+    "170": {
+      "id": 170,
+      "band": 3,
+      "album": 14,
+      "name": "Mehr",
+      "time": "4:10",
+      "number": 10,
+      "isPick": false
+    },
+    "171": {
+      "id": 171,
+      "band": 3,
+      "album": 14,
+      "name": "Roter Sand",
+      "time": "3:58",
+      "number": 11,
       "isPick": true
     }
   },

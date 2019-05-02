@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import { compose } from "redux";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+//redux
+import { getAdvancedSearchResult } from "../../AdvancedSearch/duck/actions";
 
 // styles
 import s from "./searchForm.module.css";
@@ -14,7 +19,7 @@ const DEFAULTS = {
   rating: 1
 };
 
-export default class AdvancedAlbumSearch extends Component {
+class AdvancedAlbumSearch extends Component {
   state = {
     ...DEFAULTS
   };
@@ -27,16 +32,22 @@ export default class AdvancedAlbumSearch extends Component {
 
   handlerSubmitForm = e => {
     e.preventDefault();
-    console.log(this.state);
+    const { getAdvancedSearchResult, history } = this.props;
+    getAdvancedSearchResult(this.state);
     this.setState({
       ...DEFAULTS
     });
+    history.push("/search");
   };
 
   render() {
+    const { marginCorrect } = this.props;
     const { genreOrStyle, date, rating } = this.state;
     return (
-      <form className={s.form} onSubmit={this.handlerSubmitForm}>
+      <form
+        className={`${s.form} ${marginCorrect}`}
+        onSubmit={this.handlerSubmitForm}
+      >
         <div className={s.groupper}>
           <h2 className={s.title}>Advanced Album Search</h2>
         </div>
@@ -98,3 +109,15 @@ export default class AdvancedAlbumSearch extends Component {
     );
   }
 }
+
+const mapDispatchToProps = {
+  getAdvancedSearchResult
+};
+
+export default compose(
+  connect(
+    null,
+    mapDispatchToProps
+  ),
+  withRouter
+)(AdvancedAlbumSearch);
