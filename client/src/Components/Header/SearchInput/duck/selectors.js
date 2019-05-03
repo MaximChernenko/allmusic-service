@@ -1,6 +1,6 @@
 import { createSelector } from "reselect";
 
-const getSearch = state => state.search;
+const getSearch = state => state.search.value;
 
 const getArtists = state => state.artists;
 
@@ -8,13 +8,12 @@ const getAlbums = state => state.albums;
 
 const getSongs = state => state.songs;
 
-const getAdvancedSearch = state => state.advancedSearch;
+const getAdvancedSearch = state => state.search.advancedSearch;
 
 const getArtistsBySearch = createSelector(
   [getSearch, getArtists, getAdvancedSearch],
   (filter, artists, advancedSearch) => {
-    const advSearchKeys = Object.keys(advancedSearch);
-    if (advSearchKeys.length > 0) {
+    if (advancedSearch) {
       return [];
     }
     const keys = Object.keys(artists);
@@ -25,19 +24,12 @@ const getArtistsBySearch = createSelector(
   }
 );
 
-const DEFAULTS = {
-  genreOrStyle: "",
-  date: 2019,
-  rating: 1
-};
-
 const getAlbumsBySearch = createSelector(
   [getSearch, getAlbums, getAdvancedSearch],
   (filter, albums, advancedSearch) => {
-    const advSearchKeys = Object.keys(advancedSearch);
     const keys = Object.keys(albums);
     const albumsArr = keys.map(id => albums[id]);
-    if (advSearchKeys.length > 0) {
+    if (advancedSearch) {
       return albumsArr.filter(
         album =>
           checkRating(advancedSearch.rating, album.rating) &&
@@ -76,8 +68,7 @@ function checkGenreOrStyle(advSearchGenreOrStyle, albumGenre, albumStyles) {
 const getSongsBySearch = createSelector(
   [getSearch, getSongs, getAdvancedSearch],
   (filter, songs, advancedSearch) => {
-    const advSearchKeys = Object.keys(advancedSearch);
-    if (advSearchKeys.length > 0) {
+    if (advancedSearch) {
       return [];
     }
     const keys = Object.keys(songs);

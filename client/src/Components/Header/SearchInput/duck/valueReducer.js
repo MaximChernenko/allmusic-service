@@ -2,7 +2,7 @@ import { SEARCH_DATA, SEARCH_CLEAR } from "./actionTypes";
 
 const initialValue = "";
 
-const searchReducer = (state = initialValue, { type, payload }) => {
+const valueReducer = (state = initialValue, { type, payload }) => {
   switch (type) {
     case SEARCH_DATA:
       return payload.filter;
@@ -13,4 +13,4 @@ const searchReducer = (state = initialValue, { type, payload }) => {
   }
 };
 
-export default searchReducer;
+export default valueReducer;

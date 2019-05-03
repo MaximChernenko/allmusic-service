@@ -1,5 +1,6 @@
 import React, { Component, createRef } from "react";
-
+import { connect } from "react-redux";
+import selectors from "../../store/session/selectors";
 // Components
 import Logo from "./Logo/Logo";
 import SearchInput from "./SearchInput/SearchInput";
@@ -8,8 +9,9 @@ import AuthBox from "./AuthBox/AuthBox";
 
 // styles
 import s from "./header.module.css";
+import UserBox from "./UserBox/UserBox";
 
-export default class Header extends Component {
+class Header extends Component {
   footBox = createRef();
 
   state = {
@@ -24,7 +26,11 @@ export default class Header extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     const { isNavFixed } = this.state;
-    return isNavFixed !== nextState.isNavFixed;
+    const { isAuthenticated } = this.props;
+    return (
+      isNavFixed !== nextState.isNavFixed ||
+      isAuthenticated !== nextProps.isAuthenticated
+    );
   }
 
   componentWillUnmount() {
@@ -44,6 +50,12 @@ export default class Header extends Component {
   };
 
   render() {
+    const {
+      openSignInForm,
+      openSignUpForm,
+      user,
+      isAuthenticated
+    } = this.props;
     const { isNavFixed } = this.state;
     return (
       <header className={s.header}>
@@ -56,7 +68,14 @@ export default class Header extends Component {
             <div ref={this.footBox} className={s.footBox}>
               <Menu />
               <div>
-                <AuthBox />
+                {isAuthenticated ? (
+                  <UserBox user={user} />
+                ) : (
+                  <AuthBox
+                    openSignUpForm={openSignUpForm}
+                    openSignInForm={openSignInForm}
+                  />
+                )}
               </div>
             </div>
           ) : (
@@ -64,7 +83,14 @@ export default class Header extends Component {
               <div ref={this.footBox} className={s.fixedFootBox}>
                 <Menu />
                 <div>
-                  <AuthBox />
+                  {isAuthenticated ? (
+                    <UserBox user={user} />
+                  ) : (
+                    <AuthBox
+                      openSignUpForm={openSignUpForm}
+                      openSignInForm={openSignInForm}
+                    />
+                  )}
                 </div>
               </div>
             </div>
@@ -74,3 +100,10 @@ export default class Header extends Component {
     );
   }
 }
+
+const mapStateToProps = state => ({
+  user: selectors.getUser(state),
+  isAuthenticated: selectors.isAuthenticated(state)
+});
+
+export default connect(mapStateToProps)(Header);

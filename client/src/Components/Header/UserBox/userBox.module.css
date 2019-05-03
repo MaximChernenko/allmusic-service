@@ -1,0 +1,36 @@
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #4888b3;
+}
+
+.item {
+    position: relative;
+}
+
+.item:first-child {
+    margin-right: 20px;
+}
+
+.item:first-child::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+}

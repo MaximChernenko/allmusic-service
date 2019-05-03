@@ -10,6 +10,8 @@ import { getAlbums } from "./Pages/Album/duck/operations";
 import { getSongs } from "./Pages/Artist/ArtistSongs/duck/operations";
 // Articles
 import { getArticles } from "./Pages/Article/duck/operations";
+// session
+import operations from "./store/session/operations";
 
 // Components
 import MainPage from "./Pages/Main/Main";
@@ -22,23 +24,64 @@ import ArticlesPage from "./Pages/Articles/Articles";
 import RecommendationsPage from "./Pages/Recommendations/Recommendations";
 import SearchPage from "./Pages/Search/Search";
 import AdvancedSearch from "./Pages/AdvancedSearch/AdvancedSearch";
+import SignInForm from "./Pages/Auth/SignIn/SignIn";
+import SignUpForm from "./Pages/Auth/SignUp/SignUp";
 
 // styles
 import s from "./app.module.css";
 
 class App extends Component {
+  state = {
+    signInForm: false,
+    signUpForm: false
+  };
   componentDidMount() {
-    const { getArtists, getAlbums, getSongs, getArticles } = this.props;
+    const {
+      getArtists,
+      getAlbums,
+      getSongs,
+      getArticles,
+      getCurrentUser
+    } = this.props;
+    getCurrentUser();
     getArtists();
     getAlbums();
     getSongs();
     getArticles();
   }
 
+  openSignInForm = () => {
+    this.setState({
+      signInForm: true
+    });
+  };
+
+  closeSignInForm = () => {
+    this.setState({
+      signInForm: false
+    });
+  };
+
+  openSignUpForm = () => {
+    this.setState({
+      signUpForm: true
+    });
+  };
+
+  closeSignUpForm = () => {
+    this.setState({
+      signUpForm: false
+    });
+  };
+
   render() {
+    const { signInForm, signUpForm } = this.state;
     return (
       <div>
-        <Header />
+        <Header
+          openSignInForm={this.openSignInForm}
+          openSignUpForm={this.openSignUpForm}
+        />
         <div className={s.inner}>
           <Switch>
             <Route exact path="/" component={MainPage} />
@@ -53,6 +96,8 @@ class App extends Component {
           </Switch>
         </div>
         <Footer />
+        {signInForm && <SignInForm closeSignInForm={this.closeSignInForm} />}
+        {signUpForm && <SignUpForm closeSignUpForm={this.closeSignUpForm} />}
       </div>
     );
   }
@@ -62,7 +107,8 @@ const mapDispatchToProps = {
   getArtists,
   getAlbums,
   getSongs,
-  getArticles
+  getArticles,
+  getCurrentUser: operations.refreshCurrentUser
 };
 
 export default connect(

@@ -3,7 +3,7 @@ import {
   ADVANCED_SEARCH_RESET
 } from "./actionTypes";
 
-const initialState = {};
+const initialState = null;
 
 const advancedSearchReducer = (
   state = initialState,

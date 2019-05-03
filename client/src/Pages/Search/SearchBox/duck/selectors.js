@@ -1,3 +1,3 @@
-const getSearchFilter = state => state.searchFilter;
+const getSearchFilter = state => state.search.searchFilter;
 
 export default { getSearchFilter };

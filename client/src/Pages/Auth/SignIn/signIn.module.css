@@ -1,0 +1,102 @@
+.wrapper {
+    height: 100vh;
+    background-color: #000000ed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+}
+
+.form {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #ffffff;
+    line-height: 1;
+    width: 400px;
+    font-weight: 700;
+    margin: 0;
+    font-size: 40px;
+}
+
+.titleChunk {
+    color: #47a4e2
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 5px 0 5px 5px;
+    box-sizing: border-box;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: #5f5c5c;
+}
+
+.btn {
+    display: block;
+    border: none;
+    background-color: #47a4e2;
+    padding: 7px 14px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btnClose {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: inherit;
+    color: #47a4e2;
+    vertical-align: middle;
+    padding: 0 20px 0 0;
+}
+
+.btnClose:focus {
+    outline: none;
+}
+
+.btnClose::after {
+    position: absolute;
+    bottom: -1px;
+    right: 2px;
+    content: url(../../../icons/auth/remove.svg);
+}

@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 // styles
 import s from "./authbox.module.css";
 
-const AuthBox = () => (
+const AuthBox = ({ openSignInForm, openSignUpForm }) => (
   <ul className={s.list}>
     <li className={s.item}>
-      <Link to="/sign-up" className={s.link}>
+      <Link to="/sign-up" onClick={openSignUpForm} className={s.link}>
         Sign up
       </Link>
     </li>
     <li className={s.item}>
-      <Link to="/log-in" className={s.link}>
+      <Link to="/log-in" onClick={openSignInForm} className={s.link}>
         Log in
       </Link>
     </li>
