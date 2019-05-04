@@ -10,6 +10,8 @@ import { getAlbums } from "./Pages/Album/duck/operations";
 import { getSongs } from "./Pages/Artist/ArtistSongs/duck/operations";
 // Articles
 import { getArticles } from "./Pages/Article/duck/operations";
+// userRatings
+import userOperations from "./Pages/Album/AlbumUserReviews/duck/operations";
 // session
 import operations from "./store/session/operations";
 
@@ -41,6 +43,8 @@ class App extends Component {
       getAlbums,
       getSongs,
       getArticles,
+      getUserRatings,
+      getUserComments,
       getCurrentUser
     } = this.props;
     getCurrentUser();
@@ -48,6 +52,8 @@ class App extends Component {
     getAlbums();
     getSongs();
     getArticles();
+    getUserRatings();
+    getUserComments();
   }
 
   openSignInForm = () => {
@@ -108,6 +114,8 @@ const mapDispatchToProps = {
   getAlbums,
   getSongs,
   getArticles,
+  getUserRatings: userOperations.getUserRatings,
+  getUserComments: userOperations.getUserComments,
   getCurrentUser: operations.refreshCurrentUser
 };
 

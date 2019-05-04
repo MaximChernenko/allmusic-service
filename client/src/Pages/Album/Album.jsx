@@ -15,6 +15,7 @@ import AlbumDataBox from "./AlbumDataBox/AlbumDataBox";
 import AlbumMenu from "./AlbumMenu/AlbumMenu";
 import AlbumOverview from "./AlbumOverview/AlbumOverview";
 import AlbumRateList from "./AlbumRateList/AlbumRateList";
+import AlbumUserReviews from "./AlbumUserReviews/AlbumUserReviews";
 
 // styles
 import s from "./album.module.css";
@@ -42,7 +43,7 @@ const AlbumPage = ({ match: { path, url }, album, artist }) =>
             {artist.name}
           </Link>
           <h1 className={s.title}>{album.name}</h1>
-          <AlbumRateList rating={album.rating} userRating={album.userRating} />
+          <AlbumRateList album={album} />
           <AlbumMenu />
         </header>
         <div>
@@ -56,6 +57,10 @@ const AlbumPage = ({ match: { path, url }, album, artist }) =>
                   review={album.review}
                 />
               )}
+            />
+            <Route
+              path={`${path}/user-reviews`}
+              render={props => <AlbumUserReviews {...props} album={album} />}
             />
             <Redirect to={`${url}/overview`} />
           </Switch>
