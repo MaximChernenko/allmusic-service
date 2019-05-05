@@ -10,7 +10,10 @@ import {
   PUT_USER_RATING_ERROR,
   ADD_USER_RATING_FETCH,
   ADD_USER_RATING_SUCCESS,
-  ADD_USER_RATING_ERROR
+  ADD_USER_RATING_ERROR,
+  ADD_USER_COMMENT_FETCH,
+  ADD_USER_COMMENT_SUCCESS,
+  ADD_USER_COMMENT_ERROR
 } from "./actionTypes";
 
 export const getUserRatingsFetch = () => ({
@@ -66,5 +69,19 @@ export const addUserRatingSuccess = userRating => ({
 
 export const addUserRatingError = error => ({
   type: ADD_USER_RATING_ERROR,
+  payload: { error }
+});
+
+export const addUserCommentFetch = () => ({
+  type: ADD_USER_COMMENT_FETCH
+});
+
+export const addUserCommentSuccess = userComment => ({
+  type: ADD_USER_COMMENT_SUCCESS,
+  payload: { userComment }
+});
+
+export const addUserCommentError = error => ({
+  type: ADD_USER_COMMENT_ERROR,
   payload: { error }
 });

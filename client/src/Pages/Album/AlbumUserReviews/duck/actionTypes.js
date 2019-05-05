@@ -21,3 +21,10 @@ export const ADD_USER_RATING_FETCH = "album-user-reviews/ADD_USER_RATING_FETCH";
 export const ADD_USER_RATING_SUCCESS =
   "album-user-reviews/ADD_USER_RATING_SUCCESS";
 export const ADD_USER_RATING_ERROR = "album-user-reviews/ADD_USER_RATING_ERROR";
+
+export const ADD_USER_COMMENT_FETCH =
+  "album-user-reviews/ADD_USER_COMMENT_FETCH";
+export const ADD_USER_COMMENT_SUCCESS =
+  "album-user-reviews/ADD_USER_COMMENT_SUCCESS";
+export const ADD_USER_COMMENT_ERROR =
+  "album-user-reviews/ADD_USER_COMMENT_ERROR";

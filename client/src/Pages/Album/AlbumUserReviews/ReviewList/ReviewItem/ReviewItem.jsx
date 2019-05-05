@@ -6,26 +6,20 @@ import UserRating from "../../../../Artist/ArtistDisco/Rating/UserRating/UserRat
 // styles
 import s from "./reviewItem.module.css";
 
-const ReviewItem = () => (
+const getValidDate = unixDate => {
+  const date = new Date(unixDate);
+  console.log(unixDate);
+  return date.getDate() + "." + date.getMonth() + " " + date.getFullYear();
+};
+
+const ReviewItem = ({ comment }) => (
   <div className={s.wrapper}>
     <div className={s.box}>
-      <p className={s.name}>User name</p>
-      <p className={s.date}>Date</p>
-      <UserRating rating="4" />
+      <p className={s.name}>{comment.userName}</p>
+      <p className={s.date}>{getValidDate(comment.date)}</p>
+      <UserRating rating={comment.userRating} />
     </div>
-    <p className={s.review}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste praesentium
-      ea debitis vel, voluptatibus maiores minus rem voluptates dicta, illo
-      explicabo! Cumque eum nulla autem, delectus totam explicabo qui aut, iste,
-      magni quo repellendus suscipit optio? Repellendus, dolores natus magnam
-      odit fuga veritatis necessitatibus et nobis illum laudantium, quas
-      possimus consequatur laborum ad fugit vel explicabo nisi sit quasi? Iure
-      illum accusamus a veritatis similique. Ratione numquam possimus amet
-      quasi, iure placeat praesentium doloribus architecto neque illum deleniti
-      repudiandae dolores maxime totam! Facere est et doloribus quia debitis
-      aliquam, adipisci nesciunt repudiandae tenetur assumenda officiis ab
-      maiores, molestiae quidem nostrum.
-    </p>
+    <p className={s.review}>{comment.comment}</p>
   </div>
 );
 

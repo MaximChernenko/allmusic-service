@@ -14,9 +14,9 @@ const UserBox = ({ user: { name }, signOut }) => (
       </Link>
     </li>
     <li className={s.item}>
-      <Link to="/log-out" onClick={signOut} className={s.link}>
+      <button type="button" onClick={signOut} className={s.btn}>
         Log out
-      </Link>
+      </button>
     </li>
   </ul>
 );

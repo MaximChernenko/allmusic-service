@@ -1,6 +1,7 @@
 import { createSelector } from "reselect";
 
 const getAllUserRatings = state => state.userRatings;
+const getAllUserComments = state => state.userComments;
 
 const getUserId = state => state.session.user && state.session.user.id;
 
@@ -15,4 +16,18 @@ const findUserRatingByUserAndAlbumId = createSelector(
   }
 );
 
-export default { findUserRatingByUserAndAlbumId, getUserId };
+const getUserCommentsByAlbumId = createSelector(
+  [getAllUserComments, (state, albumId) => albumId],
+  (comments, albumId) =>
+    comments
+      ? comments
+          .filter(comment => comment.albumId === albumId)
+          .sort((a, b) => b.date - a.date)
+      : []
+);
+
+export default {
+  findUserRatingByUserAndAlbumId,
+  getUserId,
+  getUserCommentsByAlbumId
+};

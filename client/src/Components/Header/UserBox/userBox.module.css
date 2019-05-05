@@ -11,8 +11,20 @@
     text-decoration: none;
 }
 
-.link:hover {
+.link:hover, .btn:hover {
     color: #4888b3;
+}
+
+.btn {
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background-color: inherit;
+    padding: 0;
+}
+
+.btn:focus {
+    outline: none;
 }
 
 .item {

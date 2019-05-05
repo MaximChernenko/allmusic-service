@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // styles
 import s from "./authbox.module.css";
@@ -7,14 +6,14 @@ import s from "./authbox.module.css";
 const AuthBox = ({ openSignInForm, openSignUpForm }) => (
   <ul className={s.list}>
     <li className={s.item}>
-      <Link to="/sign-up" onClick={openSignUpForm} className={s.link}>
+      <button type="button" onClick={openSignUpForm} className={s.btn}>
         Sign up
-      </Link>
+      </button>
     </li>
     <li className={s.item}>
-      <Link to="/log-in" onClick={openSignInForm} className={s.link}>
+      <button type="button" onClick={openSignInForm} className={s.btn}>
         Log in
-      </Link>
+      </button>
     </li>
   </ul>
 );

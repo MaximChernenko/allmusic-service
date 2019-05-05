@@ -20,6 +20,10 @@
     background-position: center;
 }
 
+.defaultBtn:focus {
+    outline: none;
+}
+
 .activeBtn, .defaultBtn:hover {
     background-image: url('../../../../icons/rate/star-orange.svg');
 }

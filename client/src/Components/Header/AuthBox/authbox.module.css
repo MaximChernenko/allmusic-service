@@ -7,13 +7,20 @@
     justify-content: space-between;
 }
 
-.link {
+.btn {
+    cursor: pointer;
     color: #ffffff;
-    text-decoration: none;
+    background-color: inherit;
+    border: none;
+    padding: 0;
 }
 
-.link:hover {
+.btn:hover {
     color: #4888b3;
+}
+
+.btn:focus {
+    outline: none;
 }
 
 .item {

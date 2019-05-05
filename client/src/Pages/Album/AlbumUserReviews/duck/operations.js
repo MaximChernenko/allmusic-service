@@ -12,7 +12,10 @@ import {
   addUserRatingError,
   putUserRatingFetch,
   putUserRatingSuccess,
-  putUserRatingError
+  putUserRatingError,
+  addUserCommentFetch,
+  addUserCommentSuccess,
+  addUserCommentError
 } from "./actions";
 
 const getUserRatings = () => async dispatch => {
@@ -61,9 +64,23 @@ const putUserRating = userRating => async dispatch => {
   }
 };
 
+const addUserComment = userComment => async dispatch => {
+  dispatch(addUserCommentFetch());
+  try {
+    const response = await axios.post(
+      "http://localhost:3004/userComments",
+      userComment
+    );
+    dispatch(addUserCommentSuccess(response.data));
+  } catch (error) {
+    dispatch(addUserCommentError(error));
+  }
+};
+
 export default {
   getUserRatings,
   getUserComments,
   addUserRating,
-  putUserRating
+  putUserRating,
+  addUserComment
 };
