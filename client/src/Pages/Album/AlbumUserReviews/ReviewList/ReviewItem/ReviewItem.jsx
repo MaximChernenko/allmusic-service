@@ -1,16 +1,12 @@
 import React from "react";
-
+import moment from "moment";
 // Components
 import UserRating from "../../../../Artist/ArtistDisco/Rating/UserRating/UserRating";
 
 // styles
 import s from "./reviewItem.module.css";
 
-const getValidDate = unixDate => {
-  const date = new Date(unixDate);
-  console.log(unixDate);
-  return date.getDate() + "." + date.getMonth() + " " + date.getFullYear();
-};
+const getValidDate = unixDate => moment(unixDate).fromNow();
 
 const ReviewItem = ({ comment }) => (
   <div className={s.wrapper}>
