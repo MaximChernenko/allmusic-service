@@ -1,0 +1,28 @@
+.loader {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #2e2727;
+    color: #ffffff;
+    width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}

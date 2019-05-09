@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 
 // redux
 import songSelectors from "../../../Artist/ArtistSongs/duck/selectors";
-// icons
-import streamIcon from "../../../../icons/albumTrackListing/spotify.svg";
-import playIcon from "../../../../icons/albumTrackListing/play-button.svg";
+
+// utils
+import Icon from "../../../../utils/helpers/Icon/Icon";
 
 // styles
 import s from "./albumTrackListing.module.css";
@@ -36,7 +36,12 @@ const AlbumTrackListing = ({ songsObj, artistBySong }) => (
             <tr key={song.id} className={`${s.tr} ${song.isPick && s.pickTr}`}>
               <td className={`${s.prefix} ${song.isPick && s.pickPrefix}`} />
               <td className={s.play}>
-                <img className={s.playIcon} alt="play" src={playIcon} />
+                <Icon
+                  className={s.icon}
+                  size="30px"
+                  color="#9ba6af"
+                  name="play-button"
+                />
               </td>
               <td className={s.number}>{song.number}</td>
               <td className={s.name}>
@@ -49,7 +54,12 @@ const AlbumTrackListing = ({ songsObj, artistBySong }) => (
                 <p className={s.timeText}>{song.time}</p>
               </td>
               <th>
-                <img className={s.streamIcon} src={streamIcon} alt="stream" />
+                <Icon
+                  className={s.icon}
+                  size="20px"
+                  color="#909ba3"
+                  name="spotify"
+                />
               </th>
               <td className={s.suffix} />
             </tr>

@@ -1,6 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { compose } from "redux";
+import Loader from "react-loader-spinner";
+
 // utils
 import withScrollToTop from "../../utils/hocs/withScrollToTop";
 import getClearId from "../../utils/helpers/getClearId";
@@ -21,7 +23,9 @@ const ArticlePage = ({ article }) =>
       <p className={s.text}>{article.content}</p>
     </article>
   ) : (
-    <h2>Article not found</h2>
+    <div className={s.loader}>
+      <Loader type="Watch" color="#00BFFF" height="100" width="100" />
+    </div>
   );
 
 const mapStateToProps = (

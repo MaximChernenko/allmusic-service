@@ -11,11 +11,26 @@ import {
   refreshUserStart,
   refreshUserSuccess
 } from "./actions";
+// userSett actions
+import {
+  createDefaultUserSettFetch,
+  createDefaultUserSettSuccess,
+  createDefaultUserSettError
+} from "../../Pages/UserProfile/duck/actions";
+
 import selectors from "./selectors";
 import {
   setAuthHeader,
   clearAuthHeader
 } from "../../utils/services/axiosDefaults";
+
+const userSettDefaults = userId => ({
+  userId,
+  name: "Name",
+  surname: "Surname",
+  bio: "bio",
+  age: 18
+});
 
 const signUp = credentials => dispatch => {
   dispatch(signUpRequest());
@@ -24,8 +39,17 @@ const signUp = credentials => dispatch => {
     .post("/auth/signup", credentials)
     .then(({ data }) => {
       setAuthHeader(data.token);
-
       dispatch(signUpSuccess(data));
+      dispatch(createDefaultUserSettFetch());
+      axios
+        .post(
+          "http://localhost:3004/userSettings",
+          userSettDefaults(data.user.id)
+        )
+        .then(({ data }) => {
+          dispatch(createDefaultUserSettSuccess(data));
+        })
+        .catch(error => dispatch(createDefaultUserSettError(error)));
     })
     .catch(error => dispatch(signUpError(error)));
 };

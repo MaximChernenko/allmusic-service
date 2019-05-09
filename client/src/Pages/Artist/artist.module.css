@@ -23,12 +23,15 @@
     position: relative;
 }
 
-.title::before {
+.linkIcon {
+    cursor: pointer;
     position: absolute;
     top: 19px;
     left: 15px;
-    line-height: 0;
-    content: url("../../icons/artistHeader/play-button.svg");
+}
+
+.linkIcon:hover {
+    fill: #66d366;
 }
 
 .title::after {
@@ -48,4 +51,12 @@
 
 .aside {
     width: 320px;
+}
+
+.loader {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

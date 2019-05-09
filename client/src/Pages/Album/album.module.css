@@ -20,12 +20,19 @@
     position: relative;
 }
 
-.link::before {
+.artistText {
+    margin: 0;
+}
+
+.linkIcon {
     position: absolute;
     top: 28px;
     left: 15px;
-    line-height: 0;
-    content: url("../../icons/artistHeader/play-button.svg");
+    z-index: 200;
+}
+
+.linkIcon:hover {
+    fill: #00c3ff;
 }
 
 .title {
@@ -54,4 +61,12 @@
 
 .aside {
     width: 320px;
+}
+
+.loader {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -92,19 +92,12 @@
     background-color: #e9f6fc;
 }
 
-.img {
-    display: block;
-    width: 54px;
-}
-
-.streamIcon {
+.icon {
     display: block;
     margin: 0 auto;
-    width: 20px;
+    cursor: pointer;
 }
 
-.playIcon {
-    display: block;
-    margin: 0 auto;
-    width: 30px;
+.icon:hover {
+    fill: #00c3ff;
 }

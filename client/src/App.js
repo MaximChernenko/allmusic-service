@@ -14,6 +14,12 @@ import { getArticles } from "./Pages/Article/duck/operations";
 import userOperations from "./Pages/Album/AlbumUserReviews/duck/operations";
 // session
 import operations from "./store/session/operations";
+// userSettings
+import userSettOperations from "./Pages/UserProfile/duck/operations";
+import sessionSelectors from "./store/session/selectors";
+
+// utils
+import ProtectedRoute from "./utils/helpers/ProtectedRoute";
 
 // Components
 import MainPage from "./Pages/Main/Main";
@@ -28,6 +34,7 @@ import SearchPage from "./Pages/Search/Search";
 import AdvancedSearch from "./Pages/AdvancedSearch/AdvancedSearch";
 import SignInForm from "./Pages/Auth/SignIn/SignIn";
 import SignUpForm from "./Pages/Auth/SignUp/SignUp";
+import UserProfile from "./Pages/UserProfile/UserProfile";
 
 // styles
 import s from "./app.module.css";
@@ -45,7 +52,8 @@ class App extends Component {
       getArticles,
       getUserRatings,
       getUserComments,
-      getCurrentUser
+      getCurrentUser,
+      getAllUserSett
     } = this.props;
     getCurrentUser();
     getArtists();
@@ -54,6 +62,16 @@ class App extends Component {
     getArticles();
     getUserRatings();
     getUserComments();
+    getAllUserSett();
+  }
+
+  componentDidUpdate() {
+    const { location, history, user } = this.props;
+    if (user) {
+      const from = location.state && location.state.from;
+      if (from) history.replace(from);
+    }
+    console.log(location.state);
   }
 
   openSignInForm = () => {
@@ -98,6 +116,7 @@ class App extends Component {
             <Route path="/recommendations" component={RecommendationsPage} />
             <Route path="/search" component={SearchPage} />
             <Route path="/advanced-search" component={AdvancedSearch} />
+            <ProtectedRoute path="/user-profile" component={UserProfile} />
             <Redirect to="/" />
           </Switch>
         </div>
@@ -109,6 +128,8 @@ class App extends Component {
   }
 }
 
+const mapStateToProps = state => ({ user: sessionSelectors.getUser(state) });
+
 const mapDispatchToProps = {
   getArtists,
   getAlbums,
@@ -116,10 +137,11 @@ const mapDispatchToProps = {
   getArticles,
   getUserRatings: userOperations.getUserRatings,
   getUserComments: userOperations.getUserComments,
-  getCurrentUser: operations.refreshCurrentUser
+  getCurrentUser: operations.refreshCurrentUser,
+  getAllUserSett: userSettOperations.getAllUserSett
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(App);

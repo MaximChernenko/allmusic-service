@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+// components
+import Icon from "../../../../utils/helpers/Icon/Icon";
+
 // styles
 import s from "./albumReview.module.css";
 
@@ -25,9 +28,19 @@ export default class AlbumReview extends Component {
         </div>
         <button
           onClick={this.handlerToggleBtn}
-          className={`${s.btn} ${isCollapsed ? s.btnCollapsed : s.btnFull}`}
+          className={`${s.btn} ${isCollapsed && s.btnCollapsed}`}
         >
-          {isCollapsed ? "Read more" : "Collapse"}
+          {isCollapsed ? (
+            <>
+              <p className={s.btnText}>Read more</p>
+              <Icon name="arrow-down" color="#ababab" size="20px" />
+            </>
+          ) : (
+            <>
+              <p className={s.btnText}>Collapse</p>
+              <Icon name="arrow-up" color="#ababab" size="20px" />
+            </>
+          )}
         </button>
       </div>
     );

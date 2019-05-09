@@ -3,9 +3,11 @@ import { Link, Route, Switch, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { compose } from "redux";
 import slugify from "slugify";
+import Loader from "react-loader-spinner";
 // utils
 import withScrollToTop from "../../utils/hocs/withScrollToTop";
 import getClearId from "../../utils/helpers/getClearId";
+import Icon from "../../utils/helpers/Icon/Icon";
 // redux
 import albumSelectors from "./duck/selectors";
 
@@ -21,7 +23,7 @@ import AlbumUserReviews from "./AlbumUserReviews/AlbumUserReviews";
 import s from "./album.module.css";
 
 const AlbumPage = ({ match: { path, url }, album, artist }) =>
-  album ? (
+  album && artist ? (
     <main className={s.main}>
       <div className={s.aside}>
         <Avatar id={album.id} alt={album.name} isPick={album.isPick} />
@@ -40,7 +42,15 @@ const AlbumPage = ({ match: { path, url }, album, artist }) =>
               artist.id}`}
             className={s.link}
           >
-            {artist.name}
+            <p className={s.artistText}>
+              {artist.name}
+              <Icon
+                className={s.linkIcon}
+                name="play-button"
+                color="#9ba6af"
+                size="40px"
+              />
+            </p>
           </Link>
           <h1 className={s.title}>{album.name}</h1>
           <AlbumRateList album={album} />
@@ -68,7 +78,9 @@ const AlbumPage = ({ match: { path, url }, album, artist }) =>
       </div>
     </main>
   ) : (
-    <h2>Album not found</h2>
+    <div className={s.loader}>
+      <Loader type="Puff" color="#00BFFF" height="100" width="100" />
+    </div>
   );
 
 const mapStateToProps = (

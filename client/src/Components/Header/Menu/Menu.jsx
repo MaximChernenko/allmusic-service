@@ -26,7 +26,7 @@ const Menu = () => (
       </Link>
     </li>
     <li>
-      <Link className={s.link} to="/my-profile">
+      <Link className={s.link} to="/user-profile">
         My Profile
       </Link>
     </li>

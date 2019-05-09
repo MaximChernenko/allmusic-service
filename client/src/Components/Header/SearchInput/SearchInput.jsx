@@ -6,7 +6,6 @@ import searchSelectors from "./duck/selectors";
 import { searchData, searchClear } from "./duck/actions";
 import { advancedSearchReset } from "../../../Pages/AdvancedSearch/duck/actions";
 
-import cancelIcon from "../../../icons/searchInput/close.svg";
 import searchIcon from "../../../icons/searchInput/search.svg";
 
 // Components
@@ -47,14 +46,18 @@ class SearchInput extends Component {
 
   checkClick({ target }) {
     // Close if search btn entered
-    if (this.searchBtn.current.contains(target)) {
-      this.closeModal();
-      return;
+    if (this.searchBtn.current) {
+      if (this.searchBtn.current.contains(target)) {
+        this.closeModal();
+        return;
+      }
     }
-    if (this.container.current.contains(target)) {
-      this.openModal();
-    } else {
-      this.closeModal();
+    if (this.container.current) {
+      if (this.container.current.contains(target)) {
+        this.openModal();
+      } else {
+        this.closeModal();
+      }
     }
   }
 
@@ -82,13 +85,7 @@ class SearchInput extends Component {
           placeholder="Search"
           onChange={this.handlerInputChange}
         />
-        {search.length > 0 && (
-          <CancelBtn
-            onReset={this.handlerResetInput}
-            src={cancelIcon}
-            alt="cancel"
-          />
-        )}
+        {search.length > 0 && <CancelBtn onReset={this.handlerResetInput} />}
         <SearchBtn
           ref={this.searchBtn}
           closeModal={this.closeModal}

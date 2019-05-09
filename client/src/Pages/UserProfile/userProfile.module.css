@@ -1,0 +1,42 @@
+.wrapper {
+    position: relative;
+    padding: 30px;
+    background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title {
+    color: #000000;
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.title::after {
+    content: '';
+    margin-top: 6px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+}
+
+.btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    padding: 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.icon:hover {
+    fill: #814081;
+}

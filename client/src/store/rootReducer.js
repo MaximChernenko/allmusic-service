@@ -11,6 +11,7 @@ import searchReducer from "../Pages/Search/duck/searchReducer";
 import sessionReducer from "./session/sessionReducer";
 import userRatingsReducer from "../Pages/Album/AlbumUserReviews/duck/userRatingsReducer";
 import userCommentsReducer from "../Pages/Album/AlbumUserReviews/duck/userCommentsReducer";
+import userSettingsReducer from "../Pages/UserProfile/duck/userProfileReducer";
 
 const tokenPersistConfig = {
   key: "token",
@@ -25,6 +26,7 @@ const rootReducer = combineReducers({
   articles: articlesReducer,
   userRatings: userRatingsReducer,
   userComments: userCommentsReducer,
+  userSettings: userSettingsReducer,
   search: searchReducer,
   session: persistReducer(tokenPersistConfig, sessionReducer)
 });

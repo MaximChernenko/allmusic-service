@@ -14,3 +14,7 @@
 .btn:focus {
     outline: none;
 }
+
+.icon:hover {
+    fill: #af0909;
+}

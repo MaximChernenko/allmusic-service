@@ -19,7 +19,7 @@ const getArtistsBySearch = createSelector(
     const keys = Object.keys(artists);
     const artistsArr = keys.map(id => artists[id]);
     return artistsArr.filter(artist =>
-      artist.name.toLowerCase().includes(filter)
+      artist.name.toLowerCase().includes(filter.toLowerCase())
     );
   }
 );
@@ -41,7 +41,9 @@ const getAlbumsBySearch = createSelector(
           )
       );
     }
-    return albumsArr.filter(album => album.name.toLowerCase().includes(filter));
+    return albumsArr.filter(album =>
+      album.name.toLowerCase().includes(filter.toLowerCase())
+    );
   }
 );
 
@@ -73,7 +75,9 @@ const getSongsBySearch = createSelector(
     }
     const keys = Object.keys(songs);
     const songsArr = keys.map(id => songs[id]);
-    return songsArr.filter(song => song.name.toLowerCase().includes(filter));
+    return songsArr.filter(song =>
+      song.name.toLowerCase().includes(filter.toLowerCase())
+    );
   }
 );
 

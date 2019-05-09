@@ -2,9 +2,13 @@ import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { compose } from "redux";
+import Loader from "react-loader-spinner";
+
 // utils
 import withScrollToTop from "../../utils/hocs/withScrollToTop";
 import getClearId from "../../utils/helpers/getClearId";
+import Icon from "../../utils/helpers/Icon/Icon";
+
 // redux
 import artistSelectors from "./duck/selectors";
 
@@ -24,7 +28,15 @@ const ArtistPage = ({ match: { path, url }, artist }) =>
     <main className={s.main}>
       <div className={s.wrapper}>
         <header className={s.header}>
-          <h2 className={s.title}>{artist.name}</h2>
+          <h2 className={s.title}>
+            {artist.name}
+            <Icon
+              className={s.linkIcon}
+              name="play-button"
+              color="#9ba6af"
+              size="40px"
+            />
+          </h2>
           <ArtistMenu />
         </header>
         <div className={s.inner}>
@@ -59,7 +71,9 @@ const ArtistPage = ({ match: { path, url }, artist }) =>
       </div>
     </main>
   ) : (
-    <h2>Artist Not Found</h2>
+    <div className={s.loader}>
+      <Loader type="Triangle" color="#00BFFF" height="100" width="100" />
+    </div>
   );
 
 const mapStateToProps = (
