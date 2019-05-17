@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
 const { JWT_SECRET } = process.env;
 
@@ -9,7 +9,7 @@ const generate = id => {
 };
 
 const verify = token => {
-  token = token.split(' ')[1];
+  token = token.split(" ")[1];
   let decoded = false;
 
   try {

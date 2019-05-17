@@ -34,7 +34,6 @@ const userSettDefaults = userId => ({
 
 const signUp = credentials => dispatch => {
   dispatch(signUpRequest());
-
   axios
     .post("/auth/signup", credentials)
     .then(({ data }) => {
