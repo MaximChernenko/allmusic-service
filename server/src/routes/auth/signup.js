@@ -28,18 +28,16 @@ const signUp = (req, res) => {
     });
   };
 
-  User.findOne({ email })
-    .then(user => {
-      if (user) {
-        sendUserAlreadyExists();
-      } else {
-        newUser
-          .save()
-          .then(sendResponse)
-          .catch(sendError);
-      }
-    })
-    .catch(sendUserAlreadyExists);
+  User.findOne({ email: userData.email }).then(user => {
+    if (user) {
+      sendUserAlreadyExists();
+    } else {
+      newUser
+        .save()
+        .then(sendResponse)
+        .catch(sendError);
+    }
+  });
 };
 
 module.exports = signUp;

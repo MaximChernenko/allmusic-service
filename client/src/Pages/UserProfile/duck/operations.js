@@ -16,8 +16,8 @@ import userSettSelectors from "./selectors";
 const getAllUserSett = () => async dispatch => {
   dispatch(getAllUserSettFetch());
   try {
-    const resp = await axios.get("http://localhost:3004/userSettings");
-    dispatch(getAllUserSettSuccess(resp.data));
+    const resp = await axios.get("/user/userSettings");
+    dispatch(getAllUserSettSuccess(resp.data.userSettings));
   } catch (error) {
     dispatch(getAllUserSettError(error));
   }
@@ -27,13 +27,12 @@ const updateUserSett = userSett => async (dispatch, getState) => {
   dispatch(updateUserSettFetch());
   try {
     const resp = await axios.put(
-      `http://localhost:3004/userSettings/${+userSettSelectors.getUserSettByUserId(
-        getState()
-      ).id}`,
+      `/user/userSettings/${
+        userSettSelectors.getUserSettByUserId(getState())._id
+      }`,
       userSett
     );
-    console.log(resp.data);
-    dispatch(updateUserSettSuccess(resp.data));
+    dispatch(updateUserSettSuccess(resp.data.userSettings));
   } catch (error) {
     dispatch(updateUserSettError(error));
   }

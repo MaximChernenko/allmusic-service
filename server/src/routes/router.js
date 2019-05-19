@@ -2,12 +2,15 @@ require("dotenv").config();
 const expressJwt = require("express-jwt");
 const express = require("express");
 
-const pushSong = require("./pushData/pushSong");
 // auth
 const signUp = require("./auth/signup");
 const signIn = require("./auth/signin");
 const signOut = require("./auth/signout");
 const current = require("./auth/current");
+//user
+const getUserSettings = require("./userRoutes/userSettings/getUserSettings");
+const addDefaultUserSettings = require("./userRoutes/userSettings/addDefaultUserSettings");
+const updateUserSettings = require("./userRoutes/userSettings/updateUserSettings");
 // router
 const apiRoutes = express.Router();
 
@@ -21,6 +24,8 @@ apiRoutes
   .post("/auth/signin", signIn)
   .post("/auth/signout", signOut)
   .get("/auth/current", requireAuth, current)
-  .post("/song", pushSong);
+  .get("/user/userSettings", getUserSettings)
+  .post("/user/userSettings", addDefaultUserSettings)
+  .put("/user/userSettings/:id", updateUserSettings);
 
 module.exports = apiRoutes;

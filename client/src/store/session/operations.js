@@ -41,12 +41,9 @@ const signUp = credentials => dispatch => {
       dispatch(signUpSuccess(data));
       dispatch(createDefaultUserSettFetch());
       axios
-        .post(
-          "http://localhost:3004/userSettings",
-          userSettDefaults(data.user.id)
-        )
-        .then(({ data }) => {
-          dispatch(createDefaultUserSettSuccess(data));
+        .post("/user/userSettings", userSettDefaults(data.user.id))
+        .then(({ data: { userSettings } }) => {
+          dispatch(createDefaultUserSettSuccess(userSettings));
         })
         .catch(error => dispatch(createDefaultUserSettError(error)));
     })

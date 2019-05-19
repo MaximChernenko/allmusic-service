@@ -14,11 +14,14 @@ export default function userProfileReducer(
     case GET_ALL_USER_SETTINGS_SUCCESS:
       return payload.data;
     case CREATE_DEFAULT_USER_SETTINGS_SUCCESS:
-      return [...state, payload.defaultUserSett];
+      return [
+        ...state,
+        { ...payload.defaultUserSett, id: payload.defaultUserSett._id }
+      ];
     case UPDATE_USER_SETTINGS_SUCCESS:
       return state.map(userSett =>
-        userSett.id === payload.userSettings.id
-          ? payload.userSettings
+        userSett._id === payload.userSettings._id
+          ? { ...payload.userSettings, id: payload.userSettings._id }
           : userSett
       );
     default:
