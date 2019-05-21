@@ -1,7 +1,6 @@
 const User = require("../../modules/db/schemas/user");
 
 const current = (req, res) => {
-  console.log("from current: " + req.user);
   const { id } = req.user;
 
   const sendResponse = ({ _id, name, email }) => {

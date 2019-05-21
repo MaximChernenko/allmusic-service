@@ -10,7 +10,7 @@ class UserRatingSelect extends Component {
   handleStarClick = ({ target: { value } }) => {
     const { userRating, addRating, putRating, userId, albumId } = this.props;
     if (userRating) {
-      putRating({ id: userRating.id, rating: Number(value), userId, albumId });
+      putRating({ id: userRating._id, rating: Number(value), userId, albumId });
     } else {
       addRating({ rating: Number(value), userId, albumId });
     }

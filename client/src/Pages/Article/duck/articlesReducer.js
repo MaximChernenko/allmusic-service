@@ -1,6 +1,6 @@
 import { GET_ARTICLES } from "./actionTypes";
 
-const initialState = {};
+const initialState = [];
 
 const articleReducer = (state = initialState, { type, payload }) => {
   switch (type) {

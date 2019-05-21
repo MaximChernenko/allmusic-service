@@ -4,25 +4,23 @@ import { connect } from "react-redux";
 // redux
 import sessionSelectors from "../../store/session/selectors";
 
-const ProtectedRoute = ({ component: Component, isAuthenticated, ...rest }) =>
-  console.log(isAuthenticated) || (
-    <Route
-      {...rest}
-      render={props =>
-        isAuthenticated ? (
-          <Component {...props} />
-        ) : (
-          <Redirect
-            to={{
-              pathname: "/",
-              state: { from: props.location }
-            }}
-          />
-        )
-      }
-    />
-  );
-
+const ProtectedRoute = ({ component: Component, isAuthenticated, ...rest }) => (
+  <Route
+    {...rest}
+    render={props =>
+      isAuthenticated ? (
+        <Component {...props} />
+      ) : (
+        <Redirect
+          to={{
+            pathname: "/",
+            state: { from: props.location }
+          }}
+        />
+      )
+    }
+  />
+);
 const mapStateToProps = state => ({
   isAuthenticated: sessionSelectors.isAuthenticated(state)
 });

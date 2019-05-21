@@ -23,7 +23,7 @@ const ArticleBox = ({ articles }) => (
 );
 
 const mapStateToProps = state => ({
-  articles: articleSelectors.getArticlesArr(state)
+  articles: articleSelectors.getArticles(state)
 });
 
 export default connect(mapStateToProps)(ArticleBox);

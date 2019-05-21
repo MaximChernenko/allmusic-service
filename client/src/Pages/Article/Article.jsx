@@ -18,7 +18,7 @@ const ArticlePage = ({ article }) =>
       <img
         className={s.img}
         alt={article.content.slice(0, 10)}
-        src={process.env.PUBLIC_URL + `/images/articles/${article.id}.jpg`}
+        src={process.env.PUBLIC_URL + `/images/articles/${article._id}.jpg`}
       />
       <p className={s.text}>{article.content}</p>
     </article>

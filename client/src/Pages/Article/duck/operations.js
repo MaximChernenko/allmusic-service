@@ -9,9 +9,9 @@ export const getArticles = () => async dispatch => {
   // start request
   dispatch(getArticlesFetch());
   try {
-    const { data } = await axios.get("http://localhost:3004/articles");
+    const { data } = await axios.get("/articles");
     // if success
-    dispatch(getArticlesSuccess(data));
+    dispatch(getArticlesSuccess(data.articles));
   } catch (error) {
     // if error
     dispatch(getArticlesError(error));

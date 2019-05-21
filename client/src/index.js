@@ -13,7 +13,7 @@ import "normalize.css";
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate loading={null} persistor={persistor}>
+    <PersistGate loading={<div>Loading...</div>} persistor={persistor}>
       <BrowserRouter>
         <Route component={App} />
       </BrowserRouter>

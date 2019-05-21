@@ -85,7 +85,7 @@ class ProfileEditor extends Component {
             value={age}
           >
             {ageSelectOptions.map(age => (
-              <option className={s.option} value={age}>
+              <option key={age} className={s.option} value={age}>
                 {age}
               </option>
             ))}

@@ -71,7 +71,6 @@ class App extends Component {
       const from = location.state && location.state.from;
       if (from) history.replace(from);
     }
-    console.log(location.state);
   }
 
   openSignInForm = () => {

@@ -21,8 +21,8 @@ import {
 const getUserRatings = () => async dispatch => {
   dispatch(getUserRatingsFetch());
   try {
-    const response = await axios.get("http://localhost:3004/userRatings");
-    dispatch(getUserRatingsSuccess(response.data));
+    const response = await axios.get("/user/userRatings");
+    dispatch(getUserRatingsSuccess(response.data.userRatings));
   } catch (error) {
     dispatch(getUserRatingsError(error));
   }
@@ -31,8 +31,8 @@ const getUserRatings = () => async dispatch => {
 const getUserComments = () => async dispatch => {
   dispatch(getUserCommentsFetch());
   try {
-    const response = await axios.get("http://localhost:3004/userComments");
-    dispatch(getUserCommentsSuccess(response.data));
+    const response = await axios.get("/user/userComments");
+    dispatch(getUserCommentsSuccess(response.data.userComments));
   } catch (error) {
     dispatch(getUserCommentsError(error));
   }
@@ -41,11 +41,8 @@ const getUserComments = () => async dispatch => {
 const addUserRating = userRating => async dispatch => {
   dispatch(addUserRatingFetch());
   try {
-    const response = await axios.post(
-      "http://localhost:3004/userRatings",
-      userRating
-    );
-    dispatch(addUserRatingSuccess(response.data));
+    const response = await axios.post("/user/userRatings", userRating);
+    dispatch(addUserRatingSuccess(response.data.userRating));
   } catch (error) {
     dispatch(addUserRatingError(error));
   }
@@ -55,10 +52,10 @@ const putUserRating = userRating => async dispatch => {
   dispatch(putUserRatingFetch());
   try {
     const response = await axios.put(
-      `http://localhost:3004/userRatings/${userRating.id}`,
+      `/user/userRatings/${userRating.id}`,
       userRating
     );
-    dispatch(putUserRatingSuccess(response.data));
+    dispatch(putUserRatingSuccess(response.data.userRating));
   } catch (error) {
     dispatch(putUserRatingError(error));
   }
@@ -67,11 +64,8 @@ const putUserRating = userRating => async dispatch => {
 const addUserComment = userComment => async dispatch => {
   dispatch(addUserCommentFetch());
   try {
-    const response = await axios.post(
-      "http://localhost:3004/userComments",
-      userComment
-    );
-    dispatch(addUserCommentSuccess(response.data));
+    const response = await axios.post("/user/userComments", userComment);
+    dispatch(addUserCommentSuccess(response.data.userComment));
   } catch (error) {
     dispatch(addUserCommentError(error));
   }

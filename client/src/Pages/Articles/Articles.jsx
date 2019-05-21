@@ -17,8 +17,8 @@ const ArticlesPage = ({ articles }) => (
     <h2 className={s.title}>Articles</h2>
     <ul className={s.list}>
       {articles.map(article => (
-        <li className={s.item} key={article.id}>
-          <Article id={article.id} content={article.content} />
+        <li className={s.item} key={article._id}>
+          <Article id={article._id} content={article.content} />
         </li>
       ))}
     </ul>
@@ -26,7 +26,7 @@ const ArticlesPage = ({ articles }) => (
 );
 
 const mapStateToProps = state => ({
-  articles: articlesSelectors.getArticlesArr(state)
+  articles: articlesSelectors.getArticles(state)
 });
 
 export default compose(

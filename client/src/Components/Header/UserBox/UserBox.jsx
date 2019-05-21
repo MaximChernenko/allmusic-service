@@ -9,7 +9,7 @@ import s from "./userBox.module.css";
 const UserBox = ({ user: { name }, signOut }) => (
   <ul className={s.list}>
     <li className={s.item}>
-      <Link to="/my-profile" className={s.link}>
+      <Link to="/user-profile" className={s.link}>
         {name}
       </Link>
     </li>
