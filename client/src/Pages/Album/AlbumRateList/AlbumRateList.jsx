@@ -19,7 +19,7 @@ const AlbumRateList = ({ album, isAuthenticated }) => (
     </li>
     <li className={`${s.item} ${s.userRateItem}`}>
       <p className={s.text}>User rating:</p>
-      <UserRating rating={album.userRating} />
+      <UserRating rating={album.userRating.rating} />
     </li>
     {isAuthenticated && (
       <li className={`${s.item} ${s.userRateSelect}`}>

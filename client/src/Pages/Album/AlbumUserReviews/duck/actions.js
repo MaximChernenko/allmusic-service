@@ -13,7 +13,10 @@ import {
   ADD_USER_RATING_ERROR,
   ADD_USER_COMMENT_FETCH,
   ADD_USER_COMMENT_SUCCESS,
-  ADD_USER_COMMENT_ERROR
+  ADD_USER_COMMENT_ERROR,
+  UPDATE_GENERAL_USER_RATING_FETCH,
+  UPDATE_GENERAL_USER_RATING_SUCCESS,
+  UPDATE_GENERAL_USER_RATING_ERROR
 } from "./actionTypes";
 
 export const getUserRatingsFetch = () => ({
@@ -83,5 +86,19 @@ export const addUserCommentSuccess = userComment => ({
 
 export const addUserCommentError = error => ({
   type: ADD_USER_COMMENT_ERROR,
+  payload: { error }
+});
+
+export const updateGeneralUserRatingFetch = () => ({
+  type: UPDATE_GENERAL_USER_RATING_FETCH
+});
+
+export const updateGeneralUserRatingSuccess = updatedAlbum => ({
+  type: UPDATE_GENERAL_USER_RATING_SUCCESS,
+  payload: { updatedAlbum }
+});
+
+export const updateGeneralUserRatingError = error => ({
+  type: UPDATE_GENERAL_USER_RATING_ERROR,
   payload: { error }
 });

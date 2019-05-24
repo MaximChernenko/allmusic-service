@@ -28,3 +28,12 @@ export const ADD_USER_COMMENT_SUCCESS =
   "album-user-reviews/ADD_USER_COMMENT_SUCCESS";
 export const ADD_USER_COMMENT_ERROR =
   "album-user-reviews/ADD_USER_COMMENT_ERROR";
+
+export const UPDATE_GENERAL_USER_RATING_FETCH =
+  "album-user-reviews/UPDATE_GENERAL_USER_RATING_FETCH";
+
+export const UPDATE_GENERAL_USER_RATING_SUCCESS =
+  "album-user-reviews/UPDATE_GENERAL_USER_RATING_SUCCESS";
+
+export const UPDATE_GENERAL_USER_RATING_ERROR =
+  "album-user-reviews/UPDATE_GENERAL_USER_RATING_ERROR";

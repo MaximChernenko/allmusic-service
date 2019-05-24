@@ -86,7 +86,7 @@ const ArtistDisco = ({ albumsObj }) =>
                     <Rating rating={album.rating} />
                   </td>
                   <td className={s.userRating}>
-                    <UserRating rating={album.userRating} />
+                    <UserRating rating={album.userRating.rating} />
                   </td>
                   <td className={s.suffix} />
                 </tr>

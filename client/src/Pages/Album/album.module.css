@@ -28,7 +28,7 @@
     position: absolute;
     top: 28px;
     left: 15px;
-    z-index: 200;
+    z-index: 2;
 }
 
 .linkIcon:hover {

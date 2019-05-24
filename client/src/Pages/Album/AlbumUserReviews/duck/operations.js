@@ -15,8 +15,13 @@ import {
   putUserRatingError,
   addUserCommentFetch,
   addUserCommentSuccess,
-  addUserCommentError
+  addUserCommentError,
+  updateGeneralUserRatingFetch,
+  updateGeneralUserRatingSuccess,
+  updateGeneralUserRatingError
 } from "./actions";
+
+import selectors from "./selectors";
 
 const getUserRatings = () => async dispatch => {
   dispatch(getUserRatingsFetch());
@@ -71,10 +76,36 @@ const addUserComment = userComment => async dispatch => {
   }
 };
 
+const getRating = (albumUserRating, rating) => {
+  const ratingSum = albumUserRating.rating * albumUserRating.count;
+  return (ratingSum + rating) / albumUserRating.count + 1;
+};
+
+const updateGeneralUserRating = (id, rating) => async (dispatch, getState) => {
+  dispatch(updateGeneralUserRatingFetch());
+  try {
+    const albumUserRating = selectors.getAlbumUserRating(getState(), id);
+    const patch = {
+      userRating: {
+        rating: getRating(albumUserRating, rating),
+        count: albumUserRating.count + 1
+      }
+    };
+    const response = await axios.put(
+      `http://localhost:3004/albums/${id}`,
+      patch
+    );
+    dispatch(updateGeneralUserRatingSuccess(response.data));
+  } catch (error) {
+    dispatch(updateGeneralUserRatingError());
+  }
+};
+
 export default {
   getUserRatings,
   getUserComments,
   addUserRating,
   putUserRating,
-  addUserComment
+  addUserComment,
+  updateGeneralUserRating
 };

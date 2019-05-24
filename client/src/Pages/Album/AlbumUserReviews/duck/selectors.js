@@ -2,6 +2,7 @@ import { createSelector } from "reselect";
 
 const getAllUserRatings = state => state.userRatings;
 const getAllUserComments = state => state.userComments;
+const getAlbumUserRating = (state, id) => state.albums[id].userRating;
 
 const getUserId = state => state.session.user && state.session.user.id;
 
@@ -29,5 +30,6 @@ const getUserCommentsByAlbumId = createSelector(
 export default {
   findUserRatingByUserAndAlbumId,
   getUserId,
-  getUserCommentsByAlbumId
+  getUserCommentsByAlbumId,
+  getAlbumUserRating
 };
