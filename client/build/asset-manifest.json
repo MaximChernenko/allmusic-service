@@ -1,0 +1,22 @@
+{
+  "main.css": "/allmusic-service/static/css/main.0c75fd75.chunk.css",
+  "main.js": "/allmusic-service/static/js/main.22c71717.chunk.js",
+  "main.js.map": "/allmusic-service/static/js/main.22c71717.chunk.js.map",
+  "runtime~main.js": "/allmusic-service/static/js/runtime~main.e79272ab.js",
+  "runtime~main.js.map": "/allmusic-service/static/js/runtime~main.e79272ab.js.map",
+  "static/css/2.8c71954c.chunk.css": "/allmusic-service/static/css/2.8c71954c.chunk.css",
+  "static/js/2.a3d618eb.chunk.js": "/allmusic-service/static/js/2.a3d618eb.chunk.js",
+  "static/js/2.a3d618eb.chunk.js.map": "/allmusic-service/static/js/2.a3d618eb.chunk.js.map",
+  "index.html": "/allmusic-service/index.html",
+  "precache-manifest.bf04ee81d7e8d8bb5e28062d3331a3df.js": "/allmusic-service/precache-manifest.bf04ee81d7e8d8bb5e28062d3331a3df.js",
+  "service-worker.js": "/allmusic-service/service-worker.js",
+  "static/css/2.8c71954c.chunk.css.map": "/allmusic-service/static/css/2.8c71954c.chunk.css.map",
+  "static/css/main.0c75fd75.chunk.css.map": "/allmusic-service/static/css/main.0c75fd75.chunk.css.map",
+  "static/media/icons.svg": "/allmusic-service/static/media/icons.6072894c.svg",
+  "static/media/signIn.module.css": "/allmusic-service/static/media/remove.f3181f35.svg",
+  "static/media/search.svg": "/allmusic-service/static/media/search.266bd9e6.svg",
+  "static/media/albumAvatar.module.css": "/allmusic-service/static/media/sound.b09df884.svg",
+  "static/media/serviceRating.module.css": "/allmusic-service/static/media/star-blue.525f883a.svg",
+  "static/media/userRatingSelect.module.css": "/allmusic-service/static/media/star.7f55f804.svg",
+  "static/media/userRating.module.css": "/allmusic-service/static/media/star-red.8d84e133.svg"
+}
