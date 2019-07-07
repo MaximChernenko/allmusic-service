@@ -2,7 +2,7 @@ import { createSelector } from "reselect";
 
 const getAllUserSett = state => state.userSettings;
 
-const getUserId = state => state.session.user.id;
+const getUserId = state => state.session.user && state.session.user.id;
 
 const getUserSettByUserId = createSelector(
   [getAllUserSett, getUserId],

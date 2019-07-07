@@ -1,13 +1,11 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 
-const withScrollToTop = WrappedComponent =>
-  class extends Component {
-    componentDidMount() {
-      window.scrollTo(window.top);
-    }
-    render() {
-      return <WrappedComponent {...this.props} />;
-    }
-  };
+const withScrollToTop = WrappedComponent => props => {
+  useEffect(() => {
+    window.scrollTo(window.top);
+  }, []);
+
+  return <WrappedComponent {...props} />;
+};
 
 export default withScrollToTop;

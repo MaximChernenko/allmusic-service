@@ -1,5 +1,5 @@
-import React, { Component, createRef } from "react";
-import { connect } from "react-redux";
+import React, { useState, useEffect, useRef } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 // redux
 import searchSelectors from "./duck/selectors";
@@ -16,104 +16,79 @@ import SearchModal from "./SearchModal/SearchModal";
 // styles
 import s from "./searchInput.module.css";
 
-class SearchInput extends Component {
-  container = createRef();
-  searchBtn = createRef();
+const SearchInput = () => {
+  const container = useRef();
+  const searchBtn = useRef();
 
-  state = {
-    isOpen: false
+  const search = useSelector(searchSelectors.getSearch);
+  const dispatch = useDispatch();
+
+  const srchData = value => dispatch(searchData(value));
+  const srchClear = () => dispatch(searchClear());
+  const advancedSrchReset = () => dispatch(advancedSearchReset());
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
   };
 
-  componentDidMount() {
-    window.addEventListener("click", this.checkClick.bind(this));
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("click", this.checkClick.bind(this));
-  }
-
-  openModal = () => {
-    this.setState({
-      isOpen: true
-    });
+  const closeModal = () => {
+    setIsOpen(false);
   };
 
-  closeModal = () => {
-    this.setState({
-      isOpen: false
-    });
-  };
-
-  checkClick({ target }) {
+  const checkClick = ({ target }) => {
     // Close if search btn entered
-    if (this.searchBtn.current) {
-      if (this.searchBtn.current.contains(target)) {
-        this.closeModal();
+    if (searchBtn.current) {
+      if (searchBtn.current.contains(target)) {
+        closeModal();
         return;
       }
     }
-    if (this.container.current) {
-      if (this.container.current.contains(target)) {
-        this.openModal();
+    if (container.current) {
+      if (container.current.contains(target)) {
+        openModal();
       } else {
-        this.closeModal();
+        closeModal();
       }
     }
-  }
-
-  handlerInputChange = ({ target: { value } }) => {
-    const { searchData, advancedSearchReset } = this.props;
-    advancedSearchReset();
-    searchData(value);
   };
 
-  handlerResetInput = () => {
-    const { searchClear } = this.props;
-    searchClear();
+  useEffect(() => {
+    window.addEventListener("click", checkClick);
+
+    return () => {
+      window.removeEventListener("click", checkClick);
+    };
+  }, []);
+
+  const handlerInputChange = ({ target: { value } }) => {
+    advancedSrchReset();
+    srchData(value);
   };
 
-  render() {
-    const { isOpen } = this.state;
-    const { search } = this.props;
-    return (
-      <div ref={this.container} className={s.container}>
-        <input
-          autoComplete="off"
-          className={`${s.input} ${isOpen && s.activeInput}`}
-          name="search"
-          value={search}
-          placeholder="Search"
-          onChange={this.handlerInputChange}
-        />
-        {search.length > 0 && <CancelBtn onReset={this.handlerResetInput} />}
-        <SearchBtn
-          ref={this.searchBtn}
-          closeModal={this.closeModal}
-          src={searchIcon}
-          alt="search"
-        />
-        {search.length > 0 && isOpen && (
-          <SearchModal
-            onReset={this.handlerResetInput}
-            closeModal={this.closeModal}
-          />
-        )}
-      </div>
-    );
-  }
-}
-
-const mapStateToProps = state => ({
-  search: searchSelectors.getSearch(state)
-});
-
-const mapDispatchToProps = {
-  searchData,
-  searchClear,
-  advancedSearchReset
+  return (
+    <div ref={container} className={s.container}>
+      <input
+        autoComplete="off"
+        className={`${s.input} ${isOpen && s.activeInput}`}
+        name="search"
+        value={search}
+        placeholder="Search"
+        onChange={handlerInputChange}
+      />
+      {search.length > 0 && <CancelBtn onReset={srchClear} />}
+      <SearchBtn
+        ref={searchBtn}
+        closeModal={closeModal}
+        src={searchIcon}
+        alt="search"
+      />
+      {search.length > 0 && isOpen && (
+        <SearchModal onReset={srchClear} closeModal={closeModal} />
+      )}
+    </div>
+  );
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(SearchInput);
+export default SearchInput;
