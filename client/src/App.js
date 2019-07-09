@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
+// routes
+import routes, { prefix, UserProfile } from "./routes";
 // redux
 // Artists
 import { getArtists } from "./Pages/Artist/duck/operations";
@@ -22,19 +24,10 @@ import sessionSelectors from "./store/session/selectors";
 import ProtectedRoute from "./utils/helpers/ProtectedRoute";
 
 // Components
-import MainPage from "./Pages/Main/Main";
 import Header from "./Components/Header/HeaderView";
 import Footer from "./Components/Footer/Footer";
-import ArtistPage from "./Pages/Artist/Artist";
-import AlbumPage from "./Pages/Album/Album";
-import ArticlePage from "./Pages/Article/Article";
-import ArticlesPage from "./Pages/Articles/Articles";
-import RecommendationsPage from "./Pages/Recommendations/Recommendations";
-import SearchPage from "./Pages/Search/Search";
-import AdvancedSearch from "./Pages/AdvancedSearch/AdvancedSearch";
 import SignInForm from "./Pages/Auth/SignIn/SignIn";
 import SignUpForm from "./Pages/Auth/SignUp/SignUp";
-import UserProfile from "./Pages/UserProfile/UserProfile";
 
 // styles
 import s from "./app.module.css";
@@ -107,16 +100,27 @@ class App extends Component {
         />
         <div className={s.inner}>
           <Switch>
-            <Route exact path="/" component={MainPage} />
+            {/* <Route exact path="/" component={MainPage} />
             <Route path="/artist/:id" component={ArtistPage} />
             <Route path="/album/:id" component={AlbumPage} />
             <Route path="/articles" component={ArticlesPage} />
             <Route path="/article/:id" component={ArticlePage} />
             <Route path="/recommendations" component={RecommendationsPage} />
             <Route path="/search" component={SearchPage} />
-            <Route path="/advanced-search" component={AdvancedSearch} />
-            <ProtectedRoute path="/user-profile" component={UserProfile} />
-            <Redirect to="/" />
+            <Route path="/advanced-search" component={AdvancedSearch} /> */}
+            {Object.entries(routes).map(([path, { module, isExaxt }]) => (
+              <Route
+                key={path}
+                path={path}
+                exact={isExaxt}
+                component={module}
+              />
+            ))}
+            <ProtectedRoute
+              path={prefix + "user-profile"}
+              component={UserProfile}
+            />
+            <Redirect to={prefix} />
           </Switch>
         </div>
         <Footer />

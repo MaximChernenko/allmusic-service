@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { createPortal } from "react-dom";
 import { connect } from "react-redux";
 // redux
 import operations from "../../../store/session/operations";
@@ -8,9 +9,30 @@ import s from "./signIn.module.css";
 
 const INITIAL_STATE = { email: "", password: "" };
 
+const authRoot = document.getElementById("auth-root");
+
 class SignIn extends Component {
   state = {
     ...INITIAL_STATE
+  };
+
+  div = document.createElement("div");
+
+  componentDidMount() {
+    authRoot.append(this.div);
+    window.addEventListener("keydown", this.escapeListener);
+  }
+
+  componentWillUnmount() {
+    this.div.remove();
+    window.removeEventListener("keydown", this.escapeListener);
+  }
+
+  escapeListener = ({ code }) => {
+    console.log(code);
+    if (code !== "Escape") return;
+    const { closeSignInForm } = this.props;
+    closeSignInForm();
   };
 
   handlerInputChange = ({ target: { name, value } }) => {
@@ -30,7 +52,7 @@ class SignIn extends Component {
   render() {
     const { closeSignInForm } = this.props;
     const { email, password } = this.state;
-    return (
+    return createPortal(
       <div className={s.wrapper}>
         <form className={s.form} onSubmit={this.handlerSubmitForm}>
           <div className={s.topBox}>
@@ -78,7 +100,8 @@ class SignIn extends Component {
             Log in
           </button>
         </form>
-      </div>
+      </div>,
+      this.div
     );
   }
 }
