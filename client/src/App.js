@@ -1,3 +1,4 @@
+import { hot } from "react-hot-loader/root";
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
@@ -22,10 +23,9 @@ import sessionSelectors from "./store/session/selectors";
 
 // utils
 import ProtectedRoute from "./utils/helpers/ProtectedRoute";
-
 // Components
-import Header from "./Components/Header/HeaderView";
-import Footer from "./Components/Footer/Footer";
+import Header from "@components/Header/HeaderView";
+import Footer from "@components/Footer/Footer";
 import SignInForm from "./Pages/Auth/SignIn/SignIn";
 import SignUpForm from "./Pages/Auth/SignUp/SignUp";
 
@@ -100,14 +100,6 @@ class App extends Component {
         />
         <div className={s.inner}>
           <Switch>
-            {/* <Route exact path="/" component={MainPage} />
-            <Route path="/artist/:id" component={ArtistPage} />
-            <Route path="/album/:id" component={AlbumPage} />
-            <Route path="/articles" component={ArticlesPage} />
-            <Route path="/article/:id" component={ArticlePage} />
-            <Route path="/recommendations" component={RecommendationsPage} />
-            <Route path="/search" component={SearchPage} />
-            <Route path="/advanced-search" component={AdvancedSearch} /> */}
             {Object.entries(routes).map(([path, { module, isExaxt }]) => (
               <Route
                 key={path}
@@ -144,7 +136,9 @@ const mapDispatchToProps = {
   getAllUserSett: userSettOperations.getAllUserSett
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default hot(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(App)
+);
