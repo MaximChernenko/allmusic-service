@@ -11,8 +11,9 @@ export const refreshUserSuccess = user => ({
   }
 });
 
-export const signUpRequest = () => ({
-  type: actionTypes.SIGN_UP_REQUEST
+export const signUpRequest = data => ({
+  type: actionTypes.SIGN_UP_REQUEST,
+  payload: data
 });
 
 export const signUpSuccess = data => ({
@@ -27,8 +28,9 @@ export const signUpError = error => ({
   }
 });
 
-export const signInRequest = () => ({
-  type: actionTypes.SIGN_IN_REQUEST
+export const signInRequest = data => ({
+  type: actionTypes.SIGN_IN_REQUEST,
+  payload: data
 });
 
 export const signInSuccess = data => ({

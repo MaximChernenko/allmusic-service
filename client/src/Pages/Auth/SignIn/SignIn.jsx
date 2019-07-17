@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { createPortal } from "react-dom";
 import { connect } from "react-redux";
 // redux
-import operations from "../../../store/session/operations";
-
+import { signInRequest } from "../../../store/session/actions";
 // styles
 import s from "./signIn.module.css";
 
@@ -29,7 +28,6 @@ class SignIn extends Component {
   }
 
   escapeListener = ({ code }) => {
-    console.log(code);
     if (code !== "Escape") return;
     const { closeSignInForm } = this.props;
     closeSignInForm();
@@ -107,7 +105,7 @@ class SignIn extends Component {
 }
 
 const mapDispatchToProps = {
-  signIn: operations.signIn
+  signIn: signInRequest
 };
 
 export default connect(

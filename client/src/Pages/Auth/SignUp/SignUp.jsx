@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { createPortal } from "react-dom";
 import { connect } from "react-redux";
 // redux
-import operations from "../../../store/session/operations";
+// import operations from "../../../store/session/operations"
+import { signUpRequest } from "../../../store/session/actions";
 // styles
 import s from "./signUp.module.css";
 
@@ -32,7 +33,6 @@ class SignUp extends Component {
   }
 
   escapeListener = ({ code }) => {
-    console.log(code);
     if (code !== "Escape") return;
     const { closeSignUpForm } = this.props;
     closeSignUpForm();
@@ -123,7 +123,7 @@ class SignUp extends Component {
 }
 
 const mapDispatchToProps = {
-  signUp: operations.signUp
+  signUp: signUpRequest
 };
 
 export default connect(

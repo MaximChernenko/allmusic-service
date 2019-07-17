@@ -16,7 +16,7 @@ import { getArticles } from "./Pages/Article/duck/operations";
 // userRatings
 import userOperations from "./Pages/Album/AlbumUserReviews/duck/operations";
 // session
-import operations from "./store/session/operations";
+import { refreshUserStart } from "./store/session/actions";
 // userSettings
 import userSettOperations from "./Pages/UserProfile/duck/operations";
 import sessionSelectors from "./store/session/selectors";
@@ -132,7 +132,7 @@ const mapDispatchToProps = {
   getArticles,
   getUserRatings: userOperations.getUserRatings,
   getUserComments: userOperations.getUserComments,
-  getCurrentUser: operations.refreshCurrentUser,
+  getCurrentUser: refreshUserStart,
   getAllUserSett: userSettOperations.getAllUserSett
 };
 

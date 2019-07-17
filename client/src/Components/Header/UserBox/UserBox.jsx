@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 // redux
-import operations from "../../../store/session/operations";
+import { signOutRequest } from "../../../store/session/actions";
 // styles
 import s from "./userBox.module.css";
 
 const UserBox = ({ user: { name } }) => {
   const dispatch = useDispatch();
-  const signOut = () => dispatch(operations.signOut());
+  const signOut = () => dispatch(signOutRequest());
   return (
     <ul className={s.list}>
       <li className={s.item}>
