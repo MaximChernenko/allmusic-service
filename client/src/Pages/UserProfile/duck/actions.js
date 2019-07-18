@@ -38,8 +38,9 @@ export const createDefaultUserSettError = error => ({
   payload: { error }
 });
 
-export const updateUserSettFetch = () => ({
-  type: UPDATE_USER_SETTINGS_FETCH
+export const updateUserSettFetch = userSettings => ({
+  type: UPDATE_USER_SETTINGS_FETCH,
+  payload: userSettings
 });
 
 export const updateUserSettSuccess = userSettings => ({

@@ -1,4 +1,5 @@
 import { createSelector } from "reselect";
+import * as R from "ramda";
 
 const getAllUserRatings = state => state.userRatings;
 const getAllUserComments = state => state.userComments;
@@ -10,9 +11,9 @@ const findUserRatingByUserAndAlbumId = createSelector(
   [getAllUserRatings, getUserId, (state, albumId) => albumId],
   (ratings, userId, albumId) => {
     if (ratings && userId) {
-      return ratings.find(
+      return R.find(
         userRate => userRate.userId === userId && userRate.albumId === albumId
-      );
+      )(ratings);
     }
   }
 );
@@ -21,9 +22,10 @@ const getUserCommentsByAlbumId = createSelector(
   [getAllUserComments, (state, albumId) => albumId],
   (comments, albumId) =>
     comments
-      ? comments
-          .filter(comment => comment.albumId === albumId)
-          .sort((a, b) => b.date - a.date)
+      ? R.pipe(
+          R.filter(comment => comment.albumId === albumId),
+          R.sort((a, b) => b.date - a.date)
+        )(comments)
       : []
 );
 

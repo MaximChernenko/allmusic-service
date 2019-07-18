@@ -18,7 +18,7 @@ import userOperations from "./Pages/Album/AlbumUserReviews/duck/operations";
 // session
 import { refreshUserStart } from "./store/session/actions";
 // userSettings
-import userSettOperations from "./Pages/UserProfile/duck/operations";
+import { getAllUserSettFetch } from "./Pages/UserProfile/duck/actions";
 import sessionSelectors from "./store/session/selectors";
 
 // utils
@@ -133,7 +133,7 @@ const mapDispatchToProps = {
   getUserRatings: userOperations.getUserRatings,
   getUserComments: userOperations.getUserComments,
   getCurrentUser: refreshUserStart,
-  getAllUserSett: userSettOperations.getAllUserSett
+  getAllUserSett: getAllUserSettFetch
 };
 
 export default hot(

@@ -1,4 +1,5 @@
 import { createSelector } from "reselect";
+import * as R from "ramda";
 
 const getAlbums = state => state.albums;
 const getArtists = state => state.artists;
@@ -10,7 +11,7 @@ const getArtistById = createSelector(
 
 const getAlbumsById = createSelector(
   [getAlbums, (state, ids) => ids],
-  (albums, ids) => ids.map(id => albums[id])
+  (albums, ids) => R.map(id => albums[id])(ids)
 );
 
 const getAlbumById = createSelector(
@@ -25,11 +26,12 @@ const getArtistByAlbum = createSelector(
 
 const getRecommendedAlbums = createSelector(
   [getAlbums],
-  albums => {
-    const keys = Object.keys(albums);
-    const albumsArr = keys.map(id => albums[id]);
-    return albumsArr.filter(album => album.isRecommended);
-  }
+  albums =>
+    R.pipe(
+      Object.keys,
+      R.map(id => albums[id]),
+      R.filter(album => album.isRecommended)
+    )(albums)
 );
 
 export default {

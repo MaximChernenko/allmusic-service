@@ -1,4 +1,5 @@
 import { createSelector } from "reselect";
+import * as R from "ramda";
 
 const getSearch = state => state.search.value;
 
@@ -16,11 +17,11 @@ const getArtistsBySearch = createSelector(
     if (advancedSearch) {
       return [];
     }
-    const keys = Object.keys(artists);
-    const artistsArr = keys.map(id => artists[id]);
-    return artistsArr.filter(artist =>
-      artist.name.toLowerCase().includes(filter.toLowerCase())
-    );
+    return R.pipe(
+      Object.keys,
+      R.map(id => artists[id]),
+      R.filter(artist => R.includes(R.toLower(filter))(R.toLower(artist.name)))
+    )(artists);
   }
 );
 
@@ -30,20 +31,21 @@ const getAlbumsBySearch = createSelector(
     const keys = Object.keys(albums);
     const albumsArr = keys.map(id => albums[id]);
     if (advancedSearch) {
-      return albumsArr.filter(
-        album =>
-          checkRating(advancedSearch.rating, album.rating) &&
-          checkDate(advancedSearch.date, album.releaseDate) &&
+      return R.filter(album =>
+        R.allPass([
+          checkRating(advancedSearch.rating, album.rating),
+          checkDate(advancedSearch.date, album.releaseDate),
           checkGenreOrStyle(
             advancedSearch.genreOrStyle,
             album.genre,
             album.styles
           )
-      );
+        ])
+      )(albumsArr);
     }
-    return albumsArr.filter(album =>
-      album.name.toLowerCase().includes(filter.toLowerCase())
-    );
+    return R.filter(album =>
+      R.includes(R.toLower(filter))(R.toLower(album.name))
+    )(albumsArr);
   }
 );
 
@@ -61,10 +63,10 @@ function checkDate(advSearchDate, albumRelDate) {
 
 function checkGenreOrStyle(advSearchGenreOrStyle, albumGenre, albumStyles) {
   const genre = albumGenre.split(", ");
-  return (
-    genre.includes(advSearchGenreOrStyle) ||
-    albumStyles.includes(advSearchGenreOrStyle)
-  );
+  return R.anyPass([
+    R.includes(advSearchGenreOrStyle)(genre),
+    R.includes(advSearchGenreOrStyle)(albumStyles)
+  ]);
 }
 
 const getSongsBySearch = createSelector(
@@ -73,11 +75,11 @@ const getSongsBySearch = createSelector(
     if (advancedSearch) {
       return [];
     }
-    const keys = Object.keys(songs);
-    const songsArr = keys.map(id => songs[id]);
-    return songsArr.filter(song =>
-      song.name.toLowerCase().includes(filter.toLowerCase())
-    );
+    return R.pipe(
+      Object.keys,
+      R.map(id => songs[id]),
+      R.filter(song => R.includes(R.toLower(filter))(R.toLower(song.name)))
+    )(songs);
   }
 );
 

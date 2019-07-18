@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 // redux
 import userSettSelectors from "../duck/selectors";
-import userSettOperations from "../duck/operations";
+import { updateUserSettFetch } from "../duck/actions";
 import sessionSelectors from "../../../store/session/selectors";
 
 // options
@@ -33,7 +33,8 @@ class ProfileEditor extends Component {
       closeEditMode,
       user: { id }
     } = this.props;
-    updateUserSett({ ...this.state, userId: id }).then(() => closeEditMode());
+    updateUserSett({ ...this.state, userId: id });
+    closeEditMode();
   };
 
   render() {
@@ -105,7 +106,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = {
-  updateUserSett: userSettOperations.updateUserSett
+  updateUserSett: updateUserSettFetch
 };
 
 export default connect(
